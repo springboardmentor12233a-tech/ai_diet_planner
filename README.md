@@ -57,6 +57,7 @@ Pregnancies, Glucose, BloodPressure, Insulin, BMI, Age, Outcome
 **Type:** Image Dataset (Scanned Medical Reports)  
 **Source:** Kaggle  
 **Link:** https://www.kaggle.com/datasets/dikshaasinghhh/bajaj
+
 **Purpose:**  
 - Used to implement OCR on real-world medical reports
 - Enables extraction of both numeric lab values and textual doctor notes
@@ -71,6 +72,7 @@ Pregnancies, Glucose, BloodPressure, Insulin, BMI, Age, Outcome
 **Type:** CSV (Nutrition Data)  
 **Source:** Kaggle  
 **Link:** https://www.kaggle.com/datasets/utsavdey1410/food-nutrition-dataset
+
 **Files:**  
 - FOOD-DATA-GROUP1.csv  
 - FOOD-DATA-GROUP2.csv  
@@ -92,6 +94,7 @@ Calories, fats, carbohydrates, proteins, vitamins, minerals, sodium, cholesterol
 **Type:** CSV (Health Profile → Diet Mapping)  
 **Source:** Kaggle  
 **Link:** https://www.kaggle.com/datasets/ziya07/diet-recommendations-dataset
+
 **Purpose:**  
 - Maps patient health profiles to diet recommendations
 - Contains disease type, severity, allergies, preferences, and target diet
@@ -116,31 +119,29 @@ OCR is implemented using **EasyOCR** to extract text from scanned medical report
 
 ## 🧱 Project Structure
 
+```text
 AI-DIET-PLANNER/
 │
-├── data/
-│ ├── medical_reports_images/
-│ ├── food_nutrition/
-│ ├── pima_diabetes.csv
-│ ├── diet_recommendations.csv
-│ └── healthy_eating.csv
+├── data/                           
+│   ├── medical_reports_images/     
+│   ├── food_nutrition/             
+│   ├── pima_diabetes.csv           
+│   ├── diet_recommendations_dataset.csv    
 │
-├── src/
-│ ├── ocr_easyocr.py
-│ ├── load_csv_datasets.py
-│ └── utils.py
+├── src/                            
+│   ├── ocr_easyocr.py              
+│   ├── load_csv_datasets.py                     
 │
-├── outputs/
-│ └── ocr_results.json
+├── outputs/                        
+│   └── ocr_results.json            
 │
-├── notebooks/
-│ └── (Google Colab notebooks)
+├── notebooks/                      
+│   └── (Google Colab notebooks)    
 │
-├── requirements.txt
-└── README.md
+├── requirements.txt                
+└── README.md                      
 
-
----
+```
 
 ## ✅ Milestone-1 (Weeks 1–2): Data Collection & Preprocessing
 
