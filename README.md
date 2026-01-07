@@ -1,5 +1,4 @@
 # AI Diet Planner
-
 **Project Name:** AI Diet Planner  
 **Author:** Sabiha Anjum 
 **Status:** Under Development  
@@ -7,7 +6,6 @@
 ---
 
 ## Overview
-
 AI Diet Planner is an intelligent system designed to generate **personalized diet plans** by analyzing **medical data and reports** using Artificial Intelligence and Machine Learning techniques.
 
 The project leverages structured medical datasets, image-based data, and OCR pipelines to understand a user’s health condition and recommend suitable dietary plans.
@@ -15,7 +13,6 @@ The project leverages structured medical datasets, image-based data, and OCR pip
 ---
 
 ## Objectives
-
 - Analyze medical report data (numerical + textual)
 - Detect health conditions such as diabetes
 - Provide AI-driven, personalized diet recommendations
@@ -24,7 +21,6 @@ The project leverages structured medical datasets, image-based data, and OCR pip
 ---
 
 ## Key Features
-
 - Personalized diet planning  
 - AI-based health recommendations  
 - Medical report analysis using OCR  
@@ -34,7 +30,6 @@ The project leverages structured medical datasets, image-based data, and OCR pip
 ---
 
 ## Datasets Used
-
 ### CSV Dataset (Medical Data)
 - **Pima Indians Diabetes Database**
 - Source: Kaggle  
@@ -58,7 +53,6 @@ Used for experimenting with image-based medical data and OCR workflows.
 ---
 
 ## OCR Integration
-
 To extract text from medical reports and scanned documents, OCR is implemented using a Google Colab notebook.
 
 **Capabilities:**
@@ -69,7 +63,6 @@ To extract text from medical reports and scanned documents, OCR is implemented u
 ---
 
 ## Technology Stack
-
 - **Programming Language:** Python  
 - **Libraries:**  
   - Pandas  
@@ -83,7 +76,6 @@ To extract text from medical reports and scanned documents, OCR is implemented u
 ---
 
 ## Future Enhancements
-
 - Integration with real-world medical reports (PDF/Image)
 - Web or mobile application interface
 - Advanced ML / Deep Learning models
