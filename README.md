@@ -57,6 +57,7 @@ Pregnancies, Glucose, BloodPressure, Insulin, BMI, Age, Outcome
 **Type:** Image Dataset (Scanned Medical Reports)  
 **Source:** Kaggle  
 **Link:** https://www.kaggle.com/datasets/dikshaasinghhh/bajaj
+
 **Purpose:**  
 - Used to implement OCR on real-world medical reports
 - Enables extraction of both numeric lab values and textual doctor notes
@@ -71,6 +72,7 @@ Pregnancies, Glucose, BloodPressure, Insulin, BMI, Age, Outcome
 **Type:** CSV (Nutrition Data)  
 **Source:** Kaggle  
 **Link:** https://www.kaggle.com/datasets/utsavdey1410/food-nutrition-dataset
+
 **Files:**  
 - FOOD-DATA-GROUP1.csv  
 - FOOD-DATA-GROUP2.csv  
@@ -92,6 +94,7 @@ Calories, fats, carbohydrates, proteins, vitamins, minerals, sodium, cholesterol
 **Type:** CSV (Health Profile → Diet Mapping)  
 **Source:** Kaggle  
 **Link:** https://www.kaggle.com/datasets/ziya07/diet-recommendations-dataset
+
 **Purpose:**  
 - Maps patient health profiles to diet recommendations
 - Contains disease type, severity, allergies, preferences, and target diet
