@@ -119,31 +119,29 @@ OCR is implemented using **EasyOCR** to extract text from scanned medical report
 
 ## 🧱 Project Structure
 
+```text
 AI-DIET-PLANNER/
 │
-├── data/
-│ ├── medical_reports_images/
-│ ├── food_nutrition/
-│ ├── pima_diabetes.csv
-│ ├── diet_recommendations.csv
-│ └── healthy_eating.csv
+├── data/                           
+│   ├── medical_reports_images/     
+│   ├── food_nutrition/             
+│   ├── pima_diabetes.csv           
+│   ├── diet_recommendations_dataset.csv    
 │
-├── src/
-│ ├── ocr_easyocr.py
-│ ├── load_csv_datasets.py
-│ └── utils.py
+├── src/                            
+│   ├── ocr_easyocr.py              
+│   ├── load_csv_datasets.py                     
 │
-├── outputs/
-│ └── ocr_results.json
+├── outputs/                        
+│   └── ocr_results.json            
 │
-├── notebooks/
-│ └── (Google Colab notebooks)
+├── notebooks/                      
+│   └── (Google Colab notebooks)    
 │
-├── requirements.txt
-└── README.md
+├── requirements.txt                
+└── README.md                      
 
-
----
+```
 
 ## ✅ Milestone-1 (Weeks 1–2): Data Collection & Preprocessing
 
