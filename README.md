@@ -29,5 +29,5 @@ At the end of Milestone 1, raw medical data was successfully converted into read
 
 ---
 
-**Author:**  
+**Name:**  
 Amrutha M
