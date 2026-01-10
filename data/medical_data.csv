@@ -1,0 +1,1001 @@
+Patient_ID,Age,Gender,Medical_Condition,Treatment,Outcome,Insurance_Type,Income,Region,Smoking_Status,Admission_Type,Hospital_ID,Length_of_Stay
+1,77,Female,Chronic Obstructive,Dialysis,Stable,Public,77444,North,Former smoker,Urgent,3173,20
+2,62,Female,Obesity,Physical therapy,Improved,Public,19367,West,Non-smoker,Urgent,65671,4
+3,77,Male,Hypertension,Inhaler therapy,Improved,Medicare,16054,North,Non-smoker,Urgent,96914,3
+4,41,Female,Alzheimer's Disease,Medication C,Worsened,Medicare,54371,West,Non-smoker,Emergency,15732,11
+5,82,Male,Alzheimer's Disease,Chemotherapy,Stable,Private,55489,West,Non-smoker,Emergency,98232,2
+6,71,Male,Cancer,Dietary changes,Stable,Public,48565,North,Non-smoker,Emergency,65285,5
+7,74,Female,Diabetes,Physical therapy,Stable,Private,57793,South,Non-smoker,Elective,60973,11
+8,44,Female,Cancer,Inhaler therapy,Stable,Public,47674,North,Former smoker,Emergency,4978,8
+9,29,Male,Arthritis,Medication A,Stable,Public,15075,West,Former smoker,Emergency,79254,18
+10,29,Male,Arthritis,Medication B,Stable,Medicare,78488,South,Non-smoker,Elective,91801,10
+11,41,Male,Rheumatoid Arthritis,Therapy,Stable,Public,924,North,Non-smoker,Urgent,63557,13
+12,82,Male,Stroke,Medication B,Improved,Medicare,31315,North,Former smoker,Urgent,90504,1
+13,81,Female,Rheumatoid Arthritis,Dialysis,Improved,Private,75416,East,Former smoker,Emergency,26040,17
+14,82,Male,Chronic Kidney Disease,Inhaler therapy,Improved,Public,87756,West,Former smoker,Urgent,75342,14
+15,75,Female,Hypertension,Physical therapy,Improved,Public,43193,West,Former smoker,Urgent,83615,5
+16,61,Male,Cancer,Medication A,Stable,Medicare,48718,North,Non-smoker,Emergency,89637,5
+17,34,Female,Stroke,Immunosuppressants,Improved,Medicare,1106,East,Non-smoker,Urgent,3963,4
+18,81,Male,Chronic Kidney Disease,Inhaler therapy,Worsened,Private,99980,West,Non-smoker,Urgent,99228,16
+19,6,Female,Rheumatoid Arthritis,Medication A,Worsened,Public,48841,South,Non-smoker,Elective,9873,13
+20,71,Male,Chronic Kidney Disease,Dietary counseling,Improved,Medicare,59108,West,Non-smoker,Elective,53610,4
+21,48,Bigender,Obesity,Medication C,Worsened,Medicare,25847,South,Non-smoker,Urgent,47390,13
+22,49,Female,Asthma,Medication C,Stable,Private,27241,West,Non-smoker,Urgent,13701,10
+23,20,Female,Chronic Obstructive,Dietary counseling,Improved,Private,90395,South,Former smoker,Emergency,94471,15
+24,28,Male,Chronic Obstructive,Dietary counseling,Worsened,Public,45771,East,Former smoker,Urgent,83312,12
+25,14,Male,Heart Disease,Therapy,Improved,Private,97833,East,Former smoker,Urgent,76095,4
+26,5,Male,Depression,Therapy,Worsened,Private,7708,East,Non-smoker,Urgent,85131,7
+27,22,Male,Alzheimer's Disease,Therapy,Worsened,Medicare,63975,North,Non-smoker,Urgent,96874,17
+28,70,Female,Chronic Kidney Disease,Immunosuppressants,Improved,Public,81630,East,Non-smoker,Emergency,13952,0
+29,51,Female,Chronic Obstructive,Inhaler therapy,Stable,Public,169,East,Non-smoker,Urgent,14005,9
+30,39,Female,Alzheimer's Disease,Memory exercises,Stable,Public,11145,North,Former smoker,Urgent,23763,0
+31,32,Male,Stroke,Therapy,Improved,Private,9429,North,Former smoker,Elective,35918,19
+32,77,Male,Chronic Kidney Disease,Memory exercises,Improved,Medicare,70416,West,Non-smoker,Elective,72514,12
+33,66,Female,Arthritis,Inhaler therapy,Improved,Public,36879,West,Non-smoker,Emergency,26856,6
+34,60,Genderqueer,Alzheimer's Disease,Dietary changes,Worsened,Private,82660,West,Former smoker,Elective,94139,3
+35,6,Male,Obesity,Medication A,Worsened,Public,30202,North,Former smoker,Urgent,47998,3
+36,81,Female,Diabetes,Immunosuppressants,Worsened,Private,90351,West,Non-smoker,Elective,16843,6
+37,61,Male,Chronic Kidney Disease,Inhaler therapy,Improved,Public,92773,West,Non-smoker,Emergency,22885,5
+38,62,Female,Osteoporosis,Memory exercises,Worsened,Public,80285,West,Former smoker,Emergency,17606,3
+39,27,Male,Hypertension,Dietary counseling,Stable,Public,15740,South,Former smoker,Emergency,67629,6
+40,73,Female,Depression,Dialysis,Improved,Private,20149,South,Non-smoker,Emergency,91835,17
+41,30,Female,Asthma,Physical therapy,Improved,Public,20736,North,Former smoker,Emergency,2121,19
+42,76,Male,Osteoporosis,Physical therapy,Stable,Private,78167,North,Former smoker,Elective,49802,10
+43,25,Female,Anxiety,Dialysis,Stable,Public,39657,South,Non-smoker,Emergency,92009,6
+44,49,Male,Stroke,Memory exercises,Improved,Public,61116,North,Former smoker,Elective,18473,19
+45,45,Female,Depression,Chemotherapy,Stable,Private,80681,East,Non-smoker,Urgent,26431,17
+46,82,Male,Cancer,Physical therapy,Worsened,Medicare,22378,West,Non-smoker,Elective,51843,10
+47,81,Female,Alzheimer's Disease,Medication C,Worsened,Medicare,30474,North,Former smoker,Urgent,99608,7
+48,36,Female,Alzheimer's Disease,Dietary changes,Improved,Medicare,59570,North,Former smoker,Urgent,90078,19
+49,85,Female,Osteoporosis,Chemotherapy,Stable,Private,42112,South,Non-smoker,Elective,38387,0
+50,1,Female,Chronic Kidney Disease,Medication C,Worsened,Medicare,21141,East,Non-smoker,Elective,98059,0
+51,29,Female,Chronic Kidney Disease,Inhaler therapy,Improved,Medicare,50821,East,Non-smoker,Elective,10135,13
+52,2,Female,Chronic Obstructive,Dietary changes,Worsened,Public,76719,West,Non-smoker,Urgent,96250,5
+53,76,Male,Alzheimer's Disease,Memory exercises,Stable,Public,82743,South,Former smoker,Elective,62056,19
+54,51,Female,Depression,Medication A,Improved,Medicare,72228,South,Non-smoker,Elective,20740,8
+55,74,Male,Stroke,Dietary counseling,Improved,Private,20976,North,Non-smoker,Elective,44738,15
+56,90,Female,Heart Disease,Medication C,Stable,Medicare,20857,North,Former smoker,Urgent,48581,1
+57,81,Genderqueer,Rheumatoid Arthritis,Memory exercises,Worsened,Medicare,25777,East,Non-smoker,Elective,53407,9
+58,28,Male,Cancer,Bone density tests,Improved,Private,42042,East,Non-smoker,Urgent,59822,17
+59,87,Non-binary,Chronic Kidney Disease,Inhaler therapy,Worsened,Public,96304,West,Non-smoker,Emergency,53903,10
+60,36,Female,Osteoporosis,Inhaler therapy,Worsened,Public,7033,South,Former smoker,Elective,80144,11
+61,43,Male,Arthritis,Immunosuppressants,Stable,Medicare,95657,West,Non-smoker,Urgent,16899,17
+62,35,Female,Rheumatoid Arthritis,Dialysis,Improved,Private,52053,North,Former smoker,Emergency,4455,7
+63,59,Female,Heart Disease,Dialysis,Improved,Public,642,West,Non-smoker,Emergency,73585,17
+64,56,Male,Stroke,Chemotherapy,Stable,Medicare,9415,West,Non-smoker,Urgent,60592,11
+65,59,Male,Diabetes,Physical therapy,Improved,Public,54376,South,Non-smoker,Urgent,69738,20
+66,28,Female,Rheumatoid Arthritis,Inhaler therapy,Improved,Public,27099,North,Former smoker,Elective,63627,18
+67,90,Female,Asthma,Medication B,Worsened,Public,53984,East,Former smoker,Urgent,18479,12
+68,35,Male,Asthma,Dietary changes,Improved,Medicare,15119,South,Non-smoker,Urgent,56604,10
+69,27,Male,Depression,Inhaler therapy,Improved,Public,22729,East,Former smoker,Emergency,92979,20
+70,65,Male,Hypertension,Medication A,Worsened,Private,69956,East,Former smoker,Elective,66874,10
+71,11,Non-binary,Chronic Kidney Disease,Physical therapy,Improved,Medicare,2299,West,Former smoker,Urgent,20981,5
+72,20,Female,Anxiety,Physical therapy,Stable,Public,93900,East,Former smoker,Emergency,67973,17
+73,71,Male,Chronic Kidney Disease,Dietary counseling,Stable,Private,69781,West,Non-smoker,Emergency,70954,9
+74,83,Female,Obesity,Dietary changes,Stable,Medicare,40947,West,Former smoker,Elective,4774,17
+75,26,Male,Alzheimer's Disease,Medication A,Improved,Public,88672,North,Non-smoker,Emergency,49892,9
+76,65,Bigender,Cancer,Dietary changes,Stable,Medicare,93330,East,Former smoker,Elective,97457,7
+77,33,Male,Hypertension,Immunosuppressants,Worsened,Medicare,75962,South,Former smoker,Urgent,51290,12
+78,19,Male,Heart Disease,Inhaler therapy,Improved,Public,47775,West,Non-smoker,Urgent,42963,8
+79,71,Male,Osteoporosis,Inhaler therapy,Stable,Public,36081,East,Non-smoker,Elective,20111,14
+80,18,Male,Alzheimer's Disease,Bone density tests,Stable,Private,32054,West,Non-smoker,Elective,43600,17
+81,81,Male,Anxiety,Dietary changes,Stable,Public,8854,West,Non-smoker,Elective,55487,1
+82,20,Female,Rheumatoid Arthritis,Medication B,Improved,Private,23479,East,Former smoker,Elective,61257,14
+83,2,Female,Arthritis,Physical therapy,Stable,Public,70682,East,Former smoker,Elective,77502,11
+84,66,Male,Asthma,Dialysis,Improved,Public,59210,South,Non-smoker,Urgent,92996,8
+85,15,Female,Alzheimer's Disease,Medication A,Improved,Public,61287,North,Non-smoker,Elective,70806,13
+86,20,Male,Depression,Medication A,Worsened,Medicare,92748,South,Non-smoker,Elective,17120,12
+87,38,Female,Depression,Medication C,Improved,Medicare,71059,South,Former smoker,Emergency,28341,0
+88,54,Non-binary,Chronic Obstructive,Physical therapy,Worsened,Public,10629,West,Non-smoker,Elective,8979,6
+89,13,Male,Rheumatoid Arthritis,Therapy,Stable,Medicare,5830,North,Non-smoker,Emergency,14767,8
+90,32,Non-binary,Anxiety,Dietary counseling,Stable,Public,9397,North,Non-smoker,Emergency,91174,17
+91,80,Male,Stroke,Medication C,Worsened,Private,50114,South,Non-smoker,Elective,74567,3
+92,31,Male,Chronic Obstructive,Dietary changes,Worsened,Public,76639,North,Non-smoker,Emergency,7118,2
+93,14,Female,Cancer,Dietary counseling,Improved,Medicare,6150,North,Non-smoker,Elective,8685,0
+94,10,Male,Chronic Obstructive,Bone density tests,Worsened,Private,43418,North,Non-smoker,Urgent,61622,16
+95,89,Female,Diabetes,Medication C,Stable,Private,9243,North,Non-smoker,Elective,80435,0
+96,44,Male,Anxiety,Memory exercises,Improved,Medicare,68394,North,Non-smoker,Emergency,15078,12
+97,26,Male,Chronic Obstructive,Dialysis,Improved,Public,39653,East,Former smoker,Urgent,77062,2
+98,29,Genderfluid,Chronic Kidney Disease,Chemotherapy,Worsened,Medicare,59546,South,Former smoker,Emergency,33492,13
+99,19,Male,Stroke,Therapy,Worsened,Public,18659,East,Former smoker,Elective,19150,0
+100,19,Female,Chronic Obstructive,Bone density tests,Improved,Medicare,17232,North,Former smoker,Urgent,14667,16
+101,40,Female,Depression,Therapy,Improved,Medicare,10795,North,Former smoker,Emergency,96262,15
+102,3,Male,Depression,Memory exercises,Worsened,Private,52063,West,Former smoker,Urgent,15555,20
+103,9,Female,Chronic Obstructive,Therapy,Stable,Private,21330,East,Former smoker,Urgent,99838,16
+104,13,Female,Diabetes,Chemotherapy,Improved,Public,57544,North,Former smoker,Urgent,21596,15
+105,0,Female,Depression,Chemotherapy,Stable,Medicare,6713,South,Non-smoker,Elective,98181,14
+106,72,Female,Depression,Dialysis,Stable,Private,56172,West,Non-smoker,Urgent,39481,20
+107,64,Male,Diabetes,Bone density tests,Worsened,Medicare,81705,West,Non-smoker,Emergency,30752,1
+108,47,Male,Anxiety,Medication C,Improved,Public,91292,West,Non-smoker,Urgent,60322,13
+109,31,Agender,Hypertension,Therapy,Improved,Private,45160,West,Former smoker,Elective,42283,9
+110,2,Male,Chronic Obstructive,Medication C,Improved,Private,53342,West,Former smoker,Emergency,1635,3
+111,10,Female,Rheumatoid Arthritis,Medication C,Worsened,Private,70300,West,Non-smoker,Urgent,43679,15
+112,36,Female,Arthritis,Chemotherapy,Worsened,Private,12999,North,Non-smoker,Urgent,21856,16
+113,15,Male,Cancer,Inhaler therapy,Stable,Medicare,91916,South,Non-smoker,Elective,88270,1
+114,19,Non-binary,Rheumatoid Arthritis,Dietary changes,Worsened,Medicare,97980,West,Former smoker,Elective,24153,2
+115,1,Male,Chronic Obstructive,Bone density tests,Worsened,Private,5617,East,Former smoker,Elective,99445,12
+116,55,Male,Heart Disease,Memory exercises,Improved,Medicare,82301,South,Former smoker,Urgent,334,16
+117,61,Male,Osteoporosis,Bone density tests,Stable,Private,24875,East,Non-smoker,Urgent,26675,4
+118,90,Genderqueer,Obesity,Therapy,Stable,Private,98133,South,Former smoker,Elective,82821,6
+119,26,Female,Asthma,Inhaler therapy,Improved,Private,45407,South,Former smoker,Emergency,17742,14
+120,21,Agender,Rheumatoid Arthritis,Medication B,Stable,Public,71200,West,Non-smoker,Emergency,20357,8
+121,89,Female,Heart Disease,Medication C,Stable,Public,67864,North,Former smoker,Elective,3290,0
+122,23,Non-binary,Osteoporosis,Therapy,Worsened,Private,10690,South,Former smoker,Elective,28794,16
+123,17,Genderfluid,Chronic Kidney Disease,Medication C,Worsened,Medicare,14564,South,Former smoker,Emergency,6196,16
+124,5,Female,Heart Disease,Dietary counseling,Stable,Medicare,53715,East,Non-smoker,Emergency,75930,4
+125,8,Male,Hypertension,Inhaler therapy,Improved,Private,38506,South,Non-smoker,Elective,44970,9
+126,16,Male,Stroke,Medication B,Stable,Private,25910,East,Non-smoker,Urgent,66723,11
+127,15,Male,Osteoporosis,Inhaler therapy,Improved,Medicare,42279,South,Former smoker,Urgent,52187,16
+128,74,Agender,Asthma,Dietary changes,Stable,Public,1095,East,Former smoker,Elective,92035,0
+129,88,Female,Anxiety,Bone density tests,Worsened,Public,62329,South,Former smoker,Elective,98300,6
+130,14,Female,Asthma,Medication B,Worsened,Public,93960,West,Former smoker,Elective,43921,11
+131,83,Female,Stroke,Therapy,Stable,Medicare,61969,North,Non-smoker,Elective,63400,15
+132,80,Female,Rheumatoid Arthritis,Bone density tests,Improved,Medicare,16529,South,Former smoker,Urgent,56700,2
+133,81,Female,Chronic Obstructive,Bone density tests,Improved,Medicare,63871,East,Former smoker,Urgent,63522,7
+134,51,Male,Chronic Obstructive,Bone density tests,Improved,Medicare,506,West,Former smoker,Emergency,9988,19
+135,41,Male,Alzheimer's Disease,Therapy,Stable,Public,66277,South,Non-smoker,Emergency,8635,8
+136,71,Female,Chronic Obstructive,Medication B,Stable,Private,85178,West,Former smoker,Urgent,27894,18
+137,10,Female,Rheumatoid Arthritis,Immunosuppressants,Improved,Medicare,23164,North,Non-smoker,Elective,80937,10
+138,45,Female,Obesity,Dietary counseling,Improved,Private,80263,North,Non-smoker,Elective,12230,20
+139,22,Male,Alzheimer's Disease,Therapy,Worsened,Public,11118,East,Non-smoker,Elective,48472,2
+140,6,Male,Stroke,Inhaler therapy,Stable,Private,98435,East,Non-smoker,Urgent,72274,18
+141,1,Female,Osteoporosis,Medication B,Stable,Private,76382,South,Non-smoker,Urgent,88119,8
+142,52,Bigender,Diabetes,Dialysis,Worsened,Medicare,372,South,Former smoker,Urgent,69568,16
+143,74,Male,Chronic Kidney Disease,Dietary changes,Stable,Medicare,31938,West,Non-smoker,Emergency,21903,10
+144,26,Female,Hypertension,Therapy,Stable,Public,88363,South,Former smoker,Emergency,24435,3
+145,10,Bigender,Heart Disease,Dietary counseling,Worsened,Private,51490,South,Former smoker,Emergency,38524,14
+146,31,Male,Osteoporosis,Inhaler therapy,Stable,Medicare,14504,South,Former smoker,Elective,33067,12
+147,43,Male,Alzheimer's Disease,Bone density tests,Worsened,Public,42364,West,Non-smoker,Urgent,99771,5
+148,3,Agender,Diabetes,Therapy,Improved,Medicare,469,West,Former smoker,Elective,63256,15
+149,12,Female,Hypertension,Inhaler therapy,Stable,Private,40231,East,Former smoker,Emergency,54736,19
+150,62,Agender,Diabetes,Medication A,Worsened,Public,67273,East,Non-smoker,Elective,12000,12
+151,82,Male,Arthritis,Inhaler therapy,Stable,Private,68419,West,Former smoker,Urgent,8785,4
+152,24,Male,Chronic Obstructive,Dietary changes,Stable,Private,35459,West,Former smoker,Urgent,5345,1
+153,74,Male,Hypertension,Dietary changes,Stable,Public,22243,East,Former smoker,Urgent,28518,12
+154,76,Female,Alzheimer's Disease,Chemotherapy,Stable,Medicare,98173,North,Non-smoker,Elective,24625,0
+155,17,Male,Osteoporosis,Medication B,Improved,Medicare,78154,North,Non-smoker,Urgent,65687,12
+156,19,Male,Cancer,Memory exercises,Improved,Medicare,51215,East,Former smoker,Elective,49513,5
+157,62,Male,Stroke,Dietary counseling,Improved,Medicare,83923,East,Non-smoker,Elective,7572,14
+158,30,Male,Asthma,Bone density tests,Worsened,Public,5940,South,Non-smoker,Urgent,25100,15
+159,22,Male,Chronic Obstructive,Memory exercises,Improved,Private,44275,North,Former smoker,Urgent,91162,1
+160,84,Non-binary,Alzheimer's Disease,Medication C,Worsened,Private,66341,North,Non-smoker,Urgent,73704,11
+161,15,Male,Heart Disease,Memory exercises,Worsened,Public,36298,West,Non-smoker,Elective,58962,1
+162,90,Female,Anxiety,Bone density tests,Worsened,Medicare,60563,South,Former smoker,Urgent,19176,7
+163,14,Male,Diabetes,Medication C,Stable,Public,19210,North,Non-smoker,Emergency,93325,11
+164,65,Male,Chronic Kidney Disease,Therapy,Worsened,Medicare,96866,East,Former smoker,Urgent,27791,13
+165,11,Male,Rheumatoid Arthritis,Chemotherapy,Worsened,Private,53820,South,Former smoker,Elective,91180,9
+166,87,Female,Chronic Obstructive,Dietary changes,Worsened,Private,81998,West,Non-smoker,Elective,87449,1
+167,75,Male,Heart Disease,Bone density tests,Improved,Public,60169,East,Non-smoker,Elective,64042,0
+168,23,Male,Diabetes,Immunosuppressants,Improved,Medicare,26669,South,Non-smoker,Elective,23899,0
+169,0,Female,Chronic Kidney Disease,Chemotherapy,Stable,Public,73850,West,Former smoker,Urgent,32568,17
+170,33,Female,Cancer,Memory exercises,Worsened,Public,57068,North,Former smoker,Emergency,26098,18
+171,83,Female,Alzheimer's Disease,Immunosuppressants,Stable,Private,62329,West,Non-smoker,Elective,35995,16
+172,11,Male,Chronic Obstructive,Inhaler therapy,Improved,Public,43767,North,Former smoker,Urgent,62688,18
+173,78,Male,Chronic Obstructive,Inhaler therapy,Worsened,Public,94183,East,Non-smoker,Emergency,52689,20
+174,90,Male,Anxiety,Bone density tests,Improved,Medicare,58990,East,Former smoker,Urgent,97139,7
+175,49,Male,Asthma,Immunosuppressants,Stable,Medicare,81857,East,Non-smoker,Elective,94012,5
+176,20,Male,Stroke,Physical therapy,Improved,Private,22225,North,Non-smoker,Emergency,31278,19
+177,50,Female,Chronic Kidney Disease,Bone density tests,Worsened,Private,46722,West,Non-smoker,Emergency,46439,13
+178,33,Female,Cancer,Physical therapy,Stable,Public,40416,West,Non-smoker,Urgent,90314,12
+179,3,Female,Heart Disease,Dialysis,Improved,Medicare,8763,South,Non-smoker,Emergency,74841,1
+180,65,Female,Obesity,Inhaler therapy,Worsened,Private,75294,West,Non-smoker,Emergency,1350,3
+181,27,Female,Asthma,Medication B,Worsened,Private,36319,North,Non-smoker,Emergency,19374,11
+182,27,Agender,Heart Disease,Physical therapy,Worsened,Private,84521,West,Former smoker,Elective,45327,19
+183,41,Male,Arthritis,Medication A,Stable,Public,68078,North,Non-smoker,Urgent,44719,7
+184,24,Female,Stroke,Dietary changes,Worsened,Medicare,24085,North,Former smoker,Urgent,10496,16
+185,55,Female,Asthma,Bone density tests,Improved,Private,2628,North,Former smoker,Emergency,89586,18
+186,42,Male,Chronic Kidney Disease,Memory exercises,Stable,Private,64542,West,Former smoker,Urgent,39656,9
+187,45,Female,Diabetes,Therapy,Stable,Medicare,66207,East,Non-smoker,Urgent,80419,14
+188,16,Male,Hypertension,Medication C,Worsened,Public,54856,South,Non-smoker,Urgent,99189,14
+189,75,Female,Alzheimer's Disease,Physical therapy,Stable,Medicare,14396,South,Non-smoker,Elective,86464,2
+190,65,Female,Arthritis,Dialysis,Improved,Medicare,56361,West,Non-smoker,Elective,28319,9
+191,9,Male,Obesity,Dietary counseling,Improved,Medicare,18543,West,Non-smoker,Urgent,10878,17
+192,69,Female,Stroke,Medication A,Worsened,Private,78561,South,Non-smoker,Emergency,66385,3
+193,74,Female,Cancer,Memory exercises,Worsened,Public,8853,East,Former smoker,Urgent,61268,7
+194,59,Male,Hypertension,Physical therapy,Improved,Public,31045,South,Non-smoker,Urgent,52015,6
+195,35,Male,Arthritis,Chemotherapy,Worsened,Private,73575,West,Non-smoker,Urgent,95410,1
+196,39,Male,Depression,Bone density tests,Worsened,Private,69486,West,Former smoker,Elective,37149,2
+197,15,Male,Hypertension,Medication C,Worsened,Medicare,38964,North,Non-smoker,Emergency,17546,7
+198,4,Female,Diabetes,Memory exercises,Improved,Private,68897,East,Former smoker,Emergency,20983,18
+199,26,Female,Arthritis,Bone density tests,Improved,Medicare,24146,West,Former smoker,Elective,65330,0
+200,53,Female,Depression,Dialysis,Stable,Medicare,15175,North,Non-smoker,Urgent,21571,11
+201,11,Male,Chronic Kidney Disease,Medication B,Stable,Medicare,14170,West,Former smoker,Emergency,75919,6
+202,74,Female,Asthma,Medication B,Improved,Private,86722,North,Non-smoker,Emergency,66519,3
+203,66,Male,Alzheimer's Disease,Dietary counseling,Improved,Public,56989,North,Former smoker,Emergency,7819,6
+204,63,Male,Osteoporosis,Physical therapy,Worsened,Medicare,97058,South,Non-smoker,Elective,85356,14
+205,10,Female,Anxiety,Dialysis,Improved,Medicare,5719,East,Former smoker,Elective,30216,11
+206,89,Female,Heart Disease,Chemotherapy,Worsened,Public,80217,North,Former smoker,Elective,63364,9
+207,39,Female,Stroke,Chemotherapy,Worsened,Public,45767,East,Non-smoker,Urgent,15148,20
+208,35,Female,Depression,Medication C,Worsened,Medicare,39540,South,Former smoker,Emergency,9235,11
+209,44,Female,Chronic Obstructive,Chemotherapy,Stable,Medicare,94415,North,Non-smoker,Emergency,90516,11
+210,3,Male,Obesity,Immunosuppressants,Stable,Medicare,58589,East,Non-smoker,Elective,16917,8
+211,1,Male,Hypertension,Memory exercises,Worsened,Medicare,53297,South,Former smoker,Emergency,82905,15
+212,29,Female,Osteoporosis,Bone density tests,Improved,Public,70481,South,Non-smoker,Urgent,44594,12
+213,1,Female,Arthritis,Medication C,Worsened,Public,3491,North,Non-smoker,Urgent,21526,10
+214,0,Male,Depression,Chemotherapy,Improved,Medicare,86419,East,Former smoker,Emergency,18366,14
+215,49,Male,Asthma,Dialysis,Improved,Public,6579,West,Non-smoker,Emergency,90343,8
+216,32,Bigender,Chronic Obstructive,Dialysis,Stable,Public,80260,North,Former smoker,Elective,23881,0
+217,41,Male,Anxiety,Medication B,Worsened,Public,93603,East,Former smoker,Urgent,65534,18
+218,54,Male,Stroke,Physical therapy,Worsened,Private,54160,South,Former smoker,Elective,24163,9
+219,21,Male,Depression,Dietary changes,Improved,Private,33320,South,Non-smoker,Elective,81880,18
+220,3,Female,Alzheimer's Disease,Medication C,Stable,Private,62060,South,Non-smoker,Emergency,33665,4
+221,5,Female,Chronic Kidney Disease,Medication B,Improved,Private,17558,South,Non-smoker,Elective,46255,11
+222,70,Non-binary,Rheumatoid Arthritis,Therapy,Stable,Public,36691,East,Former smoker,Urgent,4166,2
+223,65,Female,Obesity,Therapy,Worsened,Private,6586,North,Non-smoker,Urgent,69490,20
+224,57,Male,Hypertension,Dialysis,Stable,Public,29100,South,Non-smoker,Elective,35592,19
+225,33,Male,Chronic Kidney Disease,Immunosuppressants,Stable,Private,82845,East,Former smoker,Elective,70463,17
+226,82,Female,Stroke,Immunosuppressants,Stable,Private,79364,East,Former smoker,Elective,27515,9
+227,63,Female,Rheumatoid Arthritis,Bone density tests,Improved,Medicare,93653,West,Non-smoker,Elective,33336,11
+228,41,Male,Anxiety,Dialysis,Stable,Medicare,18059,West,Former smoker,Emergency,7958,20
+229,14,Female,Obesity,Medication C,Improved,Private,46426,West,Former smoker,Urgent,70843,8
+230,64,Female,Diabetes,Dietary changes,Stable,Private,88708,North,Non-smoker,Elective,93069,4
+231,58,Male,Diabetes,Memory exercises,Stable,Medicare,93718,South,Non-smoker,Emergency,77006,6
+232,57,Female,Diabetes,Chemotherapy,Improved,Private,52764,West,Non-smoker,Urgent,88622,4
+233,8,Female,Asthma,Therapy,Stable,Private,18926,East,Non-smoker,Urgent,83913,15
+234,70,Female,Obesity,Dietary counseling,Improved,Medicare,20512,North,Non-smoker,Emergency,77845,8
+235,37,Male,Obesity,Dietary counseling,Stable,Private,13163,East,Non-smoker,Emergency,66844,6
+236,33,Female,Asthma,Medication C,Stable,Public,11415,West,Non-smoker,Emergency,82574,2
+237,25,Female,Diabetes,Medication B,Worsened,Public,7159,East,Non-smoker,Emergency,44939,11
+238,56,Genderfluid,Rheumatoid Arthritis,Physical therapy,Worsened,Private,60679,South,Non-smoker,Urgent,90841,2
+239,73,Genderqueer,Hypertension,Dietary changes,Stable,Medicare,53906,South,Former smoker,Emergency,74526,0
+240,86,Male,Depression,Medication B,Worsened,Private,34397,North,Non-smoker,Elective,59251,12
+241,38,Male,Stroke,Medication B,Stable,Medicare,61461,South,Non-smoker,Urgent,91675,13
+242,29,Male,Asthma,Physical therapy,Worsened,Private,96687,South,Non-smoker,Emergency,52844,17
+243,43,Female,Hypertension,Physical therapy,Improved,Private,94697,North,Former smoker,Emergency,94372,11
+244,57,Female,Heart Disease,Memory exercises,Stable,Public,71042,South,Former smoker,Emergency,15644,8
+245,28,Male,Rheumatoid Arthritis,Memory exercises,Improved,Private,87850,South,Former smoker,Urgent,53154,5
+246,22,Male,Arthritis,Chemotherapy,Stable,Medicare,16365,East,Non-smoker,Urgent,6587,1
+247,79,Female,Asthma,Medication A,Improved,Medicare,72714,South,Non-smoker,Elective,49967,3
+248,38,Male,Stroke,Dietary counseling,Improved,Medicare,48431,North,Former smoker,Elective,10164,19
+249,15,Female,Anxiety,Therapy,Improved,Medicare,89338,West,Non-smoker,Elective,78890,19
+250,68,Male,Asthma,Dialysis,Improved,Medicare,53202,East,Former smoker,Emergency,47180,12
+251,44,Male,Chronic Obstructive,Medication B,Stable,Medicare,5547,North,Non-smoker,Emergency,2386,7
+252,32,Male,Heart Disease,Inhaler therapy,Improved,Public,67901,West,Former smoker,Urgent,10556,15
+253,6,Female,Alzheimer's Disease,Memory exercises,Stable,Medicare,76908,West,Non-smoker,Emergency,26313,2
+254,50,Male,Depression,Dialysis,Stable,Medicare,11262,East,Former smoker,Urgent,73070,16
+255,88,Female,Hypertension,Physical therapy,Worsened,Medicare,65496,South,Former smoker,Elective,84363,12
+256,23,Female,Diabetes,Medication C,Improved,Public,54889,South,Former smoker,Urgent,79744,5
+257,76,Female,Stroke,Dietary changes,Stable,Public,30929,West,Former smoker,Urgent,16022,12
+258,5,Female,Osteoporosis,Immunosuppressants,Improved,Public,76193,South,Non-smoker,Elective,12955,9
+259,34,Non-binary,Heart Disease,Therapy,Improved,Private,54183,North,Former smoker,Urgent,40791,7
+260,61,Female,Anxiety,Bone density tests,Stable,Private,28063,West,Former smoker,Elective,66420,2
+261,14,Male,Alzheimer's Disease,Medication B,Worsened,Private,44578,North,Former smoker,Elective,78431,3
+262,10,Female,Chronic Kidney Disease,Therapy,Worsened,Private,33352,South,Non-smoker,Emergency,98934,20
+263,25,Female,Osteoporosis,Immunosuppressants,Worsened,Private,61112,South,Non-smoker,Urgent,15404,4
+264,59,Female,Diabetes,Physical therapy,Improved,Medicare,63587,East,Former smoker,Elective,99309,1
+265,5,Female,Rheumatoid Arthritis,Memory exercises,Improved,Public,47077,West,Non-smoker,Emergency,90212,0
+266,72,Female,Diabetes,Chemotherapy,Worsened,Private,62647,West,Non-smoker,Emergency,30089,0
+267,28,Male,Rheumatoid Arthritis,Dietary counseling,Improved,Public,28030,East,Former smoker,Emergency,43605,3
+268,81,Female,Chronic Kidney Disease,Bone density tests,Improved,Medicare,85443,West,Former smoker,Emergency,46400,17
+269,71,Female,Diabetes,Physical therapy,Improved,Private,38930,North,Former smoker,Elective,82425,16
+270,3,Female,Rheumatoid Arthritis,Dialysis,Stable,Public,46927,North,Former smoker,Urgent,46352,17
+271,87,Male,Asthma,Inhaler therapy,Improved,Public,26783,South,Non-smoker,Elective,24808,17
+272,79,Female,Hypertension,Medication B,Improved,Private,88443,West,Former smoker,Urgent,53913,11
+273,85,Male,Heart Disease,Physical therapy,Improved,Medicare,41777,South,Former smoker,Emergency,66364,8
+274,63,Female,Chronic Obstructive,Memory exercises,Stable,Private,97881,South,Non-smoker,Urgent,20709,5
+275,43,Male,Anxiety,Therapy,Stable,Public,61212,South,Non-smoker,Emergency,27957,19
+276,80,Male,Hypertension,Medication B,Worsened,Private,6654,West,Former smoker,Emergency,97184,16
+277,13,Male,Heart Disease,Immunosuppressants,Worsened,Private,78438,West,Former smoker,Urgent,77788,17
+278,14,Female,Osteoporosis,Medication B,Stable,Medicare,25862,West,Former smoker,Elective,93369,6
+279,81,Female,Anxiety,Dietary changes,Improved,Medicare,23090,North,Non-smoker,Urgent,96063,3
+280,65,Male,Obesity,Memory exercises,Improved,Medicare,64921,North,Non-smoker,Emergency,27634,8
+281,89,Female,Alzheimer's Disease,Bone density tests,Stable,Public,66236,East,Non-smoker,Elective,6458,20
+282,6,Female,Alzheimer's Disease,Medication C,Worsened,Public,6446,West,Non-smoker,Urgent,16328,15
+283,32,Bigender,Rheumatoid Arthritis,Medication A,Improved,Medicare,18103,East,Former smoker,Elective,41791,14
+284,21,Male,Osteoporosis,Therapy,Stable,Medicare,66347,North,Former smoker,Emergency,26885,9
+285,68,Female,Diabetes,Bone density tests,Worsened,Public,69405,West,Former smoker,Emergency,18284,1
+286,27,Female,Depression,Medication B,Improved,Public,51901,North,Former smoker,Urgent,64966,19
+287,61,Male,Anxiety,Medication B,Stable,Public,97816,East,Non-smoker,Urgent,32531,9
+288,19,Female,Hypertension,Medication C,Stable,Medicare,30571,West,Former smoker,Emergency,19544,16
+289,83,Female,Hypertension,Memory exercises,Improved,Private,75678,South,Former smoker,Emergency,94140,1
+290,85,Male,Alzheimer's Disease,Bone density tests,Improved,Public,86315,South,Non-smoker,Emergency,8219,13
+291,52,Male,Heart Disease,Dialysis,Stable,Private,46687,South,Former smoker,Emergency,25176,13
+292,89,Male,Chronic Obstructive,Bone density tests,Improved,Medicare,6543,North,Former smoker,Emergency,75617,10
+293,16,Female,Chronic Obstructive,Dialysis,Stable,Medicare,28216,East,Non-smoker,Urgent,65661,10
+294,1,Female,Obesity,Therapy,Improved,Private,20349,North,Non-smoker,Emergency,37064,17
+295,85,Male,Cancer,Dietary changes,Stable,Private,81797,West,Former smoker,Urgent,54335,20
+296,20,Male,Anxiety,Medication A,Improved,Medicare,98860,West,Former smoker,Urgent,19137,17
+297,55,Male,Stroke,Medication B,Worsened,Private,52778,East,Non-smoker,Urgent,83270,7
+298,68,Male,Chronic Kidney Disease,Medication A,Stable,Private,33912,East,Non-smoker,Urgent,83659,6
+299,25,Polygender,Diabetes,Dietary counseling,Stable,Medicare,1905,West,Non-smoker,Urgent,23950,15
+300,18,Male,Stroke,Physical therapy,Worsened,Medicare,20548,East,Non-smoker,Elective,94507,11
+301,50,Male,Obesity,Chemotherapy,Worsened,Private,53086,East,Non-smoker,Emergency,76204,4
+302,3,Male,Hypertension,Dietary counseling,Worsened,Public,42517,North,Former smoker,Urgent,56591,0
+303,14,Female,Rheumatoid Arthritis,Dialysis,Improved,Medicare,44837,East,Former smoker,Emergency,22419,20
+304,77,Female,Anxiety,Medication C,Worsened,Public,75716,South,Former smoker,Emergency,62559,19
+305,50,Male,Cancer,Therapy,Worsened,Private,8393,West,Former smoker,Elective,85297,6
+306,85,Female,Chronic Kidney Disease,Chemotherapy,Worsened,Public,75695,West,Non-smoker,Urgent,89697,12
+307,50,Male,Rheumatoid Arthritis,Memory exercises,Worsened,Public,14784,North,Non-smoker,Elective,79768,15
+308,42,Female,Anxiety,Chemotherapy,Worsened,Public,42354,East,Former smoker,Emergency,79533,7
+309,67,Male,Hypertension,Dietary changes,Worsened,Public,91486,North,Non-smoker,Emergency,6473,0
+310,22,Male,Anxiety,Therapy,Improved,Medicare,12152,West,Former smoker,Emergency,57112,18
+311,66,Female,Stroke,Chemotherapy,Improved,Medicare,79912,East,Non-smoker,Urgent,87411,3
+312,88,Agender,Cancer,Medication A,Stable,Private,54525,North,Non-smoker,Emergency,19818,3
+313,90,Female,Rheumatoid Arthritis,Medication B,Improved,Private,96749,North,Non-smoker,Urgent,85866,4
+314,26,Female,Rheumatoid Arthritis,Medication A,Improved,Private,33140,East,Non-smoker,Emergency,92871,20
+315,16,Female,Chronic Obstructive,Memory exercises,Stable,Public,31532,East,Former smoker,Emergency,48053,16
+316,65,Female,Stroke,Physical therapy,Stable,Medicare,10958,West,Non-smoker,Elective,45207,4
+317,82,Female,Depression,Medication C,Improved,Private,53636,West,Former smoker,Urgent,97037,13
+318,36,Bigender,Chronic Kidney Disease,Dialysis,Stable,Private,93580,West,Former smoker,Elective,95041,7
+319,57,Female,Cancer,Inhaler therapy,Stable,Private,20816,North,Non-smoker,Elective,86216,3
+320,88,Male,Chronic Obstructive,Inhaler therapy,Improved,Private,85277,North,Non-smoker,Elective,10624,7
+321,53,Female,Cancer,Dietary changes,Improved,Medicare,81918,West,Non-smoker,Elective,71037,3
+322,64,Female,Chronic Obstructive,Medication B,Worsened,Public,62855,East,Former smoker,Emergency,42738,15
+323,61,Female,Heart Disease,Medication B,Worsened,Public,83046,West,Former smoker,Emergency,46537,12
+324,15,Male,Depression,Immunosuppressants,Stable,Public,10819,South,Non-smoker,Elective,90436,18
+325,29,Male,Alzheimer's Disease,Memory exercises,Stable,Private,69113,East,Former smoker,Elective,78020,5
+326,30,Male,Alzheimer's Disease,Medication A,Worsened,Medicare,1303,West,Non-smoker,Elective,37444,2
+327,49,Female,Stroke,Dialysis,Improved,Medicare,88028,East,Non-smoker,Elective,83290,12
+328,63,Male,Hypertension,Dialysis,Stable,Public,90708,South,Former smoker,Elective,79018,11
+329,19,Male,Rheumatoid Arthritis,Chemotherapy,Stable,Public,89825,South,Non-smoker,Urgent,73071,13
+330,49,Female,Rheumatoid Arthritis,Medication A,Improved,Public,48616,West,Former smoker,Emergency,67387,8
+331,36,Genderqueer,Asthma,Chemotherapy,Improved,Medicare,99606,South,Non-smoker,Urgent,71996,6
+332,3,Male,Anxiety,Memory exercises,Improved,Medicare,86470,East,Former smoker,Urgent,21533,11
+333,33,Female,Obesity,Dietary counseling,Worsened,Private,80256,South,Former smoker,Urgent,82554,5
+334,83,Male,Cancer,Dietary counseling,Stable,Private,38236,South,Former smoker,Urgent,40758,1
+335,33,Female,Chronic Kidney Disease,Memory exercises,Worsened,Public,14185,East,Former smoker,Elective,60503,5
+336,67,Female,Asthma,Medication C,Improved,Public,74634,East,Former smoker,Emergency,87382,19
+337,86,Polygender,Chronic Obstructive,Chemotherapy,Stable,Private,77078,East,Former smoker,Elective,9686,4
+338,3,Male,Depression,Chemotherapy,Improved,Public,9383,North,Former smoker,Urgent,70455,5
+339,15,Female,Alzheimer's Disease,Immunosuppressants,Improved,Medicare,17351,South,Non-smoker,Elective,71130,4
+340,23,Male,Alzheimer's Disease,Chemotherapy,Worsened,Medicare,23341,West,Non-smoker,Emergency,50856,10
+341,17,Female,Diabetes,Immunosuppressants,Stable,Medicare,94728,North,Former smoker,Urgent,98307,11
+342,56,Bigender,Heart Disease,Dietary changes,Improved,Private,71214,North,Former smoker,Emergency,13708,15
+343,11,Bigender,Chronic Obstructive,Dialysis,Improved,Private,25670,North,Former smoker,Urgent,6090,8
+344,60,Female,Obesity,Dietary counseling,Stable,Public,75699,North,Former smoker,Elective,26022,5
+345,34,Female,Chronic Kidney Disease,Inhaler therapy,Worsened,Public,48942,South,Former smoker,Emergency,196,10
+346,10,Genderfluid,Obesity,Immunosuppressants,Stable,Private,39005,South,Former smoker,Urgent,79128,4
+347,62,Polygender,Asthma,Chemotherapy,Stable,Medicare,59197,South,Non-smoker,Urgent,27202,0
+348,10,Male,Osteoporosis,Memory exercises,Worsened,Private,92043,North,Former smoker,Urgent,58637,2
+349,86,Male,Diabetes,Memory exercises,Worsened,Medicare,55551,South,Former smoker,Emergency,74473,2
+350,82,Female,Diabetes,Physical therapy,Worsened,Public,53896,North,Former smoker,Elective,88826,0
+351,70,Male,Asthma,Medication B,Improved,Medicare,19972,South,Non-smoker,Emergency,14322,18
+352,3,Male,Alzheimer's Disease,Chemotherapy,Improved,Public,4942,West,Non-smoker,Urgent,75793,19
+353,59,Polygender,Osteoporosis,Immunosuppressants,Stable,Public,90327,North,Former smoker,Emergency,99688,6
+354,1,Female,Diabetes,Chemotherapy,Improved,Medicare,61600,East,Non-smoker,Emergency,53445,9
+355,46,Female,Stroke,Memory exercises,Worsened,Private,23683,East,Non-smoker,Urgent,81442,13
+356,4,Female,Depression,Medication A,Worsened,Private,69667,South,Former smoker,Emergency,77980,7
+357,50,Female,Depression,Medication A,Improved,Medicare,75025,North,Non-smoker,Elective,74403,11
+358,47,Female,Chronic Kidney Disease,Physical therapy,Worsened,Medicare,10870,South,Non-smoker,Elective,64702,5
+359,46,Female,Stroke,Medication B,Improved,Medicare,784,South,Non-smoker,Urgent,28406,18
+360,33,Male,Depression,Medication B,Improved,Public,64980,South,Non-smoker,Emergency,41963,14
+361,89,Male,Osteoporosis,Dietary counseling,Improved,Medicare,39184,South,Non-smoker,Urgent,1045,1
+362,26,Female,Depression,Physical therapy,Worsened,Public,64786,West,Former smoker,Emergency,70478,11
+363,88,Male,Rheumatoid Arthritis,Dietary changes,Worsened,Medicare,80255,West,Former smoker,Urgent,47057,4
+364,50,Male,Alzheimer's Disease,Physical therapy,Improved,Medicare,95883,South,Former smoker,Urgent,53482,18
+365,43,Male,Alzheimer's Disease,Medication B,Worsened,Private,45996,East,Former smoker,Urgent,31387,8
+366,65,Male,Arthritis,Dialysis,Improved,Public,63865,East,Non-smoker,Urgent,27746,14
+367,19,Female,Heart Disease,Inhaler therapy,Stable,Public,53809,East,Former smoker,Emergency,88304,14
+368,74,Male,Diabetes,Bone density tests,Stable,Public,53755,West,Former smoker,Emergency,99194,7
+369,72,Male,Anxiety,Immunosuppressants,Worsened,Public,52130,East,Non-smoker,Elective,2683,19
+370,39,Female,Depression,Therapy,Worsened,Private,81348,West,Non-smoker,Emergency,85196,11
+371,68,Non-binary,Heart Disease,Inhaler therapy,Improved,Private,11533,East,Non-smoker,Urgent,71154,2
+372,22,Male,Anxiety,Dietary changes,Worsened,Private,70737,North,Non-smoker,Elective,86792,18
+373,42,Female,Chronic Kidney Disease,Medication A,Improved,Private,19167,South,Non-smoker,Emergency,72928,9
+374,88,Female,Anxiety,Physical therapy,Stable,Medicare,36946,West,Former smoker,Urgent,32906,6
+375,0,Genderfluid,Diabetes,Chemotherapy,Stable,Medicare,66425,North,Former smoker,Urgent,34142,8
+376,15,Female,Stroke,Medication B,Improved,Private,54171,West,Former smoker,Elective,17427,9
+377,75,Male,Rheumatoid Arthritis,Immunosuppressants,Worsened,Public,7083,East,Former smoker,Elective,96408,9
+378,55,Female,Arthritis,Immunosuppressants,Improved,Public,52720,North,Non-smoker,Elective,21197,3
+379,45,Male,Arthritis,Medication B,Improved,Public,9353,West,Non-smoker,Urgent,89741,5
+380,69,Polygender,Chronic Kidney Disease,Dietary counseling,Worsened,Medicare,71920,North,Non-smoker,Urgent,27836,19
+381,28,Female,Chronic Obstructive,Dialysis,Worsened,Public,23058,West,Former smoker,Emergency,61277,5
+382,45,Male,Cancer,Medication A,Improved,Medicare,73065,West,Former smoker,Emergency,31542,17
+383,1,Male,Chronic Obstructive,Medication C,Improved,Private,22023,North,Former smoker,Elective,63292,13
+384,75,Male,Alzheimer's Disease,Physical therapy,Stable,Private,82789,North,Non-smoker,Emergency,63694,17
+385,28,Female,Anxiety,Memory exercises,Improved,Private,62193,North,Non-smoker,Emergency,55290,2
+386,45,Male,Diabetes,Therapy,Worsened,Medicare,26504,South,Non-smoker,Elective,80093,1
+387,87,Female,Cancer,Immunosuppressants,Worsened,Public,13327,East,Non-smoker,Elective,76829,5
+388,52,Female,Chronic Kidney Disease,Chemotherapy,Worsened,Medicare,44134,South,Former smoker,Emergency,19220,2
+389,77,Male,Obesity,Physical therapy,Improved,Medicare,2138,North,Non-smoker,Elective,5384,1
+390,43,Female,Osteoporosis,Bone density tests,Stable,Private,39204,North,Former smoker,Urgent,14390,0
+391,54,Agender,Osteoporosis,Therapy,Worsened,Private,8885,South,Non-smoker,Emergency,48023,5
+392,20,Male,Arthritis,Dietary counseling,Improved,Public,62566,North,Former smoker,Elective,16466,14
+393,16,Male,Arthritis,Physical therapy,Improved,Private,284,West,Former smoker,Elective,16047,18
+394,0,Female,Hypertension,Inhaler therapy,Worsened,Private,51256,South,Non-smoker,Elective,48948,11
+395,11,Bigender,Chronic Obstructive,Dietary changes,Stable,Medicare,94843,East,Former smoker,Emergency,90649,16
+396,72,Male,Stroke,Memory exercises,Stable,Private,67481,South,Non-smoker,Emergency,33317,18
+397,78,Male,Anxiety,Dialysis,Worsened,Public,20857,West,Former smoker,Emergency,39326,10
+398,1,Male,Anxiety,Medication C,Worsened,Medicare,21212,North,Non-smoker,Elective,23624,1
+399,83,Male,Chronic Kidney Disease,Medication B,Improved,Public,71692,South,Non-smoker,Urgent,97985,1
+400,59,Female,Diabetes,Dialysis,Worsened,Medicare,61170,East,Former smoker,Elective,3711,9
+401,62,Male,Depression,Dietary changes,Worsened,Medicare,70575,West,Former smoker,Urgent,31851,10
+402,86,Male,Chronic Obstructive,Memory exercises,Improved,Private,19558,East,Former smoker,Urgent,24165,11
+403,51,Non-binary,Osteoporosis,Dietary changes,Worsened,Private,29100,South,Non-smoker,Urgent,71017,8
+404,88,Male,Chronic Kidney Disease,Medication A,Worsened,Public,58593,West,Former smoker,Emergency,79212,15
+405,5,Male,Stroke,Medication B,Improved,Private,29602,South,Non-smoker,Emergency,64266,0
+406,16,Female,Asthma,Therapy,Stable,Medicare,50741,West,Non-smoker,Elective,34131,2
+407,87,Male,Chronic Kidney Disease,Dietary counseling,Improved,Private,41955,South,Non-smoker,Elective,86398,7
+408,79,Male,Diabetes,Dialysis,Improved,Medicare,68956,North,Non-smoker,Urgent,64280,0
+409,51,Male,Rheumatoid Arthritis,Dietary changes,Worsened,Medicare,46806,North,Former smoker,Elective,34409,14
+410,0,Female,Hypertension,Bone density tests,Stable,Medicare,32191,North,Non-smoker,Elective,85288,7
+411,40,Female,Anxiety,Memory exercises,Worsened,Medicare,73826,West,Former smoker,Elective,78852,15
+412,83,Male,Obesity,Memory exercises,Stable,Private,74137,East,Former smoker,Urgent,13025,20
+413,35,Female,Chronic Obstructive,Medication A,Improved,Private,93438,North,Non-smoker,Elective,69973,16
+414,75,Female,Cancer,Dietary counseling,Worsened,Medicare,92841,West,Former smoker,Elective,53955,8
+415,45,Female,Cancer,Medication C,Improved,Medicare,23133,North,Former smoker,Emergency,3108,15
+416,20,Male,Obesity,Medication A,Improved,Private,55216,East,Former smoker,Emergency,21841,6
+417,20,Male,Obesity,Dialysis,Stable,Public,84471,West,Non-smoker,Urgent,37,9
+418,84,Female,Asthma,Physical therapy,Stable,Private,9722,South,Non-smoker,Elective,91757,5
+419,58,Male,Stroke,Memory exercises,Worsened,Medicare,43882,West,Non-smoker,Elective,70228,19
+420,42,Male,Obesity,Physical therapy,Worsened,Private,39550,South,Former smoker,Emergency,89526,11
+421,8,Male,Anxiety,Medication A,Improved,Public,9940,West,Former smoker,Elective,62117,2
+422,61,Female,Depression,Dietary changes,Stable,Private,29587,East,Non-smoker,Elective,86456,12
+423,75,Female,Osteoporosis,Bone density tests,Improved,Medicare,4175,South,Former smoker,Urgent,78856,18
+424,53,Male,Chronic Obstructive,Medication C,Worsened,Private,38361,South,Former smoker,Elective,56009,20
+425,21,Male,Cancer,Chemotherapy,Worsened,Medicare,53466,West,Former smoker,Emergency,35800,2
+426,34,Male,Obesity,Dietary counseling,Worsened,Public,60327,West,Former smoker,Elective,61046,18
+427,39,Female,Stroke,Medication A,Worsened,Medicare,77536,South,Former smoker,Urgent,22736,18
+428,16,Male,Alzheimer's Disease,Dialysis,Stable,Medicare,61170,North,Former smoker,Emergency,34219,19
+429,80,Female,Chronic Kidney Disease,Dietary counseling,Worsened,Medicare,77343,East,Former smoker,Urgent,24791,10
+430,56,Female,Rheumatoid Arthritis,Immunosuppressants,Improved,Public,83959,West,Former smoker,Elective,20970,17
+431,21,Male,Stroke,Medication B,Improved,Public,5996,East,Former smoker,Emergency,91364,1
+432,87,Agender,Alzheimer's Disease,Chemotherapy,Worsened,Medicare,58658,South,Non-smoker,Urgent,72681,1
+433,49,Female,Arthritis,Medication A,Improved,Public,61710,West,Former smoker,Urgent,44989,17
+434,42,Female,Obesity,Dietary counseling,Worsened,Private,73859,North,Former smoker,Urgent,25667,12
+435,6,Female,Heart Disease,Inhaler therapy,Stable,Medicare,20217,East,Non-smoker,Elective,55427,7
+436,43,Male,Chronic Obstructive,Physical therapy,Worsened,Medicare,24588,West,Non-smoker,Emergency,78609,19
+437,19,Female,Depression,Physical therapy,Stable,Public,61881,North,Former smoker,Emergency,83157,14
+438,6,Male,Diabetes,Bone density tests,Worsened,Private,30702,North,Former smoker,Emergency,2713,6
+439,8,Female,Stroke,Chemotherapy,Worsened,Private,74258,North,Former smoker,Emergency,59421,7
+440,70,Female,Alzheimer's Disease,Dietary changes,Improved,Public,93861,North,Former smoker,Urgent,72104,1
+441,47,Female,Depression,Dietary changes,Worsened,Medicare,26400,North,Former smoker,Elective,47993,5
+442,20,Male,Chronic Kidney Disease,Memory exercises,Worsened,Private,81230,South,Former smoker,Urgent,21640,14
+443,28,Non-binary,Osteoporosis,Chemotherapy,Improved,Public,16552,East,Former smoker,Emergency,87461,9
+444,60,Male,Alzheimer's Disease,Inhaler therapy,Worsened,Public,47868,West,Non-smoker,Emergency,76059,8
+445,30,Male,Anxiety,Therapy,Worsened,Public,38893,North,Non-smoker,Elective,39000,5
+446,49,Female,Cancer,Physical therapy,Worsened,Private,74102,West,Non-smoker,Emergency,52636,0
+447,51,Female,Arthritis,Inhaler therapy,Improved,Medicare,21532,West,Former smoker,Urgent,54142,3
+448,4,Male,Chronic Obstructive,Dietary counseling,Worsened,Public,15019,North,Former smoker,Urgent,81384,16
+449,46,Female,Asthma,Physical therapy,Stable,Medicare,91978,West,Non-smoker,Emergency,71018,16
+450,42,Female,Diabetes,Dietary changes,Stable,Medicare,11864,West,Non-smoker,Urgent,20086,15
+451,34,Female,Depression,Bone density tests,Improved,Medicare,95283,West,Former smoker,Urgent,70495,13
+452,16,Male,Chronic Kidney Disease,Memory exercises,Improved,Public,24064,East,Non-smoker,Elective,42364,15
+453,87,Female,Depression,Bone density tests,Improved,Private,76415,East,Non-smoker,Emergency,78771,8
+454,67,Male,Diabetes,Medication A,Worsened,Medicare,61294,West,Former smoker,Elective,71470,3
+455,40,Female,Alzheimer's Disease,Medication B,Stable,Private,1933,North,Non-smoker,Emergency,21569,11
+456,62,Male,Arthritis,Therapy,Improved,Private,83506,West,Non-smoker,Elective,1734,5
+457,72,Female,Osteoporosis,Medication A,Stable,Public,73296,East,Former smoker,Urgent,75913,19
+458,73,Male,Chronic Kidney Disease,Bone density tests,Stable,Private,42089,North,Former smoker,Urgent,33796,18
+459,8,Female,Depression,Immunosuppressants,Stable,Private,67873,East,Non-smoker,Elective,42699,11
+460,2,Male,Anxiety,Therapy,Worsened,Public,77659,East,Non-smoker,Emergency,77929,18
+461,86,Male,Cancer,Dietary changes,Improved,Private,29579,North,Former smoker,Urgent,63392,7
+462,59,Male,Obesity,Bone density tests,Worsened,Medicare,65277,South,Non-smoker,Elective,6288,0
+463,90,Male,Stroke,Immunosuppressants,Worsened,Private,24134,North,Non-smoker,Urgent,39908,2
+464,82,Female,Asthma,Dietary counseling,Stable,Private,96031,East,Non-smoker,Urgent,94644,11
+465,72,Genderfluid,Rheumatoid Arthritis,Medication C,Improved,Public,11939,West,Former smoker,Urgent,27431,1
+466,14,Female,Chronic Kidney Disease,Inhaler therapy,Stable,Public,24290,South,Non-smoker,Emergency,93102,4
+467,31,Male,Depression,Medication C,Worsened,Private,96017,North,Former smoker,Urgent,50212,13
+468,4,Female,Diabetes,Bone density tests,Improved,Medicare,12121,West,Non-smoker,Emergency,31975,20
+469,57,Male,Stroke,Medication A,Improved,Medicare,30171,East,Non-smoker,Emergency,87993,6
+470,73,Female,Asthma,Memory exercises,Worsened,Public,47508,East,Former smoker,Elective,20559,19
+471,50,Female,Rheumatoid Arthritis,Medication B,Improved,Public,91215,West,Non-smoker,Emergency,35113,4
+472,62,Female,Diabetes,Chemotherapy,Worsened,Public,7470,South,Former smoker,Urgent,40842,8
+473,29,Male,Diabetes,Inhaler therapy,Improved,Private,37941,East,Former smoker,Elective,1933,3
+474,51,Female,Rheumatoid Arthritis,Dietary counseling,Worsened,Public,60829,South,Non-smoker,Urgent,56378,3
+475,3,Female,Obesity,Medication A,Stable,Public,25363,East,Former smoker,Emergency,47454,16
+476,80,Male,Hypertension,Dialysis,Stable,Private,75101,West,Non-smoker,Elective,14415,13
+477,67,Female,Diabetes,Physical therapy,Improved,Medicare,5995,West,Former smoker,Emergency,50011,0
+478,44,Male,Chronic Kidney Disease,Dietary counseling,Improved,Public,59495,South,Former smoker,Emergency,26849,15
+479,58,Male,Asthma,Physical therapy,Improved,Public,78768,North,Former smoker,Elective,80606,2
+480,86,Male,Chronic Obstructive,Memory exercises,Worsened,Medicare,45344,East,Non-smoker,Emergency,94751,10
+481,60,Male,Hypertension,Immunosuppressants,Improved,Public,25500,East,Non-smoker,Emergency,60952,16
+482,73,Male,Chronic Obstructive,Medication B,Worsened,Medicare,80146,South,Non-smoker,Emergency,10336,8
+483,4,Male,Hypertension,Inhaler therapy,Stable,Private,61386,North,Former smoker,Urgent,64380,8
+484,20,Male,Heart Disease,Dialysis,Worsened,Public,52236,North,Non-smoker,Elective,13254,14
+485,60,Polygender,Alzheimer's Disease,Medication A,Improved,Medicare,6745,East,Non-smoker,Emergency,85207,11
+486,32,Male,Diabetes,Inhaler therapy,Stable,Private,14052,West,Non-smoker,Elective,48434,9
+487,22,Female,Alzheimer's Disease,Medication A,Stable,Medicare,61746,West,Non-smoker,Urgent,67257,8
+488,89,Female,Alzheimer's Disease,Medication C,Improved,Private,52055,North,Non-smoker,Urgent,69256,6
+489,65,Female,Diabetes,Immunosuppressants,Worsened,Private,45554,North,Non-smoker,Emergency,56896,12
+490,47,Male,Obesity,Therapy,Stable,Medicare,49685,South,Former smoker,Emergency,40628,11
+491,85,Male,Heart Disease,Medication C,Worsened,Private,67195,South,Former smoker,Emergency,81611,15
+492,67,Male,Obesity,Medication B,Worsened,Medicare,95252,South,Former smoker,Elective,6204,14
+493,58,Female,Anxiety,Medication B,Improved,Private,57543,East,Non-smoker,Urgent,52412,17
+494,28,Male,Stroke,Dietary changes,Improved,Private,99092,West,Former smoker,Emergency,16655,11
+495,77,Male,Chronic Obstructive,Medication C,Improved,Medicare,99339,North,Former smoker,Elective,93007,11
+496,36,Bigender,Diabetes,Medication B,Improved,Private,49583,South,Former smoker,Emergency,62160,2
+497,74,Genderqueer,Obesity,Therapy,Worsened,Private,64033,South,Former smoker,Urgent,87325,5
+498,55,Polygender,Osteoporosis,Medication C,Stable,Private,2241,South,Former smoker,Elective,42664,2
+499,37,Female,Cancer,Dietary counseling,Improved,Medicare,50910,North,Former smoker,Elective,92565,4
+500,17,Genderqueer,Obesity,Medication C,Stable,Private,24124,South,Non-smoker,Urgent,4568,14
+501,43,Female,Obesity,Inhaler therapy,Worsened,Private,56726,South,Former smoker,Urgent,40281,3
+502,52,Female,Chronic Kidney Disease,Medication C,Worsened,Public,12516,South,Non-smoker,Elective,15644,20
+503,40,Female,Alzheimer's Disease,Inhaler therapy,Stable,Medicare,79566,South,Former smoker,Elective,5216,2
+504,50,Male,Stroke,Therapy,Stable,Medicare,90460,East,Former smoker,Emergency,99143,0
+505,77,Male,Rheumatoid Arthritis,Medication C,Improved,Private,14379,North,Non-smoker,Urgent,77601,0
+506,74,Male,Diabetes,Dialysis,Improved,Public,81645,North,Former smoker,Emergency,47454,1
+507,55,Female,Diabetes,Medication B,Improved,Private,63679,North,Non-smoker,Elective,9888,12
+508,36,Female,Cancer,Inhaler therapy,Improved,Public,83267,West,Former smoker,Emergency,85919,17
+509,34,Female,Chronic Obstructive,Medication A,Improved,Medicare,25795,South,Non-smoker,Emergency,74271,9
+510,79,Polygender,Chronic Kidney Disease,Immunosuppressants,Improved,Public,528,South,Former smoker,Emergency,95893,6
+511,86,Male,Hypertension,Medication C,Worsened,Public,38374,West,Non-smoker,Emergency,79639,13
+512,87,Male,Hypertension,Therapy,Worsened,Private,71040,South,Non-smoker,Urgent,13025,18
+513,61,Female,Depression,Memory exercises,Improved,Medicare,68195,East,Former smoker,Emergency,2991,12
+514,9,Female,Rheumatoid Arthritis,Dialysis,Worsened,Medicare,60874,East,Non-smoker,Urgent,14367,15
+515,70,Female,Diabetes,Inhaler therapy,Improved,Medicare,72439,South,Non-smoker,Urgent,63366,19
+516,23,Non-binary,Stroke,Therapy,Stable,Medicare,66549,East,Former smoker,Elective,81139,0
+517,19,Female,Cancer,Dialysis,Stable,Medicare,89540,South,Non-smoker,Urgent,49116,0
+518,66,Male,Alzheimer's Disease,Medication B,Improved,Private,88672,South,Former smoker,Emergency,23375,8
+519,58,Female,Asthma,Medication B,Worsened,Private,31410,East,Former smoker,Emergency,6998,10
+520,47,Female,Osteoporosis,Memory exercises,Stable,Private,22454,North,Former smoker,Urgent,33180,10
+521,50,Female,Arthritis,Chemotherapy,Stable,Medicare,51592,East,Non-smoker,Emergency,20442,13
+522,61,Male,Rheumatoid Arthritis,Immunosuppressants,Stable,Medicare,91295,East,Non-smoker,Elective,93904,4
+523,1,Female,Rheumatoid Arthritis,Bone density tests,Improved,Public,47957,North,Non-smoker,Urgent,64856,19
+524,26,Bigender,Diabetes,Immunosuppressants,Improved,Private,69354,North,Former smoker,Emergency,13259,9
+525,45,Male,Obesity,Medication B,Improved,Private,83879,North,Former smoker,Elective,16430,10
+526,11,Male,Rheumatoid Arthritis,Medication A,Stable,Public,44157,West,Former smoker,Urgent,56844,19
+527,12,Male,Anxiety,Memory exercises,Stable,Medicare,17653,West,Non-smoker,Elective,83104,10
+528,7,Male,Arthritis,Dietary changes,Stable,Public,18777,East,Non-smoker,Emergency,16402,0
+529,41,Male,Asthma,Inhaler therapy,Stable,Private,6027,East,Former smoker,Emergency,82803,15
+530,56,Female,Rheumatoid Arthritis,Dietary counseling,Stable,Public,69225,South,Non-smoker,Elective,5645,4
+531,52,Female,Obesity,Medication A,Worsened,Public,42894,North,Former smoker,Urgent,11947,19
+532,52,Male,Osteoporosis,Bone density tests,Stable,Private,26494,West,Non-smoker,Urgent,10601,20
+533,18,Male,Rheumatoid Arthritis,Dietary counseling,Stable,Medicare,48657,East,Non-smoker,Urgent,22629,3
+534,19,Female,Arthritis,Memory exercises,Worsened,Private,66932,North,Former smoker,Emergency,99097,13
+535,90,Female,Rheumatoid Arthritis,Bone density tests,Improved,Private,40948,North,Non-smoker,Elective,56176,14
+536,13,Female,Depression,Medication C,Worsened,Public,46531,North,Non-smoker,Urgent,96925,17
+537,34,Male,Rheumatoid Arthritis,Dialysis,Stable,Medicare,96193,North,Non-smoker,Urgent,67635,11
+538,49,Female,Hypertension,Medication B,Improved,Medicare,43354,West,Former smoker,Emergency,86614,10
+539,76,Female,Hypertension,Medication A,Stable,Public,28256,South,Non-smoker,Emergency,9197,18
+540,75,Male,Depression,Dietary changes,Improved,Private,97521,East,Former smoker,Urgent,19689,7
+541,80,Male,Arthritis,Dietary counseling,Stable,Private,73331,North,Former smoker,Urgent,44930,18
+542,83,Female,Chronic Obstructive,Memory exercises,Stable,Medicare,48746,East,Non-smoker,Urgent,39380,9
+543,33,Non-binary,Osteoporosis,Medication C,Worsened,Medicare,27480,North,Non-smoker,Emergency,7345,3
+544,27,Female,Rheumatoid Arthritis,Immunosuppressants,Improved,Public,97929,East,Non-smoker,Emergency,1773,20
+545,69,Female,Hypertension,Medication B,Worsened,Private,80134,East,Former smoker,Emergency,80198,5
+546,86,Male,Chronic Kidney Disease,Inhaler therapy,Stable,Medicare,56761,North,Non-smoker,Elective,82250,2
+547,19,Female,Diabetes,Bone density tests,Improved,Private,25875,North,Non-smoker,Urgent,54681,3
+548,24,Male,Arthritis,Inhaler therapy,Stable,Public,81275,East,Non-smoker,Elective,49938,9
+549,16,Bigender,Obesity,Therapy,Stable,Private,23314,East,Former smoker,Emergency,22549,15
+550,42,Male,Asthma,Physical therapy,Improved,Public,33317,South,Former smoker,Emergency,28143,1
+551,48,Female,Arthritis,Memory exercises,Worsened,Public,60409,East,Former smoker,Urgent,89880,20
+552,37,Male,Rheumatoid Arthritis,Medication C,Improved,Public,7706,West,Non-smoker,Elective,32101,15
+553,90,Female,Cancer,Dietary changes,Improved,Public,47077,East,Former smoker,Elective,80136,4
+554,79,Female,Asthma,Therapy,Stable,Private,3907,East,Non-smoker,Emergency,64967,11
+555,20,Male,Asthma,Physical therapy,Worsened,Private,70510,South,Non-smoker,Emergency,59421,12
+556,71,Male,Chronic Kidney Disease,Physical therapy,Improved,Public,59795,East,Former smoker,Urgent,83813,9
+557,85,Polygender,Chronic Obstructive,Chemotherapy,Improved,Public,22438,West,Non-smoker,Elective,68351,9
+558,3,Female,Asthma,Memory exercises,Stable,Private,82935,North,Former smoker,Emergency,61974,15
+559,68,Female,Anxiety,Medication B,Worsened,Public,12105,North,Former smoker,Emergency,9319,0
+560,71,Female,Chronic Kidney Disease,Medication A,Stable,Medicare,67782,East,Former smoker,Elective,48385,13
+561,78,Female,Stroke,Therapy,Improved,Medicare,43715,North,Former smoker,Emergency,87357,14
+562,15,Male,Anxiety,Memory exercises,Worsened,Medicare,271,South,Former smoker,Elective,89824,15
+563,81,Female,Hypertension,Dialysis,Worsened,Public,94597,North,Former smoker,Emergency,45109,10
+564,5,Polygender,Heart Disease,Bone density tests,Improved,Medicare,22355,East,Non-smoker,Emergency,59114,1
+565,38,Male,Osteoporosis,Medication C,Worsened,Public,28377,North,Former smoker,Elective,903,3
+566,76,Female,Rheumatoid Arthritis,Medication C,Stable,Public,82441,East,Former smoker,Elective,25771,3
+567,67,Male,Rheumatoid Arthritis,Medication A,Worsened,Public,51131,South,Former smoker,Elective,75844,2
+568,24,Female,Depression,Dietary changes,Stable,Public,76398,South,Non-smoker,Elective,15878,13
+569,59,Female,Obesity,Dietary changes,Improved,Medicare,26751,South,Non-smoker,Emergency,52654,5
+570,32,Male,Depression,Dietary counseling,Worsened,Public,49130,West,Former smoker,Emergency,11546,8
+571,24,Male,Asthma,Dialysis,Worsened,Public,15325,West,Former smoker,Emergency,28456,10
+572,2,Female,Rheumatoid Arthritis,Immunosuppressants,Stable,Private,62235,West,Former smoker,Elective,12644,7
+573,85,Male,Osteoporosis,Bone density tests,Worsened,Private,29061,South,Non-smoker,Urgent,87957,14
+574,12,Male,Osteoporosis,Memory exercises,Worsened,Public,11802,East,Former smoker,Urgent,45656,20
+575,32,Polygender,Diabetes,Physical therapy,Stable,Private,28998,East,Non-smoker,Elective,92652,8
+576,6,Male,Cancer,Inhaler therapy,Improved,Private,15704,North,Former smoker,Urgent,78728,5
+577,76,Genderqueer,Depression,Dialysis,Improved,Public,6975,North,Former smoker,Elective,63533,20
+578,83,Male,Asthma,Dietary changes,Improved,Private,72988,East,Non-smoker,Elective,789,11
+579,57,Female,Chronic Obstructive,Bone density tests,Stable,Public,48946,North,Non-smoker,Emergency,37135,15
+580,54,Male,Diabetes,Immunosuppressants,Worsened,Medicare,5867,East,Former smoker,Elective,31268,14
+581,83,Genderqueer,Chronic Obstructive,Therapy,Worsened,Public,92284,West,Former smoker,Emergency,81758,12
+582,48,Male,Asthma,Therapy,Improved,Private,388,South,Former smoker,Urgent,69128,5
+583,29,Female,Depression,Inhaler therapy,Stable,Private,37177,South,Non-smoker,Elective,90005,16
+584,68,Female,Chronic Obstructive,Therapy,Worsened,Public,14623,West,Former smoker,Elective,83676,2
+585,82,Male,Heart Disease,Inhaler therapy,Stable,Medicare,316,South,Former smoker,Urgent,87728,11
+586,88,Female,Asthma,Medication A,Worsened,Medicare,86224,West,Former smoker,Urgent,73470,6
+587,35,Female,Asthma,Bone density tests,Improved,Public,61587,West,Former smoker,Urgent,24928,13
+588,52,Male,Cancer,Dialysis,Improved,Private,67175,North,Non-smoker,Urgent,38275,20
+589,34,Male,Asthma,Chemotherapy,Stable,Public,52030,West,Non-smoker,Urgent,98483,3
+590,23,Male,Diabetes,Bone density tests,Worsened,Private,82563,South,Non-smoker,Elective,84838,11
+591,28,Female,Chronic Kidney Disease,Dietary changes,Improved,Public,33988,West,Former smoker,Emergency,91210,13
+592,80,Male,Rheumatoid Arthritis,Immunosuppressants,Stable,Public,29821,North,Former smoker,Emergency,78839,2
+593,38,Female,Arthritis,Therapy,Worsened,Private,81393,West,Former smoker,Emergency,11540,20
+594,81,Non-binary,Depression,Therapy,Improved,Medicare,21901,South,Former smoker,Elective,64637,1
+595,61,Male,Heart Disease,Therapy,Improved,Public,75420,North,Former smoker,Emergency,62294,5
+596,0,Male,Chronic Kidney Disease,Dietary counseling,Stable,Medicare,67339,South,Former smoker,Urgent,75674,11
+597,35,Male,Asthma,Chemotherapy,Improved,Private,89044,East,Former smoker,Emergency,56522,3
+598,6,Female,Cancer,Dietary changes,Worsened,Public,73818,North,Former smoker,Emergency,91468,18
+599,45,Male,Rheumatoid Arthritis,Medication B,Worsened,Public,85952,North,Non-smoker,Elective,97712,11
+600,61,Male,Rheumatoid Arthritis,Medication C,Stable,Public,87868,West,Non-smoker,Emergency,68925,12
+601,53,Male,Alzheimer's Disease,Chemotherapy,Stable,Public,81295,East,Former smoker,Urgent,58887,15
+602,30,Female,Depression,Medication B,Worsened,Private,1763,North,Non-smoker,Emergency,25063,12
+603,75,Male,Stroke,Medication B,Stable,Public,50048,West,Non-smoker,Emergency,97260,14
+604,25,Male,Chronic Obstructive,Bone density tests,Stable,Medicare,62449,North,Non-smoker,Urgent,81645,7
+605,39,Male,Anxiety,Dietary counseling,Worsened,Public,71057,East,Former smoker,Elective,64200,1
+606,38,Male,Depression,Therapy,Improved,Private,95713,North,Non-smoker,Elective,5160,17
+607,6,Female,Hypertension,Dialysis,Worsened,Private,6646,East,Former smoker,Elective,60543,9
+608,90,Female,Chronic Obstructive,Medication B,Improved,Public,1381,West,Non-smoker,Elective,74343,11
+609,72,Female,Alzheimer's Disease,Medication A,Improved,Medicare,88641,West,Former smoker,Emergency,99527,2
+610,33,Female,Heart Disease,Therapy,Worsened,Medicare,77570,East,Former smoker,Urgent,29792,10
+611,90,Male,Depression,Immunosuppressants,Improved,Private,94328,South,Former smoker,Emergency,45697,12
+612,42,Polygender,Depression,Medication A,Stable,Private,93409,East,Former smoker,Elective,49886,14
+613,57,Male,Arthritis,Immunosuppressants,Improved,Private,83737,South,Former smoker,Urgent,52265,10
+614,80,Female,Chronic Kidney Disease,Memory exercises,Worsened,Medicare,12620,East,Non-smoker,Emergency,91028,7
+615,61,Female,Hypertension,Immunosuppressants,Worsened,Private,53622,East,Former smoker,Urgent,4651,15
+616,53,Female,Alzheimer's Disease,Therapy,Improved,Public,72665,South,Former smoker,Urgent,9557,14
+617,89,Female,Obesity,Immunosuppressants,Stable,Medicare,10532,West,Non-smoker,Emergency,64246,9
+618,28,Female,Heart Disease,Memory exercises,Improved,Private,89232,South,Non-smoker,Elective,82539,5
+619,19,Male,Obesity,Memory exercises,Worsened,Medicare,44435,East,Former smoker,Emergency,82821,13
+620,36,Female,Alzheimer's Disease,Immunosuppressants,Worsened,Medicare,27497,North,Former smoker,Emergency,62819,19
+621,75,Female,Asthma,Medication B,Worsened,Private,65839,South,Non-smoker,Urgent,98059,9
+622,29,Female,Hypertension,Memory exercises,Stable,Private,19793,West,Non-smoker,Emergency,18141,17
+623,56,Male,Rheumatoid Arthritis,Medication B,Stable,Private,18708,West,Non-smoker,Urgent,60768,5
+624,27,Female,Cancer,Dietary counseling,Worsened,Public,37206,North,Former smoker,Elective,11244,20
+625,48,Female,Osteoporosis,Chemotherapy,Improved,Private,70218,West,Non-smoker,Elective,64713,20
+626,90,Male,Chronic Obstructive,Dietary counseling,Stable,Public,67090,North,Non-smoker,Urgent,40267,18
+627,75,Female,Anxiety,Dialysis,Worsened,Medicare,18343,North,Non-smoker,Emergency,96969,20
+628,21,Male,Cancer,Memory exercises,Worsened,Public,80572,South,Former smoker,Emergency,78015,13
+629,71,Female,Alzheimer's Disease,Memory exercises,Stable,Public,62093,East,Non-smoker,Urgent,62874,10
+630,23,Male,Depression,Inhaler therapy,Worsened,Medicare,34596,West,Non-smoker,Urgent,58989,17
+631,24,Female,Osteoporosis,Immunosuppressants,Worsened,Private,60711,North,Non-smoker,Elective,70284,3
+632,2,Genderfluid,Chronic Kidney Disease,Dietary counseling,Improved,Public,94857,North,Former smoker,Urgent,38995,15
+633,24,Female,Chronic Obstructive,Medication A,Improved,Private,69139,East,Non-smoker,Urgent,85594,11
+634,86,Genderfluid,Depression,Medication B,Stable,Medicare,8743,South,Former smoker,Elective,13929,11
+635,74,Female,Chronic Obstructive,Bone density tests,Worsened,Public,75115,East,Former smoker,Emergency,58530,11
+636,78,Female,Rheumatoid Arthritis,Medication B,Stable,Medicare,57658,North,Non-smoker,Urgent,6001,5
+637,76,Female,Alzheimer's Disease,Bone density tests,Worsened,Public,4195,South,Non-smoker,Urgent,32133,6
+638,10,Polygender,Arthritis,Dietary changes,Stable,Public,31938,North,Non-smoker,Urgent,55405,14
+639,81,Female,Osteoporosis,Dietary counseling,Stable,Private,62520,South,Non-smoker,Urgent,24678,11
+640,52,Female,Heart Disease,Medication B,Worsened,Public,9200,East,Former smoker,Emergency,81229,9
+641,47,Male,Diabetes,Medication B,Worsened,Private,6298,West,Former smoker,Urgent,82742,0
+642,45,Male,Obesity,Immunosuppressants,Worsened,Private,29920,South,Non-smoker,Emergency,27861,10
+643,74,Female,Chronic Obstructive,Medication A,Improved,Medicare,48672,North,Non-smoker,Elective,49323,12
+644,7,Female,Diabetes,Chemotherapy,Improved,Medicare,56408,West,Former smoker,Emergency,27424,20
+645,82,Female,Anxiety,Inhaler therapy,Stable,Private,71423,South,Non-smoker,Urgent,48882,16
+646,4,Female,Chronic Kidney Disease,Dietary counseling,Worsened,Private,28809,West,Former smoker,Emergency,44448,18
+647,69,Female,Asthma,Medication C,Worsened,Public,3297,West,Former smoker,Elective,44141,12
+648,7,Female,Depression,Chemotherapy,Improved,Private,47768,South,Former smoker,Emergency,82431,0
+649,35,Female,Depression,Dialysis,Worsened,Public,26255,East,Former smoker,Elective,92857,11
+650,26,Bigender,Osteoporosis,Dietary counseling,Stable,Private,44516,South,Former smoker,Emergency,37336,9
+651,52,Male,Hypertension,Therapy,Improved,Medicare,48512,South,Former smoker,Elective,35924,19
+652,11,Female,Osteoporosis,Chemotherapy,Stable,Public,55751,West,Former smoker,Urgent,63017,20
+653,35,Female,Diabetes,Therapy,Worsened,Medicare,89916,North,Former smoker,Elective,76949,15
+654,0,Female,Rheumatoid Arthritis,Medication C,Improved,Private,76483,East,Non-smoker,Emergency,66082,20
+655,54,Male,Alzheimer's Disease,Inhaler therapy,Improved,Public,98929,West,Former smoker,Elective,20222,14
+656,60,Male,Cancer,Physical therapy,Stable,Medicare,93248,West,Non-smoker,Urgent,8899,14
+657,80,Female,Osteoporosis,Chemotherapy,Worsened,Medicare,33006,North,Former smoker,Emergency,97281,15
+658,45,Male,Chronic Kidney Disease,Medication B,Stable,Private,13296,East,Non-smoker,Elective,44958,18
+659,2,Female,Alzheimer's Disease,Medication A,Worsened,Public,67809,East,Non-smoker,Urgent,25506,1
+660,61,Male,Stroke,Dietary counseling,Improved,Private,63220,East,Former smoker,Urgent,77338,3
+661,86,Female,Hypertension,Immunosuppressants,Stable,Public,36174,West,Former smoker,Urgent,83976,7
+662,86,Male,Depression,Dialysis,Improved,Private,87196,North,Non-smoker,Emergency,61291,18
+663,90,Genderfluid,Cancer,Dietary counseling,Stable,Public,95303,South,Non-smoker,Elective,79274,0
+664,80,Female,Cancer,Bone density tests,Stable,Private,74623,West,Non-smoker,Urgent,80864,10
+665,7,Male,Osteoporosis,Physical therapy,Improved,Private,74955,West,Former smoker,Emergency,59232,18
+666,64,Male,Depression,Chemotherapy,Stable,Medicare,18804,West,Non-smoker,Emergency,58208,18
+667,56,Male,Cancer,Medication C,Worsened,Public,86136,East,Non-smoker,Urgent,32617,19
+668,0,Female,Arthritis,Immunosuppressants,Stable,Private,14770,South,Former smoker,Urgent,66064,5
+669,78,Female,Depression,Medication A,Improved,Public,26152,South,Former smoker,Elective,34108,3
+670,18,Male,Hypertension,Dialysis,Worsened,Medicare,5422,West,Former smoker,Elective,64548,1
+671,38,Female,Depression,Dietary changes,Worsened,Private,7250,South,Former smoker,Elective,32146,5
+672,56,Female,Heart Disease,Inhaler therapy,Improved,Public,21723,South,Former smoker,Emergency,20629,19
+673,1,Female,Depression,Dietary counseling,Worsened,Public,37247,West,Non-smoker,Urgent,35097,10
+674,76,Female,Depression,Dietary counseling,Stable,Public,39043,South,Former smoker,Emergency,9470,19
+675,69,Genderqueer,Cancer,Medication C,Improved,Public,89284,East,Former smoker,Urgent,20569,12
+676,37,Female,Cancer,Therapy,Improved,Public,95039,East,Former smoker,Urgent,25363,8
+677,86,Male,Stroke,Medication B,Stable,Public,83644,North,Non-smoker,Elective,62949,5
+678,35,Agender,Asthma,Bone density tests,Stable,Private,97176,West,Non-smoker,Urgent,31912,7
+679,13,Female,Cancer,Dietary changes,Stable,Medicare,75816,South,Former smoker,Urgent,66532,9
+680,47,Male,Chronic Kidney Disease,Medication C,Improved,Private,58179,North,Non-smoker,Urgent,23205,15
+681,40,Male,Hypertension,Immunosuppressants,Improved,Public,91676,East,Former smoker,Elective,8744,14
+682,47,Female,Chronic Kidney Disease,Chemotherapy,Worsened,Public,53026,South,Non-smoker,Urgent,26789,11
+683,46,Female,Hypertension,Immunosuppressants,Improved,Private,29216,North,Non-smoker,Elective,98983,3
+684,43,Male,Chronic Obstructive,Chemotherapy,Worsened,Medicare,47763,South,Non-smoker,Emergency,50053,18
+685,9,Male,Alzheimer's Disease,Medication C,Improved,Medicare,82172,North,Non-smoker,Elective,88669,17
+686,34,Male,Chronic Kidney Disease,Medication B,Improved,Private,90606,South,Former smoker,Emergency,87962,20
+687,82,Female,Osteoporosis,Therapy,Improved,Medicare,42357,East,Non-smoker,Emergency,96526,0
+688,61,Bigender,Chronic Kidney Disease,Dialysis,Stable,Private,88084,East,Former smoker,Urgent,85956,19
+689,77,Male,Chronic Kidney Disease,Therapy,Stable,Private,2960,East,Former smoker,Urgent,4052,0
+690,89,Female,Chronic Kidney Disease,Physical therapy,Stable,Medicare,16336,West,Non-smoker,Urgent,52640,3
+691,17,Male,Diabetes,Bone density tests,Improved,Private,51613,North,Former smoker,Elective,75180,11
+692,53,Male,Anxiety,Medication B,Improved,Medicare,33293,East,Non-smoker,Elective,61657,9
+693,50,Male,Obesity,Therapy,Worsened,Public,70596,West,Non-smoker,Elective,7932,16
+694,10,Female,Hypertension,Physical therapy,Improved,Public,87476,West,Non-smoker,Emergency,35941,16
+695,26,Male,Alzheimer's Disease,Chemotherapy,Improved,Medicare,90001,North,Non-smoker,Emergency,96945,16
+696,73,Male,Diabetes,Medication B,Improved,Medicare,79224,North,Non-smoker,Emergency,63656,1
+697,33,Male,Hypertension,Chemotherapy,Worsened,Public,48819,South,Non-smoker,Urgent,82616,10
+698,33,Non-binary,Asthma,Chemotherapy,Improved,Medicare,25165,East,Non-smoker,Emergency,52453,3
+699,28,Male,Rheumatoid Arthritis,Chemotherapy,Worsened,Medicare,3671,West,Non-smoker,Emergency,60248,13
+700,38,Female,Diabetes,Medication C,Improved,Medicare,16344,West,Non-smoker,Elective,5318,18
+701,27,Female,Obesity,Dietary counseling,Stable,Medicare,95374,East,Non-smoker,Urgent,62692,20
+702,76,Female,Cancer,Dietary counseling,Worsened,Public,69807,North,Former smoker,Emergency,77322,20
+703,84,Female,Arthritis,Medication B,Worsened,Public,5315,North,Former smoker,Urgent,70686,14
+704,43,Female,Asthma,Physical therapy,Worsened,Medicare,39572,West,Former smoker,Urgent,20634,20
+705,69,Male,Chronic Obstructive,Medication B,Worsened,Medicare,45666,South,Former smoker,Elective,35957,11
+706,45,Male,Depression,Memory exercises,Worsened,Private,81466,West,Non-smoker,Emergency,60227,8
+707,22,Male,Rheumatoid Arthritis,Bone density tests,Improved,Public,12828,East,Non-smoker,Elective,94103,1
+708,56,Female,Obesity,Medication B,Worsened,Medicare,96765,East,Former smoker,Emergency,10428,14
+709,21,Male,Arthritis,Dietary counseling,Worsened,Public,60815,West,Former smoker,Emergency,77299,2
+710,85,Male,Stroke,Dialysis,Worsened,Private,17955,South,Non-smoker,Emergency,26615,17
+711,20,Genderfluid,Osteoporosis,Immunosuppressants,Worsened,Private,78448,East,Former smoker,Urgent,37264,0
+712,25,Male,Chronic Kidney Disease,Dietary counseling,Worsened,Medicare,32460,North,Non-smoker,Urgent,2107,12
+713,66,Female,Obesity,Dietary changes,Improved,Public,61113,North,Former smoker,Emergency,25884,6
+714,15,Male,Diabetes,Dietary counseling,Improved,Public,15519,West,Non-smoker,Elective,11181,14
+715,64,Male,Obesity,Medication B,Stable,Private,73323,South,Former smoker,Urgent,80342,4
+716,44,Male,Chronic Obstructive,Medication B,Improved,Private,44184,North,Non-smoker,Elective,5634,10
+717,47,Male,Alzheimer's Disease,Memory exercises,Improved,Public,45579,East,Former smoker,Emergency,6829,0
+718,49,Male,Anxiety,Inhaler therapy,Improved,Medicare,99294,South,Non-smoker,Emergency,34094,9
+719,85,Male,Diabetes,Dialysis,Worsened,Medicare,51915,West,Non-smoker,Urgent,49434,11
+720,81,Female,Heart Disease,Inhaler therapy,Improved,Medicare,4033,North,Non-smoker,Urgent,77555,3
+721,67,Female,Depression,Chemotherapy,Worsened,Medicare,14169,North,Former smoker,Elective,39903,2
+722,9,Female,Asthma,Immunosuppressants,Stable,Medicare,16817,East,Non-smoker,Emergency,74025,6
+723,71,Genderfluid,Asthma,Immunosuppressants,Worsened,Medicare,81343,North,Former smoker,Elective,89308,16
+724,22,Male,Arthritis,Medication B,Stable,Medicare,76944,South,Non-smoker,Emergency,97990,20
+725,83,Male,Rheumatoid Arthritis,Memory exercises,Stable,Medicare,8495,North,Non-smoker,Emergency,96599,12
+726,30,Female,Asthma,Memory exercises,Improved,Medicare,68906,West,Former smoker,Elective,23723,18
+727,65,Female,Arthritis,Therapy,Worsened,Public,2174,West,Former smoker,Elective,39366,3
+728,79,Female,Heart Disease,Therapy,Improved,Public,85911,North,Former smoker,Urgent,56117,2
+729,53,Genderfluid,Stroke,Dialysis,Improved,Private,63871,South,Non-smoker,Emergency,4056,9
+730,3,Male,Stroke,Medication A,Worsened,Private,1010,South,Non-smoker,Elective,23504,16
+731,58,Male,Asthma,Therapy,Improved,Public,2665,East,Non-smoker,Emergency,7560,4
+732,74,Bigender,Osteoporosis,Dietary changes,Stable,Medicare,60251,East,Non-smoker,Elective,17459,5
+733,78,Male,Cancer,Physical therapy,Worsened,Medicare,60318,North,Former smoker,Emergency,10283,20
+734,31,Male,Arthritis,Medication C,Stable,Medicare,448,South,Non-smoker,Urgent,65305,3
+735,4,Male,Anxiety,Therapy,Worsened,Public,99544,South,Non-smoker,Urgent,55619,17
+736,14,Female,Diabetes,Bone density tests,Improved,Public,13140,North,Non-smoker,Urgent,88297,7
+737,77,Male,Stroke,Immunosuppressants,Improved,Public,10373,South,Former smoker,Urgent,42488,12
+738,17,Female,Obesity,Medication B,Stable,Medicare,62951,North,Non-smoker,Urgent,93523,13
+739,35,Male,Chronic Obstructive,Dietary changes,Stable,Medicare,70028,West,Former smoker,Emergency,45730,12
+740,45,Male,Cancer,Medication A,Worsened,Public,49352,East,Former smoker,Urgent,74786,10
+741,37,Female,Cancer,Physical therapy,Stable,Medicare,94400,South,Non-smoker,Elective,13518,17
+742,13,Male,Heart Disease,Therapy,Worsened,Private,38171,North,Former smoker,Urgent,20394,16
+743,45,Female,Chronic Kidney Disease,Bone density tests,Improved,Public,66911,North,Former smoker,Emergency,84807,11
+744,72,Genderqueer,Osteoporosis,Dietary counseling,Improved,Private,47215,North,Non-smoker,Urgent,89806,3
+745,80,Female,Rheumatoid Arthritis,Chemotherapy,Worsened,Private,69121,North,Non-smoker,Urgent,18966,14
+746,0,Female,Hypertension,Medication A,Stable,Medicare,97317,East,Former smoker,Emergency,84832,10
+747,52,Female,Obesity,Inhaler therapy,Improved,Public,61841,South,Former smoker,Elective,70636,2
+748,64,Male,Cancer,Dietary changes,Improved,Medicare,88955,East,Non-smoker,Urgent,94304,17
+749,4,Male,Chronic Obstructive,Medication A,Worsened,Private,57914,North,Non-smoker,Urgent,43433,20
+750,73,Male,Stroke,Physical therapy,Stable,Medicare,96315,East,Non-smoker,Elective,98338,11
+751,42,Male,Asthma,Dietary changes,Worsened,Private,79785,South,Non-smoker,Urgent,57005,1
+752,68,Female,Rheumatoid Arthritis,Chemotherapy,Stable,Medicare,59423,West,Former smoker,Emergency,67507,15
+753,43,Male,Depression,Therapy,Stable,Private,27949,North,Non-smoker,Urgent,48085,16
+754,66,Male,Arthritis,Medication B,Worsened,Medicare,77614,East,Non-smoker,Emergency,83767,7
+755,29,Male,Diabetes,Therapy,Stable,Medicare,17948,East,Former smoker,Elective,17459,1
+756,37,Male,Depression,Memory exercises,Stable,Private,33284,East,Non-smoker,Urgent,1487,14
+757,0,Female,Heart Disease,Memory exercises,Improved,Private,10495,South,Non-smoker,Emergency,49694,11
+758,62,Male,Arthritis,Bone density tests,Improved,Private,24789,South,Non-smoker,Urgent,26680,15
+759,27,Female,Chronic Obstructive,Dialysis,Improved,Private,12024,South,Non-smoker,Urgent,43345,7
+760,39,Female,Rheumatoid Arthritis,Bone density tests,Improved,Medicare,17885,East,Non-smoker,Emergency,86496,5
+761,82,Male,Alzheimer's Disease,Medication B,Improved,Private,4237,West,Former smoker,Urgent,93808,15
+762,68,Male,Depression,Dialysis,Worsened,Medicare,5679,South,Former smoker,Emergency,32093,7
+763,67,Male,Chronic Obstructive,Inhaler therapy,Stable,Public,38313,West,Non-smoker,Elective,89020,8
+764,35,Female,Cancer,Dialysis,Worsened,Medicare,48423,South,Non-smoker,Elective,27794,9
+765,36,Female,Alzheimer's Disease,Memory exercises,Improved,Private,53150,West,Non-smoker,Elective,46084,12
+766,24,Male,Chronic Obstructive,Immunosuppressants,Worsened,Private,10669,North,Former smoker,Elective,35151,18
+767,27,Male,Cancer,Memory exercises,Worsened,Public,23298,East,Former smoker,Urgent,87414,8
+768,16,Male,Anxiety,Immunosuppressants,Improved,Private,25870,West,Former smoker,Elective,72574,13
+769,70,Female,Chronic Obstructive,Physical therapy,Stable,Private,44248,South,Non-smoker,Emergency,70264,10
+770,20,Male,Arthritis,Physical therapy,Stable,Medicare,74551,South,Former smoker,Urgent,40338,16
+771,49,Female,Osteoporosis,Dialysis,Worsened,Private,30901,West,Former smoker,Emergency,84277,8
+772,71,Male,Osteoporosis,Therapy,Improved,Public,85695,West,Former smoker,Elective,50759,4
+773,2,Female,Diabetes,Medication C,Stable,Medicare,61945,East,Non-smoker,Elective,56029,5
+774,47,Male,Rheumatoid Arthritis,Inhaler therapy,Worsened,Public,10632,West,Non-smoker,Urgent,61521,11
+775,70,Male,Heart Disease,Physical therapy,Improved,Medicare,8805,East,Former smoker,Emergency,62256,10
+776,60,Male,Asthma,Immunosuppressants,Worsened,Public,34534,West,Non-smoker,Emergency,48319,8
+777,45,Female,Depression,Medication B,Improved,Medicare,32643,South,Former smoker,Elective,43022,5
+778,21,Male,Anxiety,Dietary counseling,Stable,Public,20093,South,Former smoker,Urgent,5315,5
+779,76,Female,Asthma,Immunosuppressants,Stable,Public,61316,North,Former smoker,Urgent,6715,20
+780,86,Female,Anxiety,Chemotherapy,Stable,Public,96503,East,Non-smoker,Urgent,9970,12
+781,8,Female,Alzheimer's Disease,Dietary changes,Worsened,Private,47113,South,Former smoker,Elective,8546,9
+782,34,Female,Heart Disease,Chemotherapy,Improved,Private,54811,West,Non-smoker,Emergency,6542,18
+783,43,Male,Diabetes,Dietary changes,Worsened,Public,924,South,Former smoker,Urgent,40602,12
+784,55,Male,Chronic Kidney Disease,Immunosuppressants,Improved,Private,27645,West,Former smoker,Elective,40828,5
+785,42,Female,Chronic Obstructive,Memory exercises,Worsened,Public,89219,North,Former smoker,Emergency,78097,18
+786,49,Female,Arthritis,Dialysis,Stable,Private,325,West,Non-smoker,Emergency,42950,1
+787,67,Male,Hypertension,Immunosuppressants,Stable,Public,95837,South,Former smoker,Urgent,40023,18
+788,61,Female,Asthma,Medication C,Worsened,Medicare,77229,East,Former smoker,Urgent,22220,19
+789,17,Male,Rheumatoid Arthritis,Immunosuppressants,Stable,Private,88406,South,Non-smoker,Elective,47632,11
+790,65,Male,Arthritis,Immunosuppressants,Stable,Public,9198,South,Non-smoker,Elective,70529,11
+791,51,Male,Alzheimer's Disease,Inhaler therapy,Improved,Medicare,12070,West,Former smoker,Emergency,19125,6
+792,28,Male,Depression,Medication C,Stable,Private,67981,South,Former smoker,Urgent,30767,14
+793,30,Female,Obesity,Inhaler therapy,Worsened,Private,86747,East,Non-smoker,Elective,49955,20
+794,16,Male,Depression,Inhaler therapy,Improved,Medicare,65108,North,Non-smoker,Emergency,78891,6
+795,69,Female,Cancer,Dialysis,Stable,Private,97835,South,Former smoker,Emergency,6816,11
+796,60,Female,Stroke,Physical therapy,Improved,Medicare,10662,East,Non-smoker,Elective,47439,12
+797,20,Male,Chronic Kidney Disease,Physical therapy,Worsened,Public,53051,South,Former smoker,Elective,25332,14
+798,53,Male,Anxiety,Medication B,Improved,Private,88032,North,Former smoker,Emergency,45724,15
+799,42,Male,Chronic Kidney Disease,Dietary changes,Worsened,Medicare,36801,North,Former smoker,Urgent,90787,3
+800,27,Male,Rheumatoid Arthritis,Bone density tests,Improved,Medicare,19458,West,Former smoker,Emergency,26590,20
+801,18,Male,Chronic Obstructive,Dietary counseling,Stable,Public,80397,East,Former smoker,Elective,78395,5
+802,60,Female,Arthritis,Immunosuppressants,Worsened,Private,32119,North,Former smoker,Elective,64722,16
+803,62,Male,Cancer,Therapy,Improved,Private,55683,North,Non-smoker,Elective,47787,8
+804,69,Male,Hypertension,Medication A,Worsened,Public,66372,East,Non-smoker,Elective,18711,6
+805,2,Female,Diabetes,Medication C,Improved,Private,46534,West,Former smoker,Emergency,93294,0
+806,88,Female,Asthma,Immunosuppressants,Worsened,Medicare,39349,East,Former smoker,Urgent,24900,9
+807,88,Polygender,Diabetes,Medication A,Stable,Medicare,84378,East,Former smoker,Elective,60858,20
+808,13,Female,Chronic Kidney Disease,Dietary counseling,Worsened,Public,66489,West,Former smoker,Elective,21605,13
+809,18,Male,Cancer,Medication B,Improved,Public,71454,South,Non-smoker,Emergency,11676,6
+810,16,Female,Anxiety,Medication C,Worsened,Private,90003,South,Former smoker,Urgent,4124,19
+811,6,Male,Asthma,Physical therapy,Improved,Medicare,12615,South,Non-smoker,Emergency,28528,6
+812,24,Female,Asthma,Memory exercises,Improved,Public,62029,West,Non-smoker,Emergency,80097,1
+813,57,Male,Obesity,Dietary counseling,Stable,Public,22970,North,Non-smoker,Urgent,8002,1
+814,67,Female,Rheumatoid Arthritis,Medication C,Stable,Private,20323,East,Non-smoker,Emergency,42245,16
+815,34,Male,Depression,Therapy,Stable,Medicare,47622,North,Non-smoker,Emergency,91948,1
+816,15,Female,Cancer,Chemotherapy,Worsened,Private,750,North,Former smoker,Urgent,4954,6
+817,33,Male,Osteoporosis,Medication C,Stable,Private,82138,South,Former smoker,Emergency,40632,2
+818,28,Female,Depression,Bone density tests,Worsened,Private,2278,South,Former smoker,Elective,50314,20
+819,7,Agender,Arthritis,Dietary changes,Stable,Public,98210,East,Former smoker,Elective,91170,2
+820,2,Female,Osteoporosis,Medication B,Stable,Public,72254,West,Former smoker,Emergency,97363,15
+821,23,Male,Hypertension,Memory exercises,Improved,Private,5499,West,Non-smoker,Elective,6571,4
+822,65,Polygender,Cancer,Memory exercises,Worsened,Private,72947,North,Non-smoker,Emergency,83765,19
+823,17,Male,Cancer,Memory exercises,Improved,Public,57262,South,Former smoker,Urgent,98565,12
+824,58,Female,Stroke,Dialysis,Stable,Private,42509,South,Former smoker,Emergency,76093,14
+825,2,Female,Osteoporosis,Medication C,Worsened,Private,22974,South,Former smoker,Urgent,64763,5
+826,65,Female,Diabetes,Dialysis,Improved,Private,41566,South,Former smoker,Elective,95445,4
+827,90,Female,Chronic Obstructive,Medication A,Improved,Medicare,22906,West,Former smoker,Emergency,61097,8
+828,80,Bigender,Depression,Chemotherapy,Worsened,Private,57825,South,Former smoker,Elective,2725,10
+829,53,Female,Depression,Physical therapy,Improved,Medicare,24278,South,Former smoker,Elective,22815,8
+830,71,Male,Diabetes,Dialysis,Worsened,Public,93214,East,Non-smoker,Urgent,7181,17
+831,84,Female,Obesity,Dialysis,Improved,Private,89501,West,Non-smoker,Emergency,96534,3
+832,84,Male,Asthma,Dietary changes,Stable,Public,65608,South,Former smoker,Emergency,42730,7
+833,86,Male,Chronic Obstructive,Therapy,Worsened,Public,59640,North,Non-smoker,Elective,28656,2
+834,33,Male,Diabetes,Medication B,Improved,Private,18700,North,Former smoker,Elective,81855,0
+835,28,Male,Alzheimer's Disease,Dietary counseling,Stable,Private,57421,North,Non-smoker,Emergency,13894,14
+836,45,Female,Chronic Obstructive,Physical therapy,Improved,Private,45491,North,Non-smoker,Elective,85381,19
+837,89,Male,Heart Disease,Dietary changes,Stable,Private,28491,East,Non-smoker,Urgent,57668,17
+838,37,Female,Osteoporosis,Immunosuppressants,Worsened,Public,35213,West,Non-smoker,Emergency,55098,17
+839,17,Agender,Alzheimer's Disease,Medication B,Improved,Private,93336,East,Former smoker,Elective,93464,11
+840,25,Female,Heart Disease,Medication B,Worsened,Medicare,83951,North,Non-smoker,Urgent,75553,8
+841,55,Male,Heart Disease,Physical therapy,Worsened,Public,40159,South,Former smoker,Emergency,83947,13
+842,64,Polygender,Rheumatoid Arthritis,Inhaler therapy,Stable,Medicare,17516,West,Former smoker,Urgent,36708,15
+843,23,Male,Rheumatoid Arthritis,Chemotherapy,Worsened,Public,9964,East,Former smoker,Urgent,75483,0
+844,18,Male,Depression,Physical therapy,Improved,Public,94485,North,Former smoker,Elective,62780,10
+845,18,Male,Alzheimer's Disease,Medication A,Stable,Medicare,10589,North,Non-smoker,Elective,98939,13
+846,60,Male,Asthma,Memory exercises,Stable,Medicare,44285,South,Non-smoker,Emergency,28652,16
+847,7,Female,Rheumatoid Arthritis,Inhaler therapy,Worsened,Public,57470,West,Non-smoker,Emergency,13598,18
+848,32,Male,Osteoporosis,Medication A,Worsened,Private,99527,South,Former smoker,Urgent,88772,9
+849,41,Male,Rheumatoid Arthritis,Bone density tests,Worsened,Private,48674,West,Non-smoker,Elective,37530,7
+850,36,Female,Diabetes,Chemotherapy,Worsened,Public,69468,East,Former smoker,Urgent,35448,16
+851,42,Female,Anxiety,Physical therapy,Improved,Medicare,70624,West,Former smoker,Elective,64365,2
+852,77,Female,Rheumatoid Arthritis,Bone density tests,Stable,Medicare,87776,South,Former smoker,Elective,98772,20
+853,30,Male,Chronic Kidney Disease,Medication C,Improved,Public,24620,South,Former smoker,Urgent,58996,8
+854,42,Male,Depression,Medication B,Worsened,Medicare,61417,North,Former smoker,Urgent,36046,10
+855,44,Male,Chronic Kidney Disease,Medication B,Worsened,Private,98278,North,Non-smoker,Emergency,99521,12
+856,76,Male,Chronic Obstructive,Therapy,Improved,Private,35534,South,Former smoker,Elective,27902,4
+857,17,Male,Anxiety,Bone density tests,Improved,Medicare,7665,East,Former smoker,Elective,55144,0
+858,77,Male,Heart Disease,Immunosuppressants,Improved,Private,80916,East,Former smoker,Emergency,45695,4
+859,75,Male,Cancer,Immunosuppressants,Stable,Private,94221,East,Non-smoker,Emergency,34813,13
+860,22,Male,Anxiety,Physical therapy,Worsened,Public,86690,East,Non-smoker,Emergency,29298,0
+861,13,Male,Rheumatoid Arthritis,Dialysis,Stable,Private,74663,East,Non-smoker,Elective,49253,9
+862,66,Female,Alzheimer's Disease,Physical therapy,Worsened,Private,31187,East,Former smoker,Urgent,71945,10
+863,19,Female,Cancer,Dialysis,Improved,Private,94347,North,Former smoker,Urgent,1659,10
+864,44,Female,Obesity,Dialysis,Stable,Medicare,50573,East,Former smoker,Emergency,30707,5
+865,83,Polygender,Osteoporosis,Dietary changes,Improved,Public,50463,West,Non-smoker,Emergency,8900,7
+866,5,Female,Cancer,Physical therapy,Worsened,Private,59791,South,Non-smoker,Urgent,4493,0
+867,67,Female,Chronic Kidney Disease,Medication C,Stable,Private,94616,South,Former smoker,Urgent,67208,20
+868,39,Genderfluid,Stroke,Immunosuppressants,Improved,Medicare,68953,East,Former smoker,Urgent,91093,13
+869,78,Male,Cancer,Dietary counseling,Improved,Medicare,96268,North,Non-smoker,Emergency,44198,3
+870,88,Male,Chronic Obstructive,Physical therapy,Worsened,Medicare,81545,East,Non-smoker,Emergency,76748,14
+871,86,Female,Heart Disease,Medication A,Worsened,Public,33062,East,Non-smoker,Emergency,29750,1
+872,45,Female,Chronic Obstructive,Medication A,Stable,Public,54369,North,Non-smoker,Elective,39012,0
+873,64,Male,Chronic Obstructive,Physical therapy,Stable,Public,88199,South,Non-smoker,Emergency,88600,15
+874,44,Female,Depression,Medication C,Stable,Medicare,2878,East,Non-smoker,Emergency,16503,11
+875,55,Male,Rheumatoid Arthritis,Dialysis,Improved,Medicare,50016,South,Former smoker,Urgent,57192,14
+876,67,Male,Depression,Dietary counseling,Worsened,Private,52444,North,Former smoker,Elective,97192,16
+877,85,Male,Arthritis,Bone density tests,Stable,Medicare,67047,North,Former smoker,Urgent,84550,1
+878,64,Polygender,Heart Disease,Inhaler therapy,Stable,Private,2513,West,Non-smoker,Elective,40529,6
+879,84,Female,Chronic Obstructive,Therapy,Stable,Private,53906,North,Non-smoker,Emergency,45911,0
+880,73,Male,Chronic Kidney Disease,Inhaler therapy,Improved,Public,51723,North,Former smoker,Emergency,43880,14
+881,68,Male,Arthritis,Dietary counseling,Improved,Public,81060,West,Non-smoker,Emergency,6529,10
+882,74,Female,Chronic Obstructive,Dietary changes,Improved,Private,62922,North,Non-smoker,Elective,76221,19
+883,3,Male,Rheumatoid Arthritis,Medication C,Stable,Medicare,36516,North,Former smoker,Urgent,3211,4
+884,60,Male,Asthma,Inhaler therapy,Worsened,Public,54801,West,Non-smoker,Emergency,51415,2
+885,54,Female,Chronic Kidney Disease,Chemotherapy,Improved,Private,49746,South,Former smoker,Urgent,32037,19
+886,25,Female,Asthma,Dietary counseling,Worsened,Medicare,38062,West,Non-smoker,Emergency,22143,0
+887,43,Female,Hypertension,Therapy,Improved,Public,38028,North,Non-smoker,Urgent,30629,18
+888,84,Male,Anxiety,Physical therapy,Stable,Private,15271,South,Non-smoker,Urgent,1107,16
+889,11,Male,Hypertension,Dietary counseling,Improved,Medicare,23618,West,Non-smoker,Emergency,45934,13
+890,21,Female,Heart Disease,Bone density tests,Worsened,Public,67533,West,Non-smoker,Urgent,69797,3
+891,20,Female,Arthritis,Immunosuppressants,Stable,Medicare,76241,South,Former smoker,Urgent,32479,2
+892,88,Female,Hypertension,Immunosuppressants,Improved,Public,19682,North,Former smoker,Emergency,4277,4
+893,25,Male,Osteoporosis,Chemotherapy,Stable,Private,42561,East,Former smoker,Urgent,38592,12
+894,59,Female,Chronic Kidney Disease,Inhaler therapy,Stable,Medicare,3834,South,Former smoker,Elective,99196,13
+895,89,Female,Heart Disease,Memory exercises,Improved,Private,59682,East,Non-smoker,Emergency,93237,16
+896,38,Female,Alzheimer's Disease,Chemotherapy,Improved,Private,88436,East,Former smoker,Emergency,25553,10
+897,55,Female,Arthritis,Physical therapy,Worsened,Public,31970,West,Former smoker,Urgent,92230,8
+898,81,Female,Chronic Kidney Disease,Medication B,Improved,Public,5605,West,Former smoker,Emergency,46625,10
+899,16,Non-binary,Hypertension,Medication A,Worsened,Private,65620,East,Non-smoker,Elective,39135,9
+900,70,Non-binary,Chronic Kidney Disease,Medication C,Worsened,Private,88585,South,Non-smoker,Elective,55953,6
+901,1,Female,Chronic Obstructive,Chemotherapy,Improved,Medicare,33923,East,Former smoker,Emergency,60076,15
+902,48,Female,Chronic Kidney Disease,Physical therapy,Worsened,Private,36794,South,Former smoker,Elective,85756,2
+903,60,Female,Chronic Kidney Disease,Medication C,Stable,Public,44526,North,Non-smoker,Elective,98515,11
+904,75,Male,Obesity,Immunosuppressants,Stable,Medicare,93691,North,Former smoker,Elective,57992,19
+905,6,Male,Obesity,Medication B,Worsened,Public,49032,East,Non-smoker,Urgent,50075,12
+906,60,Female,Cancer,Therapy,Stable,Private,55742,West,Non-smoker,Urgent,14410,10
+907,23,Male,Asthma,Physical therapy,Stable,Private,51097,South,Former smoker,Urgent,777,5
+908,86,Polygender,Anxiety,Therapy,Improved,Medicare,6218,East,Former smoker,Emergency,65432,4
+909,63,Bigender,Hypertension,Therapy,Worsened,Medicare,88345,South,Former smoker,Emergency,53281,15
+910,28,Male,Arthritis,Memory exercises,Stable,Public,91156,West,Former smoker,Emergency,43280,20
+911,87,Male,Chronic Kidney Disease,Medication C,Improved,Medicare,74293,North,Former smoker,Urgent,96150,5
+912,65,Male,Hypertension,Inhaler therapy,Worsened,Public,50845,East,Former smoker,Urgent,9535,20
+913,37,Male,Anxiety,Chemotherapy,Improved,Medicare,24107,North,Former smoker,Urgent,57286,3
+914,76,Female,Alzheimer's Disease,Medication A,Stable,Private,92816,North,Former smoker,Emergency,33732,15
+915,21,Male,Diabetes,Medication A,Stable,Public,27060,South,Non-smoker,Emergency,70172,11
+916,14,Female,Heart Disease,Chemotherapy,Stable,Medicare,53601,North,Non-smoker,Urgent,86067,2
+917,43,Male,Chronic Obstructive,Dietary changes,Improved,Medicare,5492,East,Non-smoker,Urgent,96206,16
+918,89,Genderqueer,Asthma,Medication A,Worsened,Private,58407,West,Non-smoker,Emergency,77668,17
+919,59,Female,Diabetes,Dietary counseling,Stable,Public,14709,South,Non-smoker,Elective,36351,18
+920,90,Female,Hypertension,Dietary counseling,Worsened,Public,47843,West,Non-smoker,Urgent,91193,20
+921,8,Male,Rheumatoid Arthritis,Medication C,Stable,Public,37373,South,Non-smoker,Urgent,81908,0
+922,54,Male,Anxiety,Inhaler therapy,Stable,Medicare,51078,South,Non-smoker,Urgent,17333,0
+923,51,Female,Diabetes,Dietary changes,Worsened,Medicare,58070,South,Non-smoker,Urgent,98929,17
+924,75,Female,Heart Disease,Physical therapy,Stable,Private,37673,North,Non-smoker,Elective,66917,18
+925,15,Male,Chronic Kidney Disease,Dialysis,Worsened,Private,51590,South,Non-smoker,Urgent,65487,11
+926,53,Female,Arthritis,Medication A,Improved,Medicare,11465,East,Non-smoker,Elective,7384,13
+927,34,Female,Hypertension,Immunosuppressants,Stable,Private,14648,South,Former smoker,Emergency,82875,7
+928,62,Male,Rheumatoid Arthritis,Therapy,Worsened,Public,66880,East,Former smoker,Emergency,85873,10
+929,6,Male,Diabetes,Physical therapy,Improved,Medicare,82800,North,Non-smoker,Urgent,892,2
+930,4,Agender,Stroke,Medication A,Worsened,Medicare,55934,West,Former smoker,Urgent,9555,8
+931,88,Male,Asthma,Therapy,Improved,Private,60919,East,Former smoker,Elective,37940,16
+932,78,Female,Osteoporosis,Memory exercises,Worsened,Medicare,62401,North,Non-smoker,Urgent,44384,17
+933,5,Female,Arthritis,Dietary changes,Stable,Medicare,83639,West,Former smoker,Emergency,15576,4
+934,49,Female,Stroke,Immunosuppressants,Improved,Public,31891,South,Former smoker,Emergency,22487,1
+935,31,Male,Chronic Kidney Disease,Bone density tests,Improved,Public,99863,South,Non-smoker,Emergency,22070,2
+936,41,Female,Anxiety,Physical therapy,Improved,Private,95393,West,Non-smoker,Emergency,25365,12
+937,78,Male,Obesity,Immunosuppressants,Stable,Private,9318,East,Former smoker,Emergency,17654,18
+938,11,Male,Alzheimer's Disease,Memory exercises,Improved,Public,7761,North,Former smoker,Urgent,74002,13
+939,43,Male,Stroke,Medication B,Stable,Private,43671,West,Former smoker,Urgent,38138,18
+940,0,Polygender,Hypertension,Therapy,Improved,Medicare,3230,East,Non-smoker,Elective,33986,12
+941,4,Male,Heart Disease,Dietary changes,Improved,Medicare,86971,South,Non-smoker,Elective,84474,14
+942,49,Male,Stroke,Inhaler therapy,Improved,Private,73398,West,Former smoker,Urgent,94499,2
+943,37,Female,Cancer,Immunosuppressants,Stable,Medicare,3426,South,Non-smoker,Elective,38456,19
+944,88,Male,Hypertension,Medication B,Stable,Medicare,24976,South,Former smoker,Emergency,7686,10
+945,48,Female,Asthma,Physical therapy,Worsened,Public,13866,East,Former smoker,Elective,44892,18
+946,33,Male,Chronic Kidney Disease,Dietary counseling,Stable,Private,45710,South,Non-smoker,Urgent,26815,2
+947,84,Male,Alzheimer's Disease,Medication A,Stable,Public,56924,North,Former smoker,Urgent,69821,8
+948,21,Male,Anxiety,Immunosuppressants,Stable,Medicare,82254,North,Non-smoker,Urgent,90218,8
+949,33,Female,Asthma,Medication B,Stable,Medicare,99507,North,Former smoker,Urgent,95472,16
+950,54,Genderfluid,Anxiety,Medication B,Improved,Medicare,76140,West,Former smoker,Elective,48409,3
+951,20,Female,Chronic Kidney Disease,Therapy,Stable,Private,22544,North,Non-smoker,Urgent,49590,15
+952,37,Female,Anxiety,Dietary counseling,Improved,Private,89083,South,Former smoker,Emergency,58569,2
+953,8,Male,Osteoporosis,Dietary changes,Worsened,Private,83752,South,Non-smoker,Elective,52697,5
+954,61,Female,Hypertension,Memory exercises,Improved,Public,94385,North,Non-smoker,Urgent,92216,4
+955,73,Male,Depression,Inhaler therapy,Improved,Private,78798,North,Former smoker,Elective,3183,15
+956,30,Male,Hypertension,Bone density tests,Worsened,Medicare,65695,South,Non-smoker,Emergency,52633,19
+957,26,Male,Osteoporosis,Dietary counseling,Worsened,Public,70284,South,Former smoker,Urgent,68909,15
+958,73,Male,Hypertension,Dietary counseling,Stable,Private,82220,South,Non-smoker,Urgent,35304,2
+959,39,Female,Chronic Kidney Disease,Bone density tests,Worsened,Medicare,41450,North,Former smoker,Elective,97080,7
+960,9,Male,Asthma,Physical therapy,Improved,Medicare,91642,West,Former smoker,Urgent,45167,4
+961,42,Male,Hypertension,Medication B,Stable,Medicare,2033,East,Former smoker,Urgent,94780,1
+962,40,Non-binary,Diabetes,Chemotherapy,Improved,Medicare,3235,South,Former smoker,Emergency,60478,8
+963,3,Male,Diabetes,Therapy,Improved,Medicare,43705,West,Non-smoker,Emergency,94261,0
+964,44,Female,Cancer,Chemotherapy,Worsened,Medicare,53375,North,Non-smoker,Emergency,8339,3
+965,80,Female,Cancer,Physical therapy,Improved,Public,25459,East,Former smoker,Emergency,22490,17
+966,70,Male,Heart Disease,Therapy,Stable,Public,7742,South,Former smoker,Elective,5280,14
+967,1,Female,Hypertension,Inhaler therapy,Improved,Public,13085,West,Non-smoker,Emergency,97641,14
+968,48,Female,Depression,Immunosuppressants,Stable,Private,68352,South,Former smoker,Emergency,19109,8
+969,25,Female,Anxiety,Bone density tests,Improved,Medicare,11529,South,Former smoker,Emergency,39930,4
+970,76,Male,Chronic Kidney Disease,Immunosuppressants,Stable,Private,94101,East,Former smoker,Elective,45606,12
+971,56,Female,Depression,Medication A,Stable,Private,32126,West,Non-smoker,Emergency,94316,12
+972,7,Female,Alzheimer's Disease,Dietary changes,Stable,Medicare,82574,West,Former smoker,Elective,24418,9
+973,8,Male,Chronic Obstructive,Immunosuppressants,Improved,Private,31634,South,Former smoker,Urgent,23670,13
+974,45,Female,Asthma,Dietary counseling,Worsened,Private,10761,West,Former smoker,Emergency,60133,8
+975,90,Male,Cancer,Medication A,Improved,Public,3302,South,Former smoker,Urgent,99978,11
+976,85,Male,Obesity,Therapy,Stable,Public,3076,East,Former smoker,Elective,58762,16
+977,11,Male,Obesity,Chemotherapy,Worsened,Public,25981,West,Non-smoker,Urgent,82565,18
+978,7,Male,Diabetes,Inhaler therapy,Stable,Private,68882,South,Non-smoker,Urgent,32554,10
+979,80,Male,Alzheimer's Disease,Immunosuppressants,Improved,Public,66633,West,Non-smoker,Emergency,43442,11
+980,77,Female,Stroke,Medication A,Improved,Public,5119,South,Non-smoker,Urgent,90875,10
+981,45,Female,Rheumatoid Arthritis,Dietary counseling,Improved,Medicare,86165,North,Non-smoker,Urgent,26989,2
+982,68,Female,Hypertension,Chemotherapy,Improved,Public,70758,North,Non-smoker,Urgent,14584,7
+983,31,Female,Obesity,Dietary changes,Stable,Medicare,75695,South,Former smoker,Elective,86224,20
+984,0,Male,Heart Disease,Immunosuppressants,Worsened,Public,31624,South,Former smoker,Emergency,79075,13
+985,0,Female,Chronic Obstructive,Therapy,Improved,Private,18492,South,Non-smoker,Emergency,41319,0
+986,36,Male,Alzheimer's Disease,Medication B,Improved,Public,23704,North,Former smoker,Emergency,5341,0
+987,46,Male,Diabetes,Bone density tests,Worsened,Public,38160,North,Former smoker,Elective,10488,16
+988,20,Male,Obesity,Immunosuppressants,Improved,Public,84967,East,Non-smoker,Urgent,49856,19
+989,24,Male,Stroke,Dialysis,Stable,Private,15756,North,Former smoker,Elective,92793,13
+990,24,Female,Rheumatoid Arthritis,Bone density tests,Improved,Public,25651,East,Non-smoker,Emergency,32748,3
+991,89,Male,Asthma,Medication C,Stable,Medicare,50946,West,Non-smoker,Urgent,87513,14
+992,84,Male,Depression,Physical therapy,Improved,Medicare,23694,East,Non-smoker,Emergency,52254,10
+993,2,Male,Heart Disease,Medication A,Improved,Public,43052,West,Non-smoker,Urgent,67938,17
+994,40,Male,Alzheimer's Disease,Inhaler therapy,Stable,Private,93606,East,Non-smoker,Urgent,33797,9
+995,13,Female,Hypertension,Dialysis,Worsened,Public,61688,North,Non-smoker,Elective,40748,14
+996,72,Male,Alzheimer's Disease,Immunosuppressants,Worsened,Public,6239,North,Non-smoker,Emergency,40615,10
+997,58,Female,Alzheimer's Disease,Dialysis,Worsened,Public,9075,West,Non-smoker,Urgent,16383,16
+998,57,Male,Hypertension,Dietary counseling,Improved,Public,55213,South,Non-smoker,Elective,42211,18
+999,47,Female,Stroke,Medication B,Worsened,Private,93212,North,Non-smoker,Emergency,37809,18
+1000,35,Female,Stroke,Bone density tests,Improved,Medicare,73667,West,Former smoker,Emergency,3810,6
