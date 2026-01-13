@@ -1,0 +1,5 @@
+opencv-python
+pdfminer.six
+PyPDF2
+pandas
+numpy
