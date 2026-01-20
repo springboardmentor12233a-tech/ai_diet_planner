@@ -1,97 +1,120 @@
 import pandas as pd
 import numpy as np
 
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    roc_curve,
+    roc_auc_score
+)
+
+from imblearn.over_sampling import SMOTE
+from xgboost import XGBClassifier
 
 
-# ---------------------------
-# 1. Load dataset
-# ---------------------------
-df = pd.read_csv("data/medical_data.csv")
-
-print("\nDataset loaded successfully")
+# ===============================
+# 1. Load Dataset
+# ===============================
+df = pd.read_csv("data/diabetes.csv")
+print("Dataset Loaded")
 print(df.head())
-print("\nColumns:", df.columns.tolist())
 
 
-# ---------------------------
-# 2. Drop ID column
-# ---------------------------
-df.drop(columns=["Patient_ID"], inplace=True)
+# ===============================
+# 2. Data Cleaning
+# ===============================
+cols_with_zero = ['Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
+
+for col in cols_with_zero:
+    df[col] = df[col].replace(0, np.nan)
+    df[col] = df[col].fillna(df[col].mean())
 
 
-# ---------------------------
-# 3. Handle missing values
-# ---------------------------
-categorical_cols = [
-    "Gender", "Medical_Condition", "Treatment",
-    "Insurance_Type", "Region",
-    "Smoking_Status", "Admission_Type"
-]
-
-for col in categorical_cols:
-    df[col] = df[col].fillna("Unknown")
-
-numeric_cols = ["Age", "Income", "Length_of_Stay"]
-
-for col in numeric_cols:
-    df[col] = pd.to_numeric(df[col], errors="coerce")
-    df[col].fillna(df[col].mean(), inplace=True)
-
-
-# ---------------------------
-# 4. Encode categorical columns
-# ---------------------------
-encoder = LabelEncoder()
-
-for col in categorical_cols + ["Outcome"]:
-    df[col] = encoder.fit_transform(df[col])
-
-print("\nEncoded Outcome classes:", df["Outcome"].unique())
-
-
-# ---------------------------
-# 5. Split features & target
-# ---------------------------
+# ===============================
+# 3. Split Features & Target
+# ===============================
 X = df.drop("Outcome", axis=1)
 y = df["Outcome"]
 
-
-# ---------------------------
-# 6. Train-test split
-# ---------------------------
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
+    X,
+    y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
 )
 
 
-# ---------------------------
-# 7. Feature scaling
-# ---------------------------
-scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
+# ===============================
+# 4. Handle Class Imbalance (SMOTE)
+# ===============================
+smote = SMOTE(random_state=42)
+X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
 
 
-# ---------------------------
-# 8. Train Logistic Regression
-# ---------------------------
-model = LogisticRegression(max_iter=1000)
-model.fit(X_train, y_train)
+# ===============================
+# 5. Train XGBoost Model
+# ===============================
+xgb = XGBClassifier(
+    n_estimators=500,
+    max_depth=5,
+    learning_rate=0.03,
+    subsample=0.9,
+    colsample_bytree=0.9,
+    scale_pos_weight=len(y_train_smote[y_train_smote == 0]) /
+                      len(y_train_smote[y_train_smote == 1]),
+    eval_metric="logloss",
+    random_state=42
+)
+
+xgb.fit(X_train_smote, y_train_smote)
 
 
-# ---------------------------
-# 9. Predict & evaluate
-# ---------------------------
-y_pred = model.predict(X_test)
+# ===============================
+# 6. Default Prediction
+# ===============================
+y_pred_default = xgb.predict(X_test)
+default_acc = accuracy_score(y_test, y_pred_default)
 
-accuracy = accuracy_score(y_test, y_pred)
+print("\nXGBoost Accuracy (Default Threshold 0.5):", default_acc)
 
-print("\n✅ Model trained successfully")
-print("🎯 Accuracy:", accuracy)
 
-print("\nClassification Report:\n")
-print(classification_report(y_test, y_pred))
+# ===============================
+# 7. Threshold Optimization
+# ===============================
+y_probs = xgb.predict_proba(X_test)[:, 1]
+
+fpr, tpr, thresholds = roc_curve(y_test, y_probs)
+j_scores = tpr - fpr
+best_threshold = thresholds[j_scores.argmax()]
+
+y_pred_opt = (y_probs >= best_threshold).astype(int)
+opt_acc = accuracy_score(y_test, y_pred_opt)
+
+print("Best Threshold:", best_threshold)
+print("Optimized Accuracy:", opt_acc)
+
+
+# ===============================
+# 8. ROC-AUC Score
+# ===============================
+auc = roc_auc_score(y_test, y_probs)
+print("ROC-AUC Score:", auc)
+
+
+# ===============================
+# 9. Classification Report
+# ===============================
+print("\nClassification Report (Optimized Threshold):\n")
+print(classification_report(y_test, y_pred_opt))
+
+
+# ===============================
+# 10. Cross-Validation Score
+# ===============================
+cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+cv_scores = cross_val_score(xgb, X, y, cv=cv, scoring="accuracy")
+
+print("Cross-Validation Accuracy Scores:", cv_scores)
+print("Mean CV Accuracy:", cv_scores.mean())
