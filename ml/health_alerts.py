@@ -1,33 +1,30 @@
-def generate_health_alerts(patient_data):
+def get_health_alerts(patient_data):
     alerts = []
+    
+    # Glucose Alert(diabetes Indicator)
+    glucose = patient_data.get('Glucose')
+    if glucose >= 126:
+        alerts.append({"metric": "Glucose", "status": "Critical", "message": "High Blood Sugar (Diabetes Range)"})
+    elif 100 <= glucose < 126:
+        alerts.append({"metric": "Glucose", "status": "Warning", "message": "Elevated Blood Sugar (Prediabetes Range)"})
 
-    # Glucose (Diabetes indicator)
-    if patient_data['Glucose'] >= 126:
-        alerts.append("High glucose level: Possible diabetes risk")
+    # BMI Alert(Obesity Indicator)
+    bmi = patient_data.get('BMI')
+    if bmi >= 30:
+        alerts.append({"metric": "BMI", "status": "Critical", "message": "High BMI (Obesity Range)"})
+    elif 25 <= bmi < 30:
+        alerts.append({"metric": "BMI", "status": "Warning", "message": "Elevated BMI (Overweight Range)"})
 
-    # BMI (Obesity indicator)
-    if patient_data['BMI'] >= 30:
-        alerts.append("High BMI: Obesity risk")
-
-    # Blood Pressure (Hypertension indicator)
-    if patient_data['BloodPressure'] >= 90:
-        alerts.append("High blood pressure: Hypertension risk")
-
-    if not alerts:
-        alerts.append("All parameters are within normal range")
-
+    # Blood Pressure Alert (Hypertension Indicator)
+    bp = patient_data.get('BloodPressure')
+    if bp >= 90: 
+        alerts.append({"metric": "Blood Pressure", "status": "Critical", "message": "High Blood Pressure Detected"})
+        
     return alerts
 
+# Example Usage
+sample_patient = {'Glucose': 145, 'BMI': 32, 'BloodPressure': 85}
+active_alerts = get_health_alerts(sample_patient)
 
-if __name__ == "__main__":
-    sample_patient = {
-        "Glucose": 140,
-        "BMI": 32,
-        "BloodPressure": 95
-    }
-
-    alerts = generate_health_alerts(sample_patient)
-
-    print("Health Alerts:")
-    for alert in alerts:
-        print("-", alert)
+for alert in active_alerts:
+    print(f"[{alert['status']}] {alert['metric']}: {alert['message']}")
