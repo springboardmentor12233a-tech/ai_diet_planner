@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import os
 
 from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
 from sklearn.metrics import (
@@ -118,3 +119,14 @@ cv_scores = cross_val_score(xgb, X, y, cv=cv, scoring="accuracy")
 
 print("Cross-Validation Accuracy Scores:", cv_scores)
 print("Mean CV Accuracy:", cv_scores.mean())
+
+
+# ===============================
+# 11. Save Model (FIXED)
+# ===============================
+os.makedirs("backend/model", exist_ok=True)
+
+# IMPORTANT: use xgb (not model)
+xgb.save_model("backend/model/diabetes_xgb.json")
+
+print("Model saved successfully at backend/model/diabetes_xgb.json")

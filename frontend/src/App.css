@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2937;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.result-card {
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+}
+
+.result-card.low {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+.result-card.medium {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.result-card.high {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.result-card h2 {
+  margin-top: 0;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: 500;
+}
