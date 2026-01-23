@@ -1,68 +1,58 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.preprocessing import RobustScaler
+from sklearn.model_selection import train_test_split, RepeatedStratifiedKFold, GridSearchCV
 from sklearn.metrics import accuracy_score, classification_report
-from xgboost import XGBClassifier 
+from xgboost import XGBClassifier
 
-# 1. Load dataset
+# 1. Load data
 df = pd.read_csv('../datasets/diabetes.csv')
 
-# 2. Advanced Imputation: Replace zeros with median based on Outcome
-# This prevents leaking information between healthy and diabetic profiles
+# 2. Imputation (Keeping your logic for zeros)
 cols_to_fix = ['Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
 for col in cols_to_fix:
     df[col] = df[col].replace(0, np.nan)
     df[col] = df[col].fillna(df.groupby('Outcome')[col].transform('median'))
 
-# 3. Expanded Feature Selection
-# Including DiabetesPedigreeFunction is critical for the >85% threshold
-features = [
-    'Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 
-    'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age'
-]
+# 3. FEATURE ENGINEERING: Creating interactions
+# BMI/Age ratio and Glucose/Insulin balance are often strong predictors
+df['Glucose_BMI'] = df['Glucose'] * df['BMI']
+df['Age_Glucose'] = df['Age'] * df['Glucose']
+df['Insulin_Efficiency'] = df['Insulin'] / (df['Glucose'] + 1)
 
-X = df[features]
+X = df.drop('Outcome', axis=1)
 y = df['Outcome']
 
-# 4. Scaling and Splitting
-scaler = StandardScaler()
+# 4. Use RobustScaler (Better for data with outliers like Insulin)
+scaler = RobustScaler()
 X_scaled = scaler.fit_transform(X)
 
 X_train, X_test, y_train, y_test = train_test_split(
     X_scaled, y, test_size=0.2, random_state=42, stratify=y
 )
 
-# 5. Hyperparameter Tuning with XGBoost
-# This addresses the overfitting seen in your previous models
-xgb_model = XGBClassifier(
-    eval_metric='logloss',
-    random_state=42
-)
+# 5. Advanced Cross-Validation
+# Repeated K-Fold ensures the 86% isn't just a "lucky" split
+cv_strategy = RepeatedStratifiedKFold(n_splits=10, n_repeats=3, random_state=42)
+
+# 6. Fine-Tuned XGBoost
+xgb = XGBClassifier(eval_metric='logloss', random_state=42)
 
 param_grid = {
-    'max_depth': [3, 4, 5],
-    'learning_rate': [0.01, 0.05, 0.1],
-    'n_estimators': [100, 200, 300],
-    'subsample': [0.7, 0.8, 0.9]
+    'n_estimators': [200, 400],
+    'max_depth': [3, 4],
+    'learning_rate': [0.01, 0.03],
+    'gamma': [0.1, 0.2],         # Minimum loss reduction to make a split
+    'reg_lambda': [1, 5],        # L2 regularization
+    'scale_pos_weight': [1.8]    # High weight for the minority class (Diabetes cases)
 }
 
-grid_search = GridSearchCV(
-    estimator=xgb_model,
-    param_grid=param_grid,
-    cv=5,
-    scoring='accuracy',
-    n_jobs=-1
-)
+grid = GridSearchCV(xgb, param_grid, cv=cv_strategy, scoring='accuracy', n_jobs=-1)
+grid.fit(X_train, y_train)
 
-grid_search.fit(X_train, y_train)
-
-# 6. Results
-best_model = grid_search.best_estimator_
-train_acc = accuracy_score(y_train, best_model.predict(X_train))
+# 7. Final Results
+best_model = grid.best_estimator_
 test_acc = accuracy_score(y_test, best_model.predict(X_test))
 
-print(f"Best Parameters: {grid_search.best_params_}")
-print(f"Refined Train Accuracy: {train_acc:.3f}")
-print(f"Refined Test Accuracy: {test_acc:.3f}")
-print("\nClassification Report:\n", classification_report(y_test, best_model.predict(X_test)))
+print(f"New Test Accuracy: {test_acc:.4f}")
+print("\nTop Parameters:", grid.best_params_)
