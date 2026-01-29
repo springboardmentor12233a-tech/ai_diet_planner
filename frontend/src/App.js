@@ -2,6 +2,9 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
+  // ===============================
+  // STATE: Diabetes Prediction
+  // ===============================
   const [form, setForm] = useState({
     pregnancies: "",
     glucose: "",
@@ -16,10 +19,23 @@ function App() {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  // ===============================
+  // STATE: Prescription Upload
+  // ===============================
+  const [file, setFile] = useState(null);
+  const [dietResult, setDietResult] = useState(null);
+  const [uploading, setUploading] = useState(false);
+
+  // ===============================
+  // Handlers
+  // ===============================
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  // ===============================
+  // Diabetes Prediction API
+  // ===============================
   const predict = async () => {
     setLoading(true);
     setResult(null);
@@ -35,6 +51,34 @@ function App() {
     setLoading(false);
   };
 
+  // ===============================
+  // Prescription Upload API
+  // ===============================
+  const uploadPrescription = async () => {
+    if (!file) {
+      alert("Please select a prescription image");
+      return;
+    }
+
+    setUploading(true);
+    setDietResult(null);
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    const res = await fetch("http://127.0.0.1:8000/upload-prescription", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await res.json();
+    setDietResult(data);
+    setUploading(false);
+  };
+
+  // ===============================
+  // UI Helpers
+  // ===============================
   const getRiskClass = () => {
     if (!result) return "";
     if (result.risk_level === "Low Risk") return "low";
@@ -42,11 +86,17 @@ function App() {
     return "high";
   };
 
+  // ===============================
+  // UI
+  // ===============================
   return (
     <div className="container">
       <h1>AI Diet Planner</h1>
-      <p className="subtitle">Diabetes Risk Assessment</p>
+      <p className="subtitle">Diabetes Risk & Diet Recommendation System</p>
 
+      {/* ===============================
+          Diabetes Prediction Section
+         =============================== */}
       <div className="card">
         <h3>Patient Health Parameters</h3>
 
@@ -81,6 +131,35 @@ function App() {
           </p>
 
           <p className="message">{result.message}</p>
+        </div>
+      )}
+
+      {/* ===============================
+          Prescription Upload Section
+         =============================== */}
+      <div className="card">
+        <h3>Upload Doctor Prescription</h3>
+
+        <input
+          type="file"
+          accept="image/*"
+          onChange={(e) => setFile(e.target.files[0])}
+        />
+
+        <button onClick={uploadPrescription} disabled={uploading}>
+          {uploading ? "Analyzing..." : "Analyze Prescription"}
+        </button>
+      </div>
+
+      {dietResult && (
+        <div className="result-card low">
+          <h3>Diet Recommendations</h3>
+
+          <ul>
+            {dietResult.diet_guidelines.map((d, i) => (
+              <li key={i}>{d}</li>
+            ))}
+          </ul>
         </div>
       )}
     </div>

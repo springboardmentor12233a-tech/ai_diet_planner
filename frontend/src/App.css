@@ -88,3 +88,7 @@ button:hover {
   margin-top: 15px;
   font-weight: 500;
 }
+
+input[type="file"] {
+  margin-top: 10px;
+}

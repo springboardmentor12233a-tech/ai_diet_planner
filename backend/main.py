@@ -4,6 +4,11 @@ import numpy as np
 from xgboost import XGBClassifier
 from fastapi.middleware.cors import CORSMiddleware
 
+from fastapi import UploadFile, File
+import os
+
+from ocr_utils import run_ocr
+from nlp_utils import interpret_doctor_notes, generate_diet_plan
 
 app = FastAPI(title="AI Diet Planner – Diabetes API")
 app.add_middleware(
@@ -68,4 +73,22 @@ def predict(input: DiabetesInput):
             if risk == "High Risk"
             else "Maintain a balanced diet and regular exercise"
         )
+    }
+os.makedirs("backend/uploads", exist_ok=True)
+
+@app.post("/upload-prescription")
+async def upload_prescription(file: UploadFile = File(...)):
+    file_path = f"backend/uploads/{file.filename}"
+
+    with open(file_path, "wb") as f:
+        f.write(await file.read())
+
+    extracted_text = run_ocr(file_path)
+    rules = interpret_doctor_notes(extracted_text)
+    diet = generate_diet_plan(rules)
+
+    return {
+        "extracted_text": extracted_text,
+        "diet_rules": rules,
+        "diet_guidelines": diet
     }
