@@ -158,6 +158,27 @@ AI-DIET-PLANNER/
 
 > Successfully extracted structured numeric and textual data from sample medical reports, forming a solid foundation for further ML and NLP-based analysis.
 
+
+## ✅ Milestone-2 (Weeks 3–4): Machine Learning Model Development & Health Analysis
+
+### Completed Tasks
+
+- ✔ Cleaned medical dataset and handled invalid zero values
+- ✔ Performed target-based median imputation for missing values
+- ✔ Applied medical-domain feature engineering (BMI, glucose, insulin categories)
+- ✔ Encoded categorical features using one-hot encoding
+- ✔ Trained multiple ML models for diabetes prediction
+- ✔ Evaluated models using accuracy, confusion matrix, precision, recall, and F1-score
+- ✔ Compared model performance and identified best-performing models
+- ✔ Implemented a patient-level health alert system using medical thresholds
+- ✔ Built an inference pipeline for disease prediction and risk probability estimation
+- ✔ Saved trained models and preprocessing objects for reuse
+
+### Milestone Outcome
+
+> Successfully developed a complete machine learning pipeline capable of predicting diabetes risk, generating interpretable health alerts, and preparing the system for real-world medical data analysis and deployment.
+
+
 ---
 
 ## 🛠️ Technology Stack
