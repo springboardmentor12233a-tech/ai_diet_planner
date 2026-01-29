@@ -15,7 +15,6 @@ for col in cols_to_fix:
     df[col] = df[col].fillna(df.groupby('Outcome')[col].transform('median'))
 
 # 3. FEATURE ENGINEERING: Creating interactions
-# BMI/Age ratio and Glucose/Insulin balance are often strong predictors
 df['Glucose_BMI'] = df['Glucose'] * df['BMI']
 df['Age_Glucose'] = df['Age'] * df['Glucose']
 df['Insulin_Efficiency'] = df['Insulin'] / (df['Glucose'] + 1)
@@ -23,19 +22,22 @@ df['Insulin_Efficiency'] = df['Insulin'] / (df['Glucose'] + 1)
 X = df.drop('Outcome', axis=1)
 y = df['Outcome']
 
-# 4. Use RobustScaler (Better for data with outliers like Insulin)
-scaler = RobustScaler()
-X_scaled = scaler.fit_transform(X)
-
+# 4. Train-Test Split
 X_train, X_test, y_train, y_test = train_test_split(
-    X_scaled, y, test_size=0.2, random_state=42, stratify=y
+    X, y, test_size=0.2, random_state=42, stratify=y
 )
 
-# 5. Advanced Cross-Validation
+# 5. Use RobustScaler (Better for data with outliers like Insulin)
+# Scale only on training data to avoid data leakage
+scaler = RobustScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# 6. Advanced Cross-Validation
 # Repeated K-Fold ensures the 86% isn't just a "lucky" split
 cv_strategy = RepeatedStratifiedKFold(n_splits=10, n_repeats=3, random_state=42)
 
-# 6. Fine-Tuned XGBoost
+# 7. Fine-Tuned XGBoost
 xgb = XGBClassifier(eval_metric='logloss', random_state=42)
 
 param_grid = {
@@ -50,7 +52,7 @@ param_grid = {
 grid = GridSearchCV(xgb, param_grid, cv=cv_strategy, scoring='accuracy', n_jobs=-1)
 grid.fit(X_train, y_train)
 
-# 7. Final Results
+# 8. Final Results
 best_model = grid.best_estimator_
 test_acc = accuracy_score(y_test, best_model.predict(X_test))
 

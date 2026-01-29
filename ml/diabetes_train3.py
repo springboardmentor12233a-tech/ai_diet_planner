@@ -18,10 +18,13 @@ for col in cols_to_fix:
 X = df.drop('Outcome', axis=1)
 y = df['Outcome']
 
-# 2. Scaling and Split
+# 2. Train-Test Split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+
+# 3. Scaling (fit only on training data to avoid data leakage)
 scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42, stratify=y)
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
 
 # --- MODEL 1: LOGISTIC REGRESSION TUNING ---
 lr_params = {'C': [0.01, 0.1, 1, 10, 100], 'solver': ['liblinear']}
@@ -42,7 +45,7 @@ rf_params = {
 rf_grid = GridSearchCV(RandomForestClassifier(random_state=42), rf_params, cv=5).fit(X_train, y_train)
 rf_acc = accuracy_score(y_test, rf_grid.predict(X_test))
 
-# 3. Final Comparison Output
+# 4. Final Comparison Output
 print("--- Mentor Review: Model Accuracies ---")
 print(f"Logistic Regression (Tuned): {lr_acc:.3f}")
 print(f"SVM (Tuned):                 {svm_acc:.3f}")
