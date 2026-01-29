@@ -2,13 +2,10 @@ import pandas as pd
 import numpy as np
 import pickle
 
-with open("svm_model.pkl", "rb") as f:
+with open("E:\InfosysSpringboard-Project\models\svm_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open("robust_scaler.pkl", "rb") as f:
-    robust_scaler = pickle.load(f)
-
-with open("standard_scaler.pkl", "rb") as f:
+with open("E:\InfosysSpringboard-Project\models\standard_scaler.pkl", "rb") as f:
     standard_scaler = pickle.load(f)
 
 
@@ -152,7 +149,6 @@ def prepare_input(patient):
     df = df.reindex(columns=MODEL_FEATURES, fill_value=0)
 
     # Scaling 
-    df_scaled = robust_scaler.transform(df)
     df_scaled = standard_scaler.transform(df_scaled)
 
 

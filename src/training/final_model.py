@@ -81,55 +81,85 @@ df = pd.get_dummies(df, columns=['NewBMI','NewInsulinScore','NewGlucose'], drop_
 X = df.drop('Outcome', axis=1)
 y = df['Outcome']
 
-# 9. ROBUST SCALING 
-robust_scaler = RobustScaler()
-X[X.columns] = robust_scaler.fit_transform(X)
-
-# 10. TRAIN-TEST SPLIT
+# 9. TRAIN-TEST SPLIT
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
 )
-
-# 
-# 11. STANDARD SCALING FOR ML MODELS
+# 10. STANDARD SCALING FOR ML MODELS
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-# 12. MODEL TRAINING & EVALUATION
+# 11. MODEL TRAINING & EVALUATION
 
 def evaluate_model(model, name):
     model.fit(X_train, y_train)
-    y_pred = model.predict(X_test)
+
+    # Training predictions
+    y_train_pred = model.predict(X_train)
+    train_acc = accuracy_score(y_train, y_train_pred)
+
+    # Testing predictions
+    y_test_pred = model.predict(X_test)
+    test_acc = accuracy_score(y_test, y_test_pred)
+
     print(f"\n{name}")
-    print("Accuracy:", accuracy_score(y_test, y_pred))
-    print(confusion_matrix(y_test, y_pred))
-    print(classification_report(y_test, y_pred))
+    print(f"Training Accuracy: {train_acc:.4f}")
+    print(f"Testing Accuracy : {test_acc:.4f}")
+    print("Confusion Matrix:")
+    print(confusion_matrix(y_test, y_test_pred))
+    print(classification_report(y_test, y_test_pred))
+
+    return train_acc, test_acc
+
+
+# MODEL TRAINING & COMPARISON
+
+results = []
 
 # Logistic Regression
-evaluate_model(LogisticRegression(), "Logistic Regression")
+train_acc, test_acc = evaluate_model(
+    LogisticRegression(), "Logistic Regression"
+)
+results.append(["Logistic Regression", train_acc, test_acc])
 
 # KNN
-evaluate_model(KNeighborsClassifier(), "KNN")
+train_acc, test_acc = evaluate_model(
+    KNeighborsClassifier(), "KNN"
+)
+results.append(["KNN", train_acc, test_acc])
 
 # SVM (Tuned)
 svc = SVC(C=10, gamma=0.01, probability=True)
-evaluate_model(svc, "Support Vector Machine")
+train_acc, test_acc = evaluate_model(
+    svc, "Support Vector Machine"
+)
+results.append(["SVM", train_acc, test_acc])
 
 # Decision Tree (Tuned)
 dt = DecisionTreeClassifier(
-    criterion='entropy', max_depth=7,
-    min_samples_leaf=3, min_samples_split=3
+    criterion='entropy',
+    max_depth=7,
+    min_samples_leaf=3,
+    min_samples_split=3
 )
-evaluate_model(dt, "Decision Tree")
+train_acc, test_acc = evaluate_model(
+    dt, "Decision Tree"
+)
+results.append(["Decision Tree", train_acc, test_acc])
 
 # Random Forest
 rf = RandomForestClassifier(
-    n_estimators=130, max_depth=15,
-    min_samples_leaf=2, min_samples_split=3,
+    n_estimators=130,
+    max_depth=15,
+    min_samples_leaf=2,
+    min_samples_split=3,
     criterion='entropy'
 )
-evaluate_model(rf, "Random Forest")
+train_acc, test_acc = evaluate_model(
+    rf, "Random Forest"
+)
+results.append(["Random Forest", train_acc, test_acc])
 
 # XGBoost
 xgb = XGBClassifier(
@@ -139,9 +169,23 @@ xgb = XGBClassifier(
     n_estimators=180,
     eval_metric='logloss'
 )
-evaluate_model(xgb, "XGBoost")
+train_acc, test_acc = evaluate_model(
+    xgb, "XGBoost"
+)
+results.append(["XGBoost", train_acc, test_acc])
+
+
+# FINAL MODEL PERFORMANCE SUMMARY
+summary_df = pd.DataFrame(
+    results,
+    columns=["Model", "Training Accuracy", "Testing Accuracy"]
+)
+
+print("\nMODEL PERFORMANCE SUMMARY")
+print(summary_df.sort_values(by="Testing Accuracy", ascending=False))
 
 print("\nPipeline execution completed successfully.")
+
 
 
 import pickle
@@ -150,7 +194,7 @@ import pickle
 trained_models = {
     "logistic_regression": LogisticRegression().fit(X_train, y_train),
     "knn": KNeighborsClassifier().fit(X_train, y_train),
-    "svm": svc,   # already trained
+    "svm": svc,   
     "decision_tree": dt,
     "random_forest": rf,
     "xgboost": xgb
@@ -160,10 +204,6 @@ trained_models = {
 for name, model in trained_models.items():
     with open(f"{name}_model.pkl", "wb") as f:
         pickle.dump(model, f)
-
-# Save scalers
-with open("robust_scaler.pkl", "wb") as f:
-    pickle.dump(robust_scaler, f)
 
 with open("standard_scaler.pkl", "wb") as f:
     pickle.dump(scaler, f)
