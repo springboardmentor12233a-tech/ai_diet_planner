@@ -1,4 +1,4 @@
-# random_forest.py
+# Best performing model based on highest accuracy among tested models
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
