@@ -23,3 +23,13 @@ output_file = r"C:\Users\parth\Documents\virtual intern\ai_diet_planner\output\d
 df.to_csv(output_file, index=False)
 
 print(f"Extraction completed. Total tests extracted: {len(df)}")
+
+
+from .model import train_logistic_regression
+
+print("\n--- TRAINING LOGISTIC REGRESSION MODEL ---")
+
+accuracy, report = train_logistic_regression("C:\\Users\\parth\\Documents\\virtual intern\\diabetes.csv")
+
+print(f"Model Accuracy: {accuracy:.4f}")
+print("\nClassification Report:\n", report)
