@@ -92,3 +92,8 @@ async def upload_prescription(file: UploadFile = File(...)):
         "diet_rules": rules,
         "diet_guidelines": diet
     }
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
