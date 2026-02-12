@@ -3,3 +3,10 @@ uvicorn
 numpy
 xgboost
 pydantic
+python-multipart
+pytesseract
+opencv-python
+pillow
+scikit-learn
+reportlab
+openai
