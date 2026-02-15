@@ -1,0 +1,201 @@
+# AI NutriCare System - Git Ignore File
+
+# ============================================
+# Environment Variables (CRITICAL - DO NOT COMMIT)
+# ============================================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ============================================
+# Python
+# ============================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+ai_diet_planner/.venv/
+
+# ============================================
+# Database Files (Contains Patient Data)
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+nutricare.db
+data/*.db
+*.db-journal
+
+# ============================================
+# Sensitive Data & Logs
+# ============================================
+# Log files
+*.log
+logs/
+*.log.*
+
+# Uploaded medical reports (patient data)
+uploads/
+temp/
+tmp/
+/tmp/
+
+# Exported reports (may contain patient data)
+exports/
+output/
+
+# ML model files (can be large)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+models/*.pkl
+models/*.joblib
+
+# ============================================
+# IDE & Editor Files
+# ============================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Spyder
+.spyderproject
+.spyproject
+
+# ============================================
+# Operating System Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================
+# Project Specific
+# ============================================
+# Test data and sample reports
+test_reports/
+sample_data/
+datasets/images/
+datasets/pdfs/
+
+# Temporary OCR files
+ocr_temp/
+*.tif
+*.tiff
+
+# Streamlit cache
+.streamlit/
+
+# Hypothesis testing database
+.hypothesis/
+
+# ============================================
+# Documentation Build Files
+# ============================================
+docs/_build/
+site/
+
+# ============================================
+# Backup Files
+# ============================================
+*.bak
+*.backup
+*.old
+*.orig
+
+# ============================================
+# Security & Credentials
+# ============================================
+# API keys and secrets
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+*.cer
+
+# ============================================
+# Node.js (if using any JS tools)
+# ============================================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ============================================
+# Misc
+# ============================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
