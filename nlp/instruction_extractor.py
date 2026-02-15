@@ -1,57 +1,69 @@
-import pytesseract
-from PIL import Image
-from pdf2image import convert_from_path
+import re
+from rules_mapping import INSTRUCTION_RULES
 
-ADVICE_KEYWORDS = [
-    "advise", "advised", "avoid", "reduce",
-    "increase", "take", "follow", "recommended",
-    "diet", "exercise", "restrict"
-]
+def _normalize_line(line):
+    line = line.lower()
+    line = re.sub(r"[^a-z\s]", " ", line)
+    line = re.sub(r"\s+", " ", line).strip()
+    return line
 
-def extract_text_from_image(image_path):
-    img = Image.open(image_path)
-    return pytesseract.image_to_string(img)
+def generate_advice_from_text(text):
+    normalized = _normalize_line(text)
+    advice = []
 
-def extract_text_from_pdf(pdf_path):
-    pages = convert_from_path(pdf_path)
-    text = ""
-    for page in pages:
-        text += pytesseract.image_to_string(page)
-    return text
+    if "diabetes" in normalized or "glucose" in normalized or "sugar" in normalized:
+        advice.append("Limit sugar intake and choose low-glycemic foods.")
+    if "bp" in normalized or "hypertension" in normalized or "pressure" in normalized:
+        advice.append("Reduce salt intake and avoid processed foods.")
+    if "cholesterol" in normalized or "lipid" in normalized:
+        advice.append("Avoid oily/fried foods and choose healthy fats.")
+    if "obese" in normalized or "overweight" in normalized:
+        advice.append("Control portion sizes and increase daily activity.")
 
-def extract_doctor_advice(text):
-    advice_lines = []
-    lines = text.split("\n")
+    if not advice:
+        advice.extend([
+            "Avoid oily and fried foods.",
+            "Limit sugar and sweetened drinks.",
+            "Reduce salt intake.",
+            "Drink adequate water daily.",
+            "Follow prescribed medicines and maintain regular meals."
+        ])
 
-    for line in lines:
-        line_lower = line.lower()
-        if any(keyword in line_lower for keyword in ADVICE_KEYWORDS):
-            advice_lines.append(line.strip())
+    return advice
 
-    return advice_lines
+def generate_diet_rules_from_advice(advice_lines):
+    rules = []
+    for line in advice_lines:
+        normalized = _normalize_line(line)
+        for key, rule in INSTRUCTION_RULES.items():
+            if key in normalized:
+                rules.append(rule)
+
+    if not rules:
+        rules.append("General healthy diet")
+
+    seen = set()
+    deduped = []
+    for rule in rules:
+        if rule not in seen:
+            seen.add(rule)
+            deduped.append(rule)
+    return deduped
 
 
-# -------- INPUT --------
-file_path = input("Enter prescription file path (PDF/Image): ").strip().strip('"')
+# -------- MANUAL PRESCRIPTION ADVICE (BYPASS OCR) --------
+manual_advice = "avoid sugar"
+full_text = manual_advice
 
-
-# -------- OCR --------
-if file_path.lower().endswith(".pdf"):
-    full_text = extract_text_from_pdf(file_path)
-elif file_path.lower().endswith((".png", ".jpg", ".jpeg")):
-    full_text = extract_text_from_image(file_path)
-else:
-    print("Unsupported file format")
-    exit()
-
-# -------- FILTER DOCTOR ADVICE --------
-doctor_advice = extract_doctor_advice(full_text)
+# -------- ADVICE + DIET RULES --------
+generated_advice = generate_advice_from_text(full_text)
+diet_rules = generate_diet_rules_from_advice(generated_advice)
 
 # -------- OUTPUT --------
-print("\n===== DOCTOR ADVICE EXTRACTED =====\n")
+print("\n===== GENERATED ADVICE =====\n")
+for line in generated_advice:
+    print("-", line)
 
-if doctor_advice:
-    for line in doctor_advice:
-        print("-", line)
-else:
-    print("No doctor advice detected.")
+print("\n===== DIET RULES (FROM ADVICE) =====\n")
+for rule in diet_rules:
+    print("-", rule)

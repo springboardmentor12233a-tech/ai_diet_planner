@@ -1,3 +1,18 @@
+"""
+DEPRECATED: This file has been replaced by ocr_engine.py
+
+Please use the unified OCREngine class instead:
+
+    from ocr import OCREngine
+    
+    engine = OCREngine(backend="tesseract")
+    result = engine.extract_text_from_pdf("path/to/document.pdf")
+    print(f"Total pages: {result.total_pages}")
+    print(result.full_text)
+
+This file is kept for reference only and will be removed in a future version.
+"""
+
 from pathlib import Path
 import pytesseract as tess
 from pdf2image import convert_from_path

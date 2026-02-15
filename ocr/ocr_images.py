@@ -1,3 +1,17 @@
+"""
+DEPRECATED: This file has been replaced by ocr_engine.py
+
+Please use the unified OCREngine class instead:
+
+    from ocr import OCREngine
+    
+    engine = OCREngine(backend="tesseract")
+    result = engine.extract_text_from_image("path/to/image.png")
+    print(result.full_text)
+
+This file is kept for reference only and will be removed in a future version.
+"""
+
 from pathlib import Path
 from PIL import Image
 import pytesseract as tess
