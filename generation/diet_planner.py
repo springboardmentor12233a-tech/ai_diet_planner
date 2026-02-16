@@ -1108,23 +1108,4 @@ class DietPlanGenerator:
             weekly_plans.append(daily_plan)
         
         return weekly_plans
-            # Generate daily plan
-            daily_plan = self.generate_plan(
-                patient_profile=patient_profile,
-                health_conditions=health_conditions,
-                diet_rules=diet_rules,
-                preferences=preferences
-            )
-
-            # Track which foods were used
-            for meal in daily_plan.meals:
-                for portion in meal.portions:
-                    used_foods.add(portion.food.name)
-
-            # Add day identifier to plan
-            daily_plan.plan_id = f"{daily_plan.plan_id}_day{day + 1}"
-
-            weekly_plans.append(daily_plan)
-
-        return weekly_plans
 
