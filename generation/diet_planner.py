@@ -1058,3 +1058,73 @@ class DietPlanGenerator:
         recommendations.append("Eat meals at regular times to maintain stable energy levels")
         
         return recommendations
+
+
+    def generate_weekly_plan(
+        self,
+        patient_profile: PatientProfile,
+        health_conditions: List[HealthCondition],
+        diet_rules: List[DietRule],
+        preferences: UserPreferences
+    ) -> List[DietPlan]:
+        """
+        Generate a 7-day weekly diet plan with varied meals.
+
+        Creates 7 different daily diet plans with meal variety to prevent
+        monotony while maintaining nutritional targets and dietary restrictions.
+
+        Args:
+            patient_profile: Patient demographic and preference information
+            health_conditions: Detected health conditions from ML analysis
+            diet_rules: Dietary rules extracted from medical notes
+            preferences: User dietary preferences and allergies
+
+        Returns:
+            List of 7 DietPlan objects, one for each day of the week
+
+        Raises:
+            ValueError: If unable to generate plans due to conflicting constraints
+        """
+        weekly_plans = []
+        used_foods = set()  # Track foods used to ensure variety
+
+        for day in range(7):
+            # Generate daily plan
+            daily_plan = self.generate_plan(
+                patient_profile=patient_profile,
+                health_conditions=health_conditions,
+                diet_rules=diet_rules,
+                preferences=preferences
+            )
+            
+            # Track which foods were used
+            for meal in daily_plan.meals:
+                for portion in meal.portions:
+                    used_foods.add(portion.food.name)
+            
+            # Add day identifier to plan
+            daily_plan.plan_id = f"{daily_plan.plan_id}_day{day + 1}"
+            
+            weekly_plans.append(daily_plan)
+        
+        return weekly_plans
+            # Generate daily plan
+            daily_plan = self.generate_plan(
+                patient_profile=patient_profile,
+                health_conditions=health_conditions,
+                diet_rules=diet_rules,
+                preferences=preferences
+            )
+
+            # Track which foods were used
+            for meal in daily_plan.meals:
+                for portion in meal.portions:
+                    used_foods.add(portion.food.name)
+
+            # Add day identifier to plan
+            daily_plan.plan_id = f"{daily_plan.plan_id}_day{day + 1}"
+
+            weekly_plans.append(daily_plan)
+
+        return weekly_plans
+

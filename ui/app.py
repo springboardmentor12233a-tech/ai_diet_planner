@@ -15,6 +15,7 @@ load_dotenv()
 
 import streamlit as st
 from typing import Optional
+from datetime import datetime
 
 
 def initialize_session_state():
@@ -591,6 +592,111 @@ def render_diet_plan_page():
             )
         else:
             st.info("JSON export not available")
+    
+    st.markdown("---")
+    
+    # Weekly Plan Generation
+    st.subheader("📅 Weekly Diet Plan")
+    st.write("Generate a complete 7-day meal plan with varied meals for the entire week.")
+    
+    if st.button("🗓️ Generate Weekly Plan", type="primary", use_container_width=True):
+        with st.spinner("Generating 7-day meal plan..."):
+            try:
+                from ai_diet_planner.main import AINutriCareOrchestrator
+                from ai_diet_planner.generation.diet_planner import DietPlanGenerator
+                
+                # Get the orchestrator components
+                orchestrator = AINutriCareOrchestrator()
+                
+                # Get patient profile from session or create default
+                if hasattr(st.session_state, 'extracted_data') and st.session_state.extracted_data:
+                    # Use existing patient profile
+                    patient_profile = st.session_state.diet_plan.patient_id
+                    # Reconstruct patient profile from diet plan
+                    from ai_diet_planner.models import PatientProfile, UserPreferences
+                    
+                    # Create a basic patient profile
+                    patient_profile = PatientProfile(
+                        patient_id=st.session_state.diet_plan.patient_id,
+                        age=30,  # Default values
+                        gender="male",
+                        height_cm=170,
+                        weight_kg=70,
+                        activity_level="moderate",
+                        preferences=UserPreferences(
+                            dietary_style=None,
+                            allergies=[],
+                            dislikes=[],
+                            cultural_preferences=[]
+                        ),
+                        created_at=datetime.now()
+                    )
+                
+                # Generate weekly plan
+                diet_generator = DietPlanGenerator()
+                weekly_plans = diet_generator.generate_weekly_plan(
+                    patient_profile=patient_profile,
+                    health_conditions=st.session_state.health_conditions,
+                    diet_rules=st.session_state.diet_rules,
+                    preferences=patient_profile.preferences
+                )
+                
+                # Store in session state
+                st.session_state.weekly_plans = weekly_plans
+                st.success("✅ Weekly plan generated successfully!")
+                st.rerun()
+                
+            except Exception as e:
+                st.error(f"❌ Failed to generate weekly plan: {e}")
+    
+    # Display weekly plan if generated
+    if hasattr(st.session_state, 'weekly_plans') and st.session_state.weekly_plans:
+        st.markdown("---")
+        st.subheader("📆 7-Day Meal Plan")
+        
+        days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        
+        # Day selector
+        selected_day = st.selectbox("Select Day", days, key="day_selector")
+        day_index = days.index(selected_day)
+        
+        daily_plan = st.session_state.weekly_plans[day_index]
+        
+        # Display selected day's plan
+        st.markdown(f"### {selected_day}'s Plan")
+        
+        # Daily summary
+        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            st.metric("Calories", f"{daily_plan.daily_calories:.0f} kcal")
+        with col2:
+            st.metric("Protein", f"{daily_plan.macronutrient_targets.protein_percent:.0f}%")
+        with col3:
+            st.metric("Carbs", f"{daily_plan.macronutrient_targets.carbs_percent:.0f}%")
+        with col4:
+            st.metric("Fat", f"{daily_plan.macronutrient_targets.fat_percent:.0f}%")
+        
+        # Display meals for selected day
+        for meal in daily_plan.meals:
+            meal_name = meal.meal_type.value.title()
+            
+            with st.expander(f"**{meal_name}** ({meal.total_calories:.0f} kcal)", expanded=False):
+                # Meal summary
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    st.metric("Protein", f"{meal.total_protein_g:.1f}g")
+                with col2:
+                    st.metric("Carbs", f"{meal.total_carbs_g:.1f}g")
+                with col3:
+                    st.metric("Fat", f"{meal.total_fat_g:.1f}g")
+                
+                # Food items
+                st.markdown("**Foods:**")
+                for portion in meal.portions:
+                    st.write(f"• **{portion.food.name}** - {portion.amount:.0f} {portion.unit} "
+                            f"({portion.calories:.0f} kcal)")
+    
+    st.markdown("---")
     
     st.markdown("""
     Your personalized diet plan based on your health analysis.
