@@ -1,0 +1,47 @@
+
+MEDICAL REPORT
+Patient Name: John Doe
+Date: January 15, 2024
+Doctor: Dr. Smith
+
+LABORATORY RESULTS:
+
+Blood Test Results:
+-------------------
+Fasting Blood Sugar (FBS): 125 mg/dl
+Total Cholesterol: 220 mg/dl
+HDL Cholesterol: 45 mg/dl
+LDL Cholesterol: 150 mg/dl
+Triglycerides: 180 mg/dl
+Hemoglobin (Hb): 14.5 g/dl
+Serum Iron: 85 mcg/dl
+
+Vital Signs:
+------------
+Blood Pressure: 135/85 mmHg
+BMI: 26.5 kg/m²
+Weight: 75 kg
+Height: 170 cm
+
+PRESCRIPTION:
+1. Metformin 500mg - Twice daily after meals
+2. Atorvastatin 20mg - Once daily at bedtime
+3. Aspirin 75mg - Once daily
+
+DOCTOR'S NOTES:
+Patient presents with elevated blood sugar and cholesterol levels.
+Recommendations:
+- Follow a diabetic diet plan
+- Reduce sugar and carbohydrate intake
+- Increase physical activity to 30 minutes daily
+- Monitor blood sugar levels regularly
+- Follow-up appointment in 3 months
+
+Dietary Restrictions:
+- Avoid high sugar foods
+- Limit saturated fats
+- Low sodium diet recommended
+- Increase fiber intake
+
+Signed,
+Dr. Smith

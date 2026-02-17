@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+
+# Database
+*.sqlite
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Project specific
+# We keep the models as they are valuable output of this session (< 100MB)
+# backend/models/*.pkl
+
+# Large data files
+# backend/data/kaggle_datasets/

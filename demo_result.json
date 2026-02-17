@@ -1,0 +1,856 @@
+{
+  "patient_name": "Ramesh Kumar",
+  "generated_date": "2026-01-21T22:50:17.559306",
+  "plan_duration_days": 7,
+  "medical_conditions": [
+    "diabetes",
+    "obesity",
+    "hypertension",
+    "borderline_high_cholesterol"
+  ],
+  "dietary_restrictions": [],
+  "allergies": [],
+  "daily_calorie_target": 1500,
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-01-21",
+      "day_name": "Wednesday",
+      "breakfast": {
+        "id": "b001",
+        "name": "Oatmeal with Berries and Almonds",
+        "calories": 320,
+        "protein": 12,
+        "carbs": 48,
+        "fat": 10,
+        "fiber": 8,
+        "suitable_for": [
+          "diabetes",
+          "high_cholesterol",
+          "heart_health"
+        ],
+        "restrictions": [
+          "no_sugar",
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "western",
+        "ingredients": [
+          "oats",
+          "berries",
+          "almonds",
+          "skim milk"
+        ]
+      },
+      "lunch": {
+        "id": "l006",
+        "name": "Rajma Chawal (Kidney Beans with Rice)",
+        "calories": 440,
+        "protein": 16,
+        "carbs": 70,
+        "fat": 8,
+        "fiber": 14,
+        "suitable_for": [
+          "diabetes",
+          "high_fiber",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "kidney beans",
+          "brown rice",
+          "tomatoes",
+          "spices"
+        ]
+      },
+      "dinner": {
+        "id": "d008",
+        "name": "Baked Chicken Breast with Roasted Vegetables",
+        "calories": 360,
+        "protein": 40,
+        "carbs": 22,
+        "fat": 12,
+        "fiber": 6,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "high_protein"
+        ],
+        "restrictions": [
+          "low_carb",
+          "low_fat"
+        ],
+        "cuisine": "western",
+        "ingredients": [
+          "chicken breast",
+          "zucchini",
+          "bell peppers",
+          "herbs"
+        ]
+      },
+      "snack": {
+        "id": "s002",
+        "name": "Roasted Chickpeas",
+        "calories": 150,
+        "protein": 8,
+        "carbs": 24,
+        "fat": 3,
+        "fiber": 7,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "high_fiber"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "chickpeas",
+          "spices"
+        ]
+      },
+      "daily_totals": {
+        "calories": 1270,
+        "protein": 76,
+        "carbs": 164,
+        "fat": 33,
+        "fiber": 35
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-01-22",
+      "day_name": "Thursday",
+      "breakfast": {
+        "id": "b006",
+        "name": "Idli with Sambar (Steamed Rice Cakes)",
+        "calories": 290,
+        "protein": 10,
+        "carbs": 50,
+        "fat": 4,
+        "fiber": 6,
+        "suitable_for": [
+          "diabetes",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "rice",
+          "urad dal",
+          "vegetables",
+          "lentils"
+        ]
+      },
+      "lunch": {
+        "id": "l002",
+        "name": "Dal Tadka with Brown Rice",
+        "calories": 420,
+        "protein": 18,
+        "carbs": 65,
+        "fat": 8,
+        "fiber": 12,
+        "suitable_for": [
+          "diabetes",
+          "heart_health",
+          "high_fiber"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "toor dal",
+          "brown rice",
+          "tomatoes",
+          "spices"
+        ]
+      },
+      "dinner": {
+        "id": "d003",
+        "name": "Tandoori Chicken with Cucumber Raita",
+        "calories": 340,
+        "protein": 38,
+        "carbs": 18,
+        "fat": 12,
+        "fiber": 4,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "high_protein"
+        ],
+        "restrictions": [
+          "low_carb",
+          "low_fat"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "chicken",
+          "yogurt",
+          "spices",
+          "cucumber"
+        ]
+      },
+      "snack": {
+        "id": "s005",
+        "name": "Handful of Mixed Nuts",
+        "calories": 170,
+        "protein": 6,
+        "carbs": 8,
+        "fat": 14,
+        "fiber": 3,
+        "suitable_for": [
+          "diabetes",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_carb",
+          "no_sugar"
+        ],
+        "cuisine": "universal",
+        "ingredients": [
+          "almonds",
+          "walnuts",
+          "cashews"
+        ]
+      },
+      "daily_totals": {
+        "calories": 1220,
+        "protein": 72,
+        "carbs": 141,
+        "fat": 38,
+        "fiber": 25
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-01-23",
+      "day_name": "Friday",
+      "breakfast": {
+        "id": "b002",
+        "name": "Vegetable Poha (Flattened Rice)",
+        "calories": 280,
+        "protein": 8,
+        "carbs": 45,
+        "fat": 8,
+        "fiber": 6,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "poha",
+          "vegetables",
+          "peanuts",
+          "turmeric"
+        ]
+      },
+      "lunch": {
+        "id": "l003",
+        "name": "Quinoa Bowl with Roasted Vegetables",
+        "calories": 400,
+        "protein": 15,
+        "carbs": 55,
+        "fat": 12,
+        "fiber": 10,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "heart_health"
+        ],
+        "restrictions": [
+          "high_fiber",
+          "gluten_free"
+        ],
+        "cuisine": "western",
+        "ingredients": [
+          "quinoa",
+          "broccoli",
+          "bell peppers",
+          "chickpeas"
+        ]
+      },
+      "dinner": {
+        "id": "d001",
+        "name": "Grilled Fish with Steamed Broccoli",
+        "calories": 320,
+        "protein": 35,
+        "carbs": 15,
+        "fat": 14,
+        "fiber": 5,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_carb",
+          "low_fat"
+        ],
+        "cuisine": "western",
+        "ingredients": [
+          "white fish",
+          "broccoli",
+          "lemon",
+          "herbs"
+        ]
+      },
+      "snack": {
+        "id": "s006",
+        "name": "Sprouts Chaat (Sprouted Lentil Salad)",
+        "calories": 130,
+        "protein": 8,
+        "carbs": 20,
+        "fat": 2,
+        "fiber": 6,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "high_fiber"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "sprouted moong",
+          "vegetables",
+          "lemon",
+          "spices"
+        ]
+      },
+      "daily_totals": {
+        "calories": 1130,
+        "protein": 66,
+        "carbs": 135,
+        "fat": 36,
+        "fiber": 27
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-01-24",
+      "day_name": "Saturday",
+      "breakfast": {
+        "id": "b004",
+        "name": "Moong Dal Cheela (Lentil Pancake)",
+        "calories": 260,
+        "protein": 14,
+        "carbs": 35,
+        "fat": 6,
+        "fiber": 8,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "high_protein"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber",
+          "no_sugar"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "moong dal",
+          "vegetables",
+          "spices"
+        ]
+      },
+      "lunch": {
+        "id": "l001",
+        "name": "Grilled Chicken Salad with Olive Oil",
+        "calories": 380,
+        "protein": 35,
+        "carbs": 20,
+        "fat": 18,
+        "fiber": 8,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "high_protein"
+        ],
+        "restrictions": [
+          "low_carb",
+          "high_fiber"
+        ],
+        "cuisine": "mediterranean",
+        "ingredients": [
+          "chicken breast",
+          "mixed greens",
+          "olive oil",
+          "vegetables"
+        ]
+      },
+      "dinner": {
+        "id": "d007",
+        "name": "Lentil Stew with Spinach",
+        "calories": 310,
+        "protein": 16,
+        "carbs": 48,
+        "fat": 6,
+        "fiber": 14,
+        "suitable_for": [
+          "diabetes",
+          "anemia",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "mediterranean",
+        "ingredients": [
+          "lentils",
+          "spinach",
+          "tomatoes",
+          "garlic"
+        ]
+      },
+      "snack": {
+        "id": "s001",
+        "name": "Apple Slices with Almond Butter",
+        "calories": 180,
+        "protein": 4,
+        "carbs": 22,
+        "fat": 8,
+        "fiber": 5,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss"
+        ],
+        "restrictions": [
+          "no_sugar",
+          "high_fiber"
+        ],
+        "cuisine": "western",
+        "ingredients": [
+          "apple",
+          "almond butter"
+        ]
+      },
+      "daily_totals": {
+        "calories": 1130,
+        "protein": 69,
+        "carbs": 125,
+        "fat": 38,
+        "fiber": 35
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-01-25",
+      "day_name": "Sunday",
+      "breakfast": {
+        "id": "b008",
+        "name": "Upma (Semolina Porridge)",
+        "calories": 260,
+        "protein": 8,
+        "carbs": 42,
+        "fat": 7,
+        "fiber": 5,
+        "suitable_for": [
+          "diabetes",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_fat"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "semolina",
+          "vegetables",
+          "mustard seeds",
+          "curry leaves"
+        ]
+      },
+      "lunch": {
+        "id": "l007",
+        "name": "Mediterranean Chickpea Salad",
+        "calories": 360,
+        "protein": 14,
+        "carbs": 48,
+        "fat": 12,
+        "fiber": 12,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "heart_health"
+        ],
+        "restrictions": [
+          "high_fiber",
+          "dairy_free"
+        ],
+        "cuisine": "mediterranean",
+        "ingredients": [
+          "chickpeas",
+          "cucumber",
+          "tomatoes",
+          "olive oil",
+          "lemon"
+        ]
+      },
+      "dinner": {
+        "id": "d004",
+        "name": "Stir-Fried Tofu with Vegetables",
+        "calories": 300,
+        "protein": 18,
+        "carbs": 28,
+        "fat": 14,
+        "fiber": 6,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "vegetarian"
+        ],
+        "restrictions": [
+          "low_carb",
+          "dairy_free"
+        ],
+        "cuisine": "asian",
+        "ingredients": [
+          "tofu",
+          "mixed vegetables",
+          "soy sauce",
+          "ginger"
+        ]
+      },
+      "snack": {
+        "id": "s004",
+        "name": "Cucumber and Carrot Sticks with Hummus",
+        "calories": 120,
+        "protein": 5,
+        "carbs": 15,
+        "fat": 5,
+        "fiber": 4,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "mediterranean",
+        "ingredients": [
+          "cucumber",
+          "carrots",
+          "hummus"
+        ]
+      },
+      "daily_totals": {
+        "calories": 1040,
+        "protein": 45,
+        "carbs": 133,
+        "fat": 38,
+        "fiber": 27
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-01-26",
+      "day_name": "Monday",
+      "breakfast": {
+        "id": "b001",
+        "name": "Oatmeal with Berries and Almonds",
+        "calories": 320,
+        "protein": 12,
+        "carbs": 48,
+        "fat": 10,
+        "fiber": 8,
+        "suitable_for": [
+          "diabetes",
+          "high_cholesterol",
+          "heart_health"
+        ],
+        "restrictions": [
+          "no_sugar",
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "western",
+        "ingredients": [
+          "oats",
+          "berries",
+          "almonds",
+          "skim milk"
+        ]
+      },
+      "lunch": {
+        "id": "l008",
+        "name": "Vegetable Khichdi (Rice and Lentil Mix)",
+        "calories": 350,
+        "protein": 12,
+        "carbs": 58,
+        "fat": 6,
+        "fiber": 10,
+        "suitable_for": [
+          "diabetes",
+          "easy_digestion",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "rice",
+          "moong dal",
+          "vegetables",
+          "turmeric"
+        ]
+      },
+      "dinner": {
+        "id": "d005",
+        "name": "Moong Dal Soup with Vegetables",
+        "calories": 260,
+        "protein": 14,
+        "carbs": 40,
+        "fat": 4,
+        "fiber": 10,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "easy_digestion"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "moong dal",
+          "vegetables",
+          "turmeric",
+          "cumin"
+        ]
+      },
+      "snack": {
+        "id": "s002",
+        "name": "Roasted Chickpeas",
+        "calories": 150,
+        "protein": 8,
+        "carbs": 24,
+        "fat": 3,
+        "fiber": 7,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "high_fiber"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "chickpeas",
+          "spices"
+        ]
+      },
+      "daily_totals": {
+        "calories": 1080,
+        "protein": 46,
+        "carbs": 170,
+        "fat": 23,
+        "fiber": 35
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-01-27",
+      "day_name": "Tuesday",
+      "breakfast": {
+        "id": "b006",
+        "name": "Idli with Sambar (Steamed Rice Cakes)",
+        "calories": 290,
+        "protein": 10,
+        "carbs": 50,
+        "fat": 4,
+        "fiber": 6,
+        "suitable_for": [
+          "diabetes",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "rice",
+          "urad dal",
+          "vegetables",
+          "lentils"
+        ]
+      },
+      "lunch": {
+        "id": "l006",
+        "name": "Rajma Chawal (Kidney Beans with Rice)",
+        "calories": 440,
+        "protein": 16,
+        "carbs": 70,
+        "fat": 8,
+        "fiber": 14,
+        "suitable_for": [
+          "diabetes",
+          "high_fiber",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_fat",
+          "high_fiber"
+        ],
+        "cuisine": "indian",
+        "ingredients": [
+          "kidney beans",
+          "brown rice",
+          "tomatoes",
+          "spices"
+        ]
+      },
+      "dinner": {
+        "id": "d008",
+        "name": "Baked Chicken Breast with Roasted Vegetables",
+        "calories": 360,
+        "protein": 40,
+        "carbs": 22,
+        "fat": 12,
+        "fiber": 6,
+        "suitable_for": [
+          "diabetes",
+          "weight_loss",
+          "high_protein"
+        ],
+        "restrictions": [
+          "low_carb",
+          "low_fat"
+        ],
+        "cuisine": "western",
+        "ingredients": [
+          "chicken breast",
+          "zucchini",
+          "bell peppers",
+          "herbs"
+        ]
+      },
+      "snack": {
+        "id": "s005",
+        "name": "Handful of Mixed Nuts",
+        "calories": 170,
+        "protein": 6,
+        "carbs": 8,
+        "fat": 14,
+        "fiber": 3,
+        "suitable_for": [
+          "diabetes",
+          "heart_health"
+        ],
+        "restrictions": [
+          "low_carb",
+          "no_sugar"
+        ],
+        "cuisine": "universal",
+        "ingredients": [
+          "almonds",
+          "walnuts",
+          "cashews"
+        ]
+      },
+      "daily_totals": {
+        "calories": 1260,
+        "protein": 72,
+        "carbs": 150,
+        "fat": 38,
+        "fiber": 29
+      }
+    }
+  ],
+  "nutritional_summary": {
+    "avg_daily_calories": 1161,
+    "avg_daily_protein": 63.7,
+    "avg_daily_carbs": 145.4,
+    "avg_daily_fat": 34.9,
+    "avg_daily_fiber": 30.4
+  },
+  "shopping_list": [
+    "almond butter",
+    "almonds",
+    "apple",
+    "bell peppers",
+    "berries",
+    "broccoli",
+    "brown rice",
+    "carrots",
+    "cashews",
+    "chicken",
+    "chicken breast",
+    "chickpeas",
+    "cucumber",
+    "cumin",
+    "curry leaves",
+    "garlic",
+    "ginger",
+    "herbs",
+    "hummus",
+    "kidney beans",
+    "lemon",
+    "lentils",
+    "mixed greens",
+    "mixed vegetables",
+    "moong dal",
+    "mustard seeds",
+    "oats",
+    "olive oil",
+    "peanuts",
+    "poha",
+    "quinoa",
+    "rice",
+    "semolina",
+    "skim milk",
+    "soy sauce",
+    "spices",
+    "spinach",
+    "sprouted moong",
+    "tofu",
+    "tomatoes",
+    "toor dal",
+    "turmeric",
+    "urad dal",
+    "vegetables",
+    "walnuts",
+    "white fish",
+    "yogurt",
+    "zucchini"
+  ],
+  "recommendations": [
+    "Monitor blood sugar levels before and after meals",
+    "Eat small, frequent meals throughout the day",
+    "Pair carbohydrates with protein to stabilize blood sugar",
+    "Practice portion control using smaller plates",
+    "Eat slowly and mindfully",
+    "Stay hydrated with 8-10 glasses of water daily",
+    "Limit sodium intake to less than 2300mg per day",
+    "Include potassium-rich foods (bananas, sweet potatoes)",
+    "Avoid processed and packaged foods",
+    "Engage in at least 30 minutes of physical activity daily",
+    "Get 7-8 hours of quality sleep each night",
+    "Manage stress through meditation or yoga"
+  ]
+}

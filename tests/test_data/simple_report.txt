@@ -1,0 +1,7 @@
+
+Blood Sugar: 95
+Cholesterol: 180
+BMI: 23.5
+BP: 120/80
+
+Continue medication. Follow healthy diet.
