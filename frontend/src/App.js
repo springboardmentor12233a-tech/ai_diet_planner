@@ -365,8 +365,9 @@ function App() {
         {/* Section 1: Manual Health Parameters */}
         <section className="section patient-section">
           <div className="section-header">
-            <h2>📋 Patient Health Parameters</h2>
-            <p>Enter patient health metrics for diabetes risk assessment</p>
+            <span className="option-badge">Option 1: Manual Entry</span>
+            <h2>Patient Health Parameters</h2>
+            <p>Enter health metrics manually if you know the values</p>
           </div>
 
           <div className="form-grid">
@@ -628,8 +629,9 @@ function App() {
         {/* Section 4: Prescription Upload */}
         <section className="section upload-section">
           <div className="section-header">
+            <span className="option-badge">Option 2: Upload Report</span>
             <h2>Upload Doctor Prescription</h2>
-            <p>Automatically extract health parameters from medical reports</p>
+            <p>Upload a medical report to automatically extract health parameters</p>
           </div>
 
           <div className="upload-box">
