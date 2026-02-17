@@ -142,6 +142,70 @@ class MealPlanner:
         
         return meal_plan
     
+    def generate_7day_meal_plan(self, conditions: List[str], dietary_restrictions: List[str],
+                               diabetes_risk: str = None) -> Dict:
+        """
+        Generate a complete 7-day personalized meal plan.
+        
+        Args:
+            conditions: List of health conditions
+            dietary_restrictions: List of dietary restrictions
+            diabetes_risk: Optional diabetes risk level (Low, Moderate, High)
+        
+        Returns:
+            Dictionary with 7-day meal plan (Monday-Sunday), each day with breakfast, lunch, snack, dinner
+        """
+        # Determine dietary category
+        category = self._determine_category(conditions, dietary_restrictions, diabetes_risk)
+        
+        # Get meals from appropriate category
+        meals = self.meal_database.get(category, self.meal_database["general_healthy"])
+        
+        days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        week_plan = {}
+        
+        # Generate unique meals for each day
+        breakfast_options = meals["breakfast"].copy()
+        lunch_options = meals["lunch"].copy()
+        dinner_options = meals["dinner"].copy()
+        
+        for day in days:
+            # Rotate through available meals to provide variety
+            idx = len(week_plan)
+            
+            breakfast = breakfast_options[idx % len(breakfast_options)]
+            lunch = lunch_options[idx % len(lunch_options)]
+            dinner = dinner_options[idx % len(dinner_options)]
+            snack = random.choice(self.snacks)
+            
+            # Calculate daily totals
+            daily_calories = breakfast["calories"] + lunch["calories"] + dinner["calories"] + snack["calories"]
+            
+            week_plan[day] = {
+                "breakfast": breakfast,
+                "lunch": lunch,
+                "snack": snack,
+                "dinner": dinner,
+                "daily_total_calories": daily_calories,
+                "daily_calories_display": f"~{daily_calories} cal"
+            }
+        
+        # Add weekly summary
+        total_weekly_calories = sum(day["daily_total_calories"] for day in week_plan.values())
+        daily_summary = self._calculate_daily_summary(meals, category)
+        
+        return {
+            "category": category,
+            "week_plan": week_plan,
+            "days_list": days,
+            "weekly_total_calories": total_weekly_calories,
+            "average_daily_calories": total_weekly_calories // 7,
+            "daily_summary": daily_summary,
+            "meal_plan": week_plan,  # For frontend compatibility
+            "hydration": "Drink 8-10 glasses of water throughout each day",
+            "notes": self._generate_notes(conditions, dietary_restrictions)
+        }
+    
     def _determine_category(self, conditions: List[str], restrictions: List[str], 
                            diabetes_risk: str = None) -> str:
         """Determine the most appropriate meal category based on conditions."""

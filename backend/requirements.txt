@@ -10,3 +10,6 @@ pillow
 scikit-learn
 reportlab
 openai
+python-dotenv
+imbalanced-learn
+pandas
