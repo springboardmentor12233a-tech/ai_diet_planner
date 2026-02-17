@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, field_validator
 import numpy as np
 from xgboost import XGBClassifier
 import os
@@ -31,7 +31,7 @@ app.add_middleware(
 # Load trained model
 try:
     model = XGBClassifier()
-    model_path = "backend/model/diabetes_xgb.json"
+    model_path = os.path.join(os.path.dirname(__file__), "model", "diabetes_xgb.json")
     if os.path.exists(model_path):
         model.load_model(model_path)
         logger.info("Model loaded successfully")
@@ -55,19 +55,22 @@ class DiabetesInput(BaseModel):
     dpf: float
     age: int
     
-    @validator('glucose')
+    @field_validator('glucose')
+    @classmethod
     def validate_glucose(cls, v):
         if v < 0 or v > 1000:
             raise ValueError('Glucose must be between 0 and 1000')
         return v
     
-    @validator('bmi')
+    @field_validator('bmi')
+    @classmethod
     def validate_bmi(cls, v):
         if v < 0 or v > 100:
             raise ValueError('BMI must be between 0 and 100')
         return v
     
-    @validator('age')
+    @field_validator('age')
+    @classmethod
     def validate_age(cls, v):
         if v < 0 or v > 150:
             raise ValueError('Age must be between 0 and 150')
