@@ -139,7 +139,11 @@ async def upload_prescription(file: UploadFile = File(...)):
         if file_ext not in allowed_extensions:
             raise HTTPException(status_code=400, detail=f"File type .{file_ext} not allowed")
         
-        file_path = f"backend/uploads/{file.filename}"
+        # Ensure uploads directory exists (relative to current working directory)
+        uploads_dir = os.path.join(os.path.dirname(__file__), "uploads")
+        os.makedirs(uploads_dir, exist_ok=True)
+        
+        file_path = os.path.join(uploads_dir, file.filename)
 
         with open(file_path, "wb") as f:
             f.write(await file.read())
