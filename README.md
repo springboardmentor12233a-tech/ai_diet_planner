@@ -1,7 +1,7 @@
 # AI-NutriCare
 ## AI/ML-Based Personalized Diet Plan Generator from Medical Reports
 
-**Project Status:** Weeks 1-2 Completed ✅  
+**Project Status:** Completed ✅  
 **Developed By:** Sai Nikhil  
 **Version:** 1.0.0
 
@@ -332,35 +332,6 @@ The system can extract the following health metrics:
 - 🛡️ **Input Validation**: File type and size validation
 - 🔍 **Data Sanitization**: Input sanitization to prevent injection attacks
 
----
-
-## Development Status
-
-### ✅ Completed (Weeks 1-2)
-- Project setup and configuration
-- OCR and PDF parsing
-- Data extraction service
-- Database models and schema
-- REST API endpoints
-- Encryption service
-- Test suite foundation
-
-### 🔄 In Progress (Weeks 3-4)
-- ML model training for health condition classification
-- Feature engineering
-- Model evaluation and optimization
-
-### ⏳ Planned (Weeks 5-8)
-- NLP/AI text interpretation (Week 5-6)
-- Diet plan generation (Week 7-8)
-- React frontend (Week 7-8)
-- PDF/JSON export (Week 7-8)
-
----
-
-## Contributing
-
-This is a project by Sai Nikhil. For questions or issues, please refer to the milestone reports in `Milestone_Reports/` directory.
 
 ---
 
@@ -383,7 +354,7 @@ This project is part of an academic/research project. Please refer to the projec
 
 **Developer:** Sai Nikhil  
 **Project:** AI-NutriCare  
-**Milestone:** Weeks 1-2 Completed ✅
+**Milestone:** Completed ✅
 
 ---
 
@@ -400,5 +371,4 @@ This project is part of an academic/research project. Please refer to the projec
 
 ---
 
-**Last Updated:** January 2024  
-**Status:** ✅ Weeks 1-2 Milestone Achieved
+
