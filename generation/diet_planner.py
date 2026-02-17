@@ -10,6 +10,7 @@ import uuid
 from datetime import datetime
 from typing import List, Dict, Optional, Tuple
 import requests
+import random
 
 from ..models import (
     HealthCondition,
@@ -760,21 +761,25 @@ class DietPlanGenerator:
         target_carbs_g = (target_calories * macro_targets.carbs_percent / 100) / 4  # 4 cal/g
         target_fat_g = (target_calories * macro_targets.fat_percent / 100) / 9  # 9 cal/g
         
-        # Meal-specific food selection
+        # Meal-specific food selection with variety
         if meal_type == MealType.BREAKFAST:
             # Breakfast: carbs, protein, some fat
-            food_keys = ["oatmeal", "eggs", "greek_yogurt", "berries", "banana", "almonds"]
+            food_keys = ["oatmeal", "eggs", "greek_yogurt", "berries", "banana", "almonds", 
+                        "whole_wheat_bread", "peanut_butter", "orange", "cottage_cheese"]
         elif meal_type == MealType.LUNCH:
             # Lunch: balanced meal with protein, carbs, vegetables
             food_keys = ["chicken_breast", "salmon", "tofu", "brown_rice", "quinoa", 
-                        "broccoli", "spinach", "avocado"]
+                        "broccoli", "spinach", "avocado", "turkey", "lentils", 
+                        "sweet_potato", "green_beans", "tomatoes"]
         elif meal_type == MealType.SNACK:
             # Snack: light, nutritious
-            food_keys = ["apple", "almonds", "greek_yogurt", "carrots"]
+            food_keys = ["apple", "almonds", "greek_yogurt", "carrots", "hummus", 
+                        "celery", "walnuts", "berries", "cottage_cheese"]
         else:  # DINNER
             # Dinner: protein, vegetables, moderate carbs
             food_keys = ["salmon", "chicken_breast", "tofu", "sweet_potato", 
-                        "broccoli", "spinach", "olive_oil"]
+                        "broccoli", "spinach", "olive_oil", "turkey", "cod", 
+                        "asparagus", "cauliflower", "zucchini"]
         
         # Filter to available foods
         meal_foods = {k: available_foods[k] for k in food_keys if k in available_foods}
@@ -786,9 +791,15 @@ class DietPlanGenerator:
         # Simple portion calculation: distribute calories across selected foods
         remaining_calories = target_calories
         
-        # Select 2-4 foods per meal (except snack which gets 1-2)
-        num_foods = 2 if meal_type == MealType.SNACK else 3
-        selected_foods = list(meal_foods.values())[:num_foods]
+        # Select 2-4 foods per meal (except snack which gets 1-2) - RANDOMIZED
+        num_foods = random.randint(1, 2) if meal_type == MealType.SNACK else random.randint(3, 4)
+        
+        # Randomly select foods from available options
+        available_food_list = list(meal_foods.values())
+        if len(available_food_list) >= num_foods:
+            selected_foods = random.sample(available_food_list, num_foods)
+        else:
+            selected_foods = available_food_list
         
         for i, food in enumerate(selected_foods):
             # Allocate calories proportionally
@@ -796,8 +807,11 @@ class DietPlanGenerator:
                 # Last food gets remaining calories
                 food_calories = remaining_calories
             else:
-                # Distribute evenly
-                food_calories = target_calories / len(selected_foods)
+                # Distribute evenly with slight randomization
+                base_calories = target_calories / len(selected_foods)
+                # Add ±20% variation
+                variation = random.uniform(0.8, 1.2)
+                food_calories = base_calories * variation
             
             # Calculate portion size to meet calorie target
             if food.calories > 0:
@@ -1089,6 +1103,9 @@ class DietPlanGenerator:
         used_foods = set()  # Track foods used to ensure variety
 
         for day in range(7):
+            # Set random seed for this day to ensure variety
+            random.seed(day * 1000 + hash(patient_profile.patient_id))
+            
             # Generate daily plan
             daily_plan = self.generate_plan(
                 patient_profile=patient_profile,
@@ -1106,6 +1123,9 @@ class DietPlanGenerator:
             daily_plan.plan_id = f"{daily_plan.plan_id}_day{day + 1}"
             
             weekly_plans.append(daily_plan)
+        
+        # Reset random seed
+        random.seed()
         
         return weekly_plans
 
