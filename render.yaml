@@ -1,0 +1,17 @@
+services:
+  # Backend API
+  - type: web
+    name: ai-diet-planner-api
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+
+  # Frontend (Static Site)
+  - type: web
+    name: ai-diet-planner-frontend
+    runtime: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./App.css";
 
+// API URL - uses environment variable in production, localhost for development
+const API_URL = process.env.REACT_APP_API_URL || "http://127.0.0.1:8000";
+
 function App() {
   // ===============================
   // STATE: Diabetes Prediction
@@ -88,7 +91,7 @@ function App() {
     setMealPlanResult(null);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/predict", {
+      const res = await fetch(`${API_URL}/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -119,7 +122,7 @@ function App() {
     setMealPlanResult(null);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/generate-meal-plan", {
+      const res = await fetch(`${API_URL}/generate-meal-plan`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -218,7 +221,7 @@ function App() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await fetch("http://127.0.0.1:8000/upload-prescription", {
+      const res = await fetch(`${API_URL}/upload-prescription`, {
         method: "POST",
         body: formData,
       });
@@ -278,7 +281,7 @@ function App() {
   // ===============================
   const exportToPDF = async (data) => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/export-pdf", {
+      const res = await fetch(`${API_URL}/export-pdf`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -302,7 +305,7 @@ function App() {
 
   const exportToJSON = async (data) => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/export-json", {
+      const res = await fetch(`${API_URL}/export-json`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -808,10 +811,9 @@ function App() {
 
       {/* Footer */}
       <footer className="footer">
-        <p>🏥 AI Diet Planner v1.0 | Diabetes Risk Assessment & Personalized Nutrition System</p>
+        <p>AI Diet Planner v1.0 | Diabetes Risk Assessment & Personalized Nutrition System</p>
         <p className="footer-links">
-          Backend: <code>http://127.0.0.1:8000</code> | 
-          API Docs: <a href="http://127.0.0.1:8000/docs" target="_blank" rel="noopener noreferrer">Swagger UI</a>
+          API Docs: <a href={`${API_URL}/docs`} target="_blank" rel="noopener noreferrer">Swagger UI</a>
         </p>
       </footer>
     </div>
