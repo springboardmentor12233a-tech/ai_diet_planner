@@ -53,4 +53,6 @@ Analyze: The system uses OCR to find keywords like "Hemoglobin" or "RBS" and gra
 Alert: If values are outside the normal range (e.g., Hb < 13.0), a clinical alert is triggered.
 
 Prescribe: A condition-specific 7-day diet plan is displayed instantly.
-![Dashboard UI](./assets/Dashboard.png)
+<p align="center">
+  <img src="./assets/dashboard.png" width="600" title="AI-NutriCare Dashboard">
+</p>
