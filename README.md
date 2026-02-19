@@ -97,3 +97,76 @@ Lab Report Image
 | PDF Generation       | ReportLab     |
 | Programming Language | Python        |
 
+✨ Key Features
+
+✔ Upload medical lab report image
+✔ Automatic value extraction
+✔ Health status detection (Normal / Pre / High)
+✔ Recommended foods list
+✔ Foods to avoid list
+✔ 7-day personalized weekly plan
+✔ Download as:
+
+PDF
+
+JSON
+
+📂 Project Structure
+AI_NutriCare/
+│
+├── app.py
+├── models/
+│   ├── best_model.pkl
+│   └── scaler.pkl
+├── data/
+├── notebooks/
+├── requirements.txt
+└── README.md
+
+
+🚀 How to Run the Project
+Step 1: Clone Repository
+git clone https://github.com/your-username/AI-NutriCare.git
+cd AI-NutriCare
+
+Step 2: Create Environment
+conda create -n nutricare python=3.9
+conda activate nutricare
+
+Step 3: Install Dependencies
+pip install -r requirements.txt
+
+Step 4: Run Application
+streamlit run app.py
+
+
+Open in browser:
+
+http://localhost:8501
+
+📊 Sample Output
+
+The system displays:
+
+Health Status Summary
+
+Main Recommended Foods
+
+Foods to Avoid
+
+7-Day Weekly Diet Plan
+
+Downloadable PDF Report
+
+🔮 Future Improvements
+
+Calorie-based personalized plans
+
+User login system
+
+Cloud deployment
+
+Mobile app version
+
+Real-time nutrition tracking
+
