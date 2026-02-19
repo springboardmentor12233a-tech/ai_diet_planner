@@ -1,0 +1,8 @@
+streamlit==1.54.0
+pandas
+numpy
+opencv-python
+easyocr
+xgboost
+scikit-learn
+reportlab
