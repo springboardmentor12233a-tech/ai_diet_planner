@@ -1,0 +1,42 @@
+Category,Food,Sugar,Sodium,Calories
+
+# ------------------ BREAKFAST ------------------
+
+Breakfast,Idli with Sambar,Low,Low,250
+Breakfast,Oatmeal with Fruits,Low,Low,220
+Breakfast,Smoothie (No Added Sugar),Low,Low,200
+Breakfast,Vegetable Upma,Medium,Medium,320
+Breakfast,Poha with Vegetables,Low,Medium,280
+Breakfast,Boiled Eggs with Toast,Low,Low,240
+Breakfast,Peanut Butter Toast,Medium,Low,300
+Breakfast,Dosa (Non-Fried),Medium,Medium,350
+Breakfast,Moong Dal Cheela,Low,Low,230
+Breakfast,Fruit Bowl with Nuts,Low,Low,210
+
+# ------------------ LUNCH ------------------
+
+Lunch,White Rice with Dal,Medium,Low,400
+Lunch,Brown Rice with Dal,Low,Low,350
+Lunch,Chapati with Sabzi,Low,Low,300
+Lunch,Grilled Paneer with Salad,Low,Low,280
+Lunch,Chickpea Salad,Low,Low,260
+Lunch,Vegetable Stir Fry,Low,Low,230
+Lunch,Moong Dal with Salad,Low,Low,240
+Lunch,Tofu Bhurji with Chapati,Low,Low,250
+Lunch,Palak Sabzi with Chapati,Low,Low,240
+Lunch,Vegetable Pulao,Medium,Medium,450
+Lunch,Rajma with Rice,Medium,Medium,420
+Lunch,Steamed Vegetables with Lentils,Low,Low,220
+
+# ------------------ DINNER ------------------
+
+Dinner,Vegetable Soup,Low,Low,180
+Dinner,Light Khichdi,Low,Low,240
+Dinner,Chapati with Lauki Sabzi,Low,Low,250
+Dinner,Steamed Vegetables with Tofu,Low,Low,220
+Dinner,Curd Rice,Medium,Low,300
+Dinner,Tinda Sabzi with Chapati,Low,Low,260
+Dinner,Boiled Lentils with Veggies,Low,Low,230
+Dinner,Lauki Soup with Salad,Low,Low,200
+Dinner,Palak Soup with Chapati,Low,Low,240
+Dinner,Vegetable Stir Fry (Light),Low,Low,210

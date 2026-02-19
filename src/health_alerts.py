@@ -25,12 +25,16 @@ def get_health_alerts(patient_data):
 
     bp = patient_data.get("BloodPressure")
 
-    if bp >= 90:
-        alerts.append(("Blood Pressure", "Critical", "High Blood Pressure"))
+    bp = patient_data.get("BloodPressure")
+
+    if bp < 60:
+       alerts.append(("Blood Pressure", "Warning", "Low Blood Pressure (Hypotension)"))
+    elif 60 <= bp < 80:
+       alerts.append(("Blood Pressure", "Normal", "Blood Pressure is normal"))
     elif 80 <= bp < 90:
-        alerts.append(("Blood Pressure", "Warning", "Elevated Blood Pressure"))
+       alerts.append(("Blood Pressure", "Warning", "Elevated Blood Pressure"))
     else:
-        alerts.append(("Blood Pressure", "Normal", "Blood Pressure is normal"))
+       alerts.append(("Blood Pressure", "Critical", "High Blood Pressure"))
 
     return alerts
 
