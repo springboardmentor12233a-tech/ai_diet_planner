@@ -1,9 +1,12 @@
 # Virtual environment
 venv/
+.env.local
+*.pt
 
 # Python cache
 __pycache__/
 *.pyc
+.env
 
 # Dataset files
 data/*.csv

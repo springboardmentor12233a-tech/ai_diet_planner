@@ -1,33 +1,53 @@
-# AI/ML-Based Personalized Diet Plan Generator from Medical Reports
+# 🧠 AI-Powered Diabetes Risk & Diet Recommendation System
 
-## Project Overview
-This project aims to build an AI/ML system that analyzes medical reports containing numeric lab values and textual doctor notes, and generates personalized diet plans based on an individual’s health condition.
-
-The system works by extracting data from medical reports, analyzing it using machine learning and NLP techniques, and converting the insights into actionable diet recommendations.
+An AI-based healthcare application that predicts diabetes risk using machine learning and generates a personalized 7-day diet plan based on medical parameters or uploaded prescriptions.
 
 ---
 
-## Milestone 1: Data Collection and Preprocessing
+## 🚀 Project Overview
 
-### Milestone Objective
-The objective of Milestone 1 is to collect medical data and preprocess it so that it can be used for further machine learning and AI-based analysis.
+This project was developed as part of an internship submission.  
+It combines Machine Learning, OCR, and AI-based diet generation to create an intelligent clinical support system.
 
-### Milestone Requirements
-- Collect sample medical reports (PDF, text, scanned images)
-- Implement OCR for scanned reports and extract text
-- Extract structured numeric and textual data from the reports
+The system:
 
-### Work Done in Milestone 1
-- Collected sample medical data including scanned medical reports and a structured CSV dataset
-- Implemented OCR using EasyOCR to extract raw text from scanned medical reports
-- Identified key health parameters such as glucose, pH, and protein from the extracted text
-- Converted the extracted information into a structured key–value format
-- Loaded and explored a structured medical dataset (CSV) to understand numeric health attributes
-
-### Outcome
-At the end of Milestone 1, raw medical data was successfully converted into readable and structured formats. This establishes the foundation required for further ML-based health analysis and NLP-driven interpretation in future milestones.
+- Predicts diabetes risk using trained ML models
+- Extracts medical values from prescription images using OCR
+- Generates a personalized 7-day diet plan
+- Allows PDF export of the generated plan
+- Provides a clean, interactive Streamlit UI
 
 ---
 
-**Name:**  
-Amrutha M
+## ✨ Features
+
+- 📊 Diabetes Risk Prediction (High / Low)
+- 📷 Prescription Upload & OCR (EasyOCR)
+- 🧠 Machine Learning Model (Scikit-learn / XGBoost)
+- 🥗 AI-Generated 7-Day Diet Plan
+- 📄 Downloadable PDF Diet Report
+- 🎨 Modern Streamlit Interface
+
+---
+
+## 🛠 Tech Stack
+
+- Python
+- Streamlit
+- Scikit-learn
+- XGBoost
+- EasyOCR
+- NumPy & Pandas
+- ReportLab (PDF Generation)
+- PyTorch (for OCR support)
+
+---
+
+## ⚙️ How It Works
+
+1. User either:
+   - Enters Glucose, Blood Pressure, BMI manually  
+   OR  
+   - Uploads a prescription image  
+
+2. OCR extracts relevant medical
