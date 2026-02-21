@@ -1,0 +1,11 @@
+{
+    "Probability": 0.9999999999999998,
+    "Risk": "Critical Risk",
+    "Diet Plan": {
+        "Calories": 2000,
+        "Breakfast": "Oats + boiled egg",
+        "Lunch": "Brown rice + vegetables + dal",
+        "Dinner": "Soup + salad",
+        "Avoid": "Sugar, fried food, white rice"
+    }
+}
