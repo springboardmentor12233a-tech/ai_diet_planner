@@ -31,7 +31,7 @@ def get_health_alerts(patient_data):
     return alerts
 
 
-# Example Usage
+# Example 
 sample_patient = {'Glucose': 145, 'BMI': 32, 'BloodPressure': 85}
 active_alerts = get_health_alerts(sample_patient)
 

@@ -3,3 +3,9 @@ pdfminer.six
 PyPDF2
 pandas
 numpy
+torch
+transformers
+scikit-learn
+pandas
+nltk
+pytesseract
