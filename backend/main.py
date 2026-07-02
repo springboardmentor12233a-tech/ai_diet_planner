@@ -86,8 +86,8 @@ def classify_risk(prob):
         return "High Risk"
 
 
-os.makedirs("backend/uploads", exist_ok=True)
-os.makedirs("backend/exports", exist_ok=True)
+os.makedirs(os.path.join(os.path.dirname(__file__), "uploads"), exist_ok=True)
+os.makedirs(os.path.join(os.path.dirname(__file__), "exports"), exist_ok=True)
 
 
 @app.post("/predict")
