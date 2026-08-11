@@ -1,0 +1,21 @@
+MEDICAL LAB REPORT - SAMPLE
+Patient ID: SAMPLE001
+Date: 2024-01-15
+
+BIOCHEMISTRY
+Fasting Blood Sugar (Glucose): 142 mg/dL
+Total Cholesterol: 258 mg/dL
+HDL: 45 mg/dL
+LDL: 160 mg/dL
+
+VITALS
+Blood Pressure: 138/88 mmHg
+BMI: 32.5 kg/m²
+Weight: 92 kg
+Height: 170 cm
+
+DOCTOR NOTES & PRESCRIPTION
+Patient advised to reduce salt and follow low-sodium diet for blood pressure.
+Avoid sugar and limit sweets due to elevated glucose. Recommend weight loss
+and balanced diet. Reduce fat and cholesterol intake. Increase fiber.
+Follow up in 3 months.

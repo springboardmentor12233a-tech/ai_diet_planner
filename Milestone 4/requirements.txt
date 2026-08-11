@@ -1,0 +1,14 @@
+# AI-NutriCare - Personalized Diet Plan Generator
+streamlit>=1.28.0
+pandas>=2.0.0
+numpy>=1.24.0
+Pillow>=10.0.0
+pdf2image>=1.16.0
+PyPDF2>=3.0.0
+easyocr>=1.7.0
+torch>=2.0.0
+opencv-python-headless>=4.8.0
+reportlab>=4.0.0
+scikit-learn>=1.3.0
+plotly>=5.0.0
+python-dotenv>=1.0.0
