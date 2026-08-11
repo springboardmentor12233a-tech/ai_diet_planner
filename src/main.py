@@ -1,25 +1,54 @@
 import pandas as pd
 import os
-import sys
 
-# Add src folder to path (if running directly)
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from .preprocess import preprocess_text, extract_parameters
+from .easyocr_extractor import extract_text_from_image
+from .model import train_logistic_regression
+from .model import train_svm_model
 
-from preprocess import preprocess_text, extract_parameters
-from easyocr_extractor import extract_text_from_image
 
-# Path to your single image
-image_path = r"C:\Users\parth\Documents\virtual intern\lbmaske\BLR-0425-PA-0039192_05c45741fa5d4b5180df06f200423a00__2_files_merged__26-04-2025_0430-01_PM@E.pdf_page_104.png"
 
-# Extract text using EasyOCR
-img_text = extract_text_from_image(image_path)
+def run_ocr_extraction():
+    print("\n--- OCR EXTRACTION STARTED ---")
 
-# Preprocess and extract parameters
-records = extract_parameters(preprocess_text(img_text))
+    image_path = (
+        r"C:\Users\parth\Documents\virtual intern\lbmaske"
+        r"\BLR-0425-PA-0039192_05c45741fa5d4b5180df06f200423a00__2_files_merged__26-04-2025_0430-01_PM@E.pdf_page_104.png"
+    )
 
-# Save results
-df = pd.DataFrame(records)
-output_file = r"C:\Users\parth\Documents\virtual intern\ai_diet_planner\output\data.csv"
-df.to_csv(output_file, index=False)
+    img_text = extract_text_from_image(image_path)
 
-print(f"Extraction completed. Total tests extracted: {len(df)}")
+    records = extract_parameters(preprocess_text(img_text))
+
+    df = pd.DataFrame(records)
+
+    output_dir = r"C:\Users\parth\Documents\virtual intern\ai_diet_planner\output"
+    os.makedirs(output_dir, exist_ok=True)
+
+    output_file = os.path.join(output_dir, "data.csv")
+    df.to_csv(output_file, index=False)
+
+    print(f"OCR extraction completed. Tests extracted: {len(df)}")
+    print(f"Saved to: {output_file}")
+
+
+def run_model_training():
+    print("\n--- TRAINING LOGISTIC REGRESSION MODEL ---")
+
+    dataset_path = r"C:\Users\parth\Documents\virtual intern\diabetes.csv"
+
+    #accuracy, report = train_logistic_regression(dataset_path)
+    accuracy, report = train_svm_model(dataset_path)
+
+    print(f"Model Accuracy: {accuracy:.4f}")
+    print("\nClassification Report:\n")
+    print(report)
+
+
+def main():
+    run_ocr_extraction()
+    run_model_training()
+
+
+if __name__ == "__main__":
+    main()
